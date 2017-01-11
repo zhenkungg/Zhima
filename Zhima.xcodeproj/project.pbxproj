@@ -105,6 +105,7 @@
 				166CBAD61E26209300E12865 /* AppDelegate.m */,
 				166CBAD81E26209300E12865 /* ViewController.h */,
 				166CBAD91E26209300E12865 /* ViewController.m */,
+				166CBB051E26277A00E12865 /* News */,
 				166CBADB1E26209300E12865 /* Main.storyboard */,
 				166CBADE1E26209300E12865 /* Assets.xcassets */,
 				166CBAE01E26209300E12865 /* LaunchScreen.storyboard */,
@@ -138,6 +139,13 @@
 				166CBAF91E26209400E12865 /* Info.plist */,
 			);
 			path = ZhimaUITests;
+			sourceTree = "<group>";
+		};
+		166CBB051E26277A00E12865 /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +524,7 @@
 				166CBAFE1E26209400E12865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		166CBAFF1E26209400E12865 /* Build configuration list for PBXNativeTarget "ZhimaTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +533,7 @@
 				166CBB011E26209400E12865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		166CBB021E26209400E12865 /* Build configuration list for PBXNativeTarget "ZhimaUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +542,7 @@
 				166CBB041E26209400E12865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
