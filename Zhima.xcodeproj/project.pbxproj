@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		166CBAD41E26209300E12865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD31E26209300E12865 /* main.m */; };
+		166CBAD71E26209300E12865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD61E26209300E12865 /* AppDelegate.m */; };
+		166CBADA1E26209300E12865 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD91E26209300E12865 /* ViewController.m */; };
+		166CBADD1E26209300E12865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166CBADB1E26209300E12865 /* Main.storyboard */; };
+		166CBADF1E26209300E12865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 166CBADE1E26209300E12865 /* Assets.xcassets */; };
+		166CBAE21E26209300E12865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166CBAE01E26209300E12865 /* LaunchScreen.storyboard */; };
+		166CBAED1E26209400E12865 /* ZhimaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAEC1E26209400E12865 /* ZhimaTests.m */; };
+		166CBAF81E26209400E12865 /* ZhimaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAF71E26209400E12865 /* ZhimaUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		166CBAE91E26209400E12865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 166CBAC71E26209200E12865 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 166CBACE1E26209300E12865;
+			remoteInfo = Zhima;
+		};
+		166CBAF41E26209400E12865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 166CBAC71E26209200E12865 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 166CBACE1E26209300E12865;
+			remoteInfo = Zhima;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		166CBACF1E26209300E12865 /* Zhima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zhima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		166CBAD31E26209300E12865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		166CBAD51E26209300E12865 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		166CBAD61E26209300E12865 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		166CBAD81E26209300E12865 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		166CBAD91E26209300E12865 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		166CBADC1E26209300E12865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		166CBADE1E26209300E12865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		166CBAE11E26209300E12865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		166CBAE31E26209300E12865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166CBAE81E26209400E12865 /* ZhimaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhimaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		166CBAEC1E26209400E12865 /* ZhimaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhimaTests.m; sourceTree = "<group>"; };
+		166CBAEE1E26209400E12865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166CBAF31E26209400E12865 /* ZhimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		166CBAF71E26209400E12865 /* ZhimaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhimaUITests.m; sourceTree = "<group>"; };
+		166CBAF91E26209400E12865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		166CBACC1E26209300E12865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		166CBAE51E26209400E12865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		166CBAF01E26209400E12865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		166CBAC61E26209200E12865 = {
+			isa = PBXGroup;
+			children = (
+				166CBAD11E26209300E12865 /* Zhima */,
+				166CBAEB1E26209400E12865 /* ZhimaTests */,
+				166CBAF61E26209400E12865 /* ZhimaUITests */,
+				166CBAD01E26209300E12865 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		166CBAD01E26209300E12865 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				166CBACF1E26209300E12865 /* Zhima.app */,
+				166CBAE81E26209400E12865 /* ZhimaTests.xctest */,
+				166CBAF31E26209400E12865 /* ZhimaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		166CBAD11E26209300E12865 /* Zhima */ = {
+			isa = PBXGroup;
+			children = (
+				166CBAD51E26209300E12865 /* AppDelegate.h */,
+				166CBAD61E26209300E12865 /* AppDelegate.m */,
+				166CBAD81E26209300E12865 /* ViewController.h */,
+				166CBAD91E26209300E12865 /* ViewController.m */,
+				166CBADB1E26209300E12865 /* Main.storyboard */,
+				166CBADE1E26209300E12865 /* Assets.xcassets */,
+				166CBAE01E26209300E12865 /* LaunchScreen.storyboard */,
+				166CBAE31E26209300E12865 /* Info.plist */,
+				166CBAD21E26209300E12865 /* Supporting Files */,
+			);
+			path = Zhima;
+			sourceTree = "<group>";
+		};
+		166CBAD21E26209300E12865 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				166CBAD31E26209300E12865 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		166CBAEB1E26209400E12865 /* ZhimaTests */ = {
+			isa = PBXGroup;
+			children = (
+				166CBAEC1E26209400E12865 /* ZhimaTests.m */,
+				166CBAEE1E26209400E12865 /* Info.plist */,
+			);
+			path = ZhimaTests;
+			sourceTree = "<group>";
+		};
+		166CBAF61E26209400E12865 /* ZhimaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				166CBAF71E26209400E12865 /* ZhimaUITests.m */,
+				166CBAF91E26209400E12865 /* Info.plist */,
+			);
+			path = ZhimaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		166CBACE1E26209300E12865 /* Zhima */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166CBAFC1E26209400E12865 /* Build configuration list for PBXNativeTarget "Zhima" */;
+			buildPhases = (
+				166CBACB1E26209300E12865 /* Sources */,
+				166CBACC1E26209300E12865 /* Frameworks */,
+				166CBACD1E26209300E12865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zhima;
+			productName = Zhima;
+			productReference = 166CBACF1E26209300E12865 /* Zhima.app */;
+			productType = "com.apple.product-type.application";
+		};
+		166CBAE71E26209400E12865 /* ZhimaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166CBAFF1E26209400E12865 /* Build configuration list for PBXNativeTarget "ZhimaTests" */;
+			buildPhases = (
+				166CBAE41E26209400E12865 /* Sources */,
+				166CBAE51E26209400E12865 /* Frameworks */,
+				166CBAE61E26209400E12865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				166CBAEA1E26209400E12865 /* PBXTargetDependency */,
+			);
+			name = ZhimaTests;
+			productName = ZhimaTests;
+			productReference = 166CBAE81E26209400E12865 /* ZhimaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		166CBAF21E26209400E12865 /* ZhimaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166CBB021E26209400E12865 /* Build configuration list for PBXNativeTarget "ZhimaUITests" */;
+			buildPhases = (
+				166CBAEF1E26209400E12865 /* Sources */,
+				166CBAF01E26209400E12865 /* Frameworks */,
+				166CBAF11E26209400E12865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				166CBAF51E26209400E12865 /* PBXTargetDependency */,
+			);
+			name = ZhimaUITests;
+			productName = ZhimaUITests;
+			productReference = 166CBAF31E26209400E12865 /* ZhimaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		166CBAC71E26209200E12865 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = zkgg;
+				TargetAttributes = {
+					166CBACE1E26209300E12865 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2RMQU53STV;
+						ProvisioningStyle = Automatic;
+					};
+					166CBAE71E26209400E12865 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2RMQU53STV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 166CBACE1E26209300E12865;
+					};
+					166CBAF21E26209400E12865 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2RMQU53STV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 166CBACE1E26209300E12865;
+					};
+				};
+			};
+			buildConfigurationList = 166CBACA1E26209200E12865 /* Build configuration list for PBXProject "Zhima" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 166CBAC61E26209200E12865;
+			productRefGroup = 166CBAD01E26209300E12865 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				166CBACE1E26209300E12865 /* Zhima */,
+				166CBAE71E26209400E12865 /* ZhimaTests */,
+				166CBAF21E26209400E12865 /* ZhimaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		166CBACD1E26209300E12865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166CBAE21E26209300E12865 /* LaunchScreen.storyboard in Resources */,
+				166CBADF1E26209300E12865 /* Assets.xcassets in Resources */,
+				166CBADD1E26209300E12865 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		166CBAE61E26209400E12865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		166CBAF11E26209400E12865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		166CBACB1E26209300E12865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166CBADA1E26209300E12865 /* ViewController.m in Sources */,
+				166CBAD71E26209300E12865 /* AppDelegate.m in Sources */,
+				166CBAD41E26209300E12865 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		166CBAE41E26209400E12865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166CBAED1E26209400E12865 /* ZhimaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		166CBAEF1E26209400E12865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166CBAF81E26209400E12865 /* ZhimaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		166CBAEA1E26209400E12865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 166CBACE1E26209300E12865 /* Zhima */;
+			targetProxy = 166CBAE91E26209400E12865 /* PBXContainerItemProxy */;
+		};
+		166CBAF51E26209400E12865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 166CBACE1E26209300E12865 /* Zhima */;
+			targetProxy = 166CBAF41E26209400E12865 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		166CBADB1E26209300E12865 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166CBADC1E26209300E12865 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		166CBAE01E26209300E12865 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166CBAE11E26209300E12865 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		166CBAFA1E26209400E12865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		166CBAFB1E26209400E12865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		166CBAFD1E26209400E12865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2RMQU53STV;
+				INFOPLIST_FILE = Zhima/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = guzhenkun.Zhima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		166CBAFE1E26209400E12865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2RMQU53STV;
+				INFOPLIST_FILE = Zhima/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = guzhenkun.Zhima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		166CBB001E26209400E12865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2RMQU53STV;
+				INFOPLIST_FILE = ZhimaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = guzhenkun.ZhimaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zhima.app/Zhima";
+			};
+			name = Debug;
+		};
+		166CBB011E26209400E12865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2RMQU53STV;
+				INFOPLIST_FILE = ZhimaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = guzhenkun.ZhimaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zhima.app/Zhima";
+			};
+			name = Release;
+		};
+		166CBB031E26209400E12865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2RMQU53STV;
+				INFOPLIST_FILE = ZhimaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = guzhenkun.ZhimaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Zhima;
+			};
+			name = Debug;
+		};
+		166CBB041E26209400E12865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2RMQU53STV;
+				INFOPLIST_FILE = ZhimaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = guzhenkun.ZhimaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Zhima;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		166CBACA1E26209200E12865 /* Build configuration list for PBXProject "Zhima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166CBAFA1E26209400E12865 /* Debug */,
+				166CBAFB1E26209400E12865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		166CBAFC1E26209400E12865 /* Build configuration list for PBXNativeTarget "Zhima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166CBAFD1E26209400E12865 /* Debug */,
+				166CBAFE1E26209400E12865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		166CBAFF1E26209400E12865 /* Build configuration list for PBXNativeTarget "ZhimaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166CBB001E26209400E12865 /* Debug */,
+				166CBB011E26209400E12865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		166CBB021E26209400E12865 /* Build configuration list for PBXNativeTarget "ZhimaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166CBB031E26209400E12865 /* Debug */,
+				166CBB041E26209400E12865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 166CBAC71E26209200E12865 /* Project object */;
+}
