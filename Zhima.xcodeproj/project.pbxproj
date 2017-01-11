@@ -81,6 +81,8 @@
 		166CBAC61E26209200E12865 = {
 			isa = PBXGroup;
 			children = (
+				166CBB091E26298700E12865 /* Tools */,
+				166CBB081E26297700E12865 /* icon */,
 				166CBAD11E26209300E12865 /* Zhima */,
 				166CBAEB1E26209400E12865 /* ZhimaTests */,
 				166CBAF61E26209400E12865 /* ZhimaUITests */,
@@ -105,6 +107,8 @@
 				166CBAD61E26209300E12865 /* AppDelegate.m */,
 				166CBAD81E26209300E12865 /* ViewController.h */,
 				166CBAD91E26209300E12865 /* ViewController.m */,
+				166CBB061E26291900E12865 /* Personage */,
+				166CBB071E26296400E12865 /* Course */,
 				166CBB051E26277A00E12865 /* News */,
 				166CBADB1E26209300E12865 /* Main.storyboard */,
 				166CBADE1E26209300E12865 /* Assets.xcassets */,
@@ -146,6 +150,34 @@
 			children = (
 			);
 			name = News;
+			sourceTree = "<group>";
+		};
+		166CBB061E26291900E12865 /* Personage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Personage;
+			sourceTree = "<group>";
+		};
+		166CBB071E26296400E12865 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Course;
+			sourceTree = "<group>";
+		};
+		166CBB081E26297700E12865 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = icon;
+			sourceTree = "<group>";
+		};
+		166CBB091E26298700E12865 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
