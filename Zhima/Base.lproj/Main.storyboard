@@ -12,7 +12,7 @@
         <!--个人中心-->
         <scene sceneID="pFH-rW-Dor">
             <objects>
-                <viewController id="OOC-Q3-bND" sceneMemberID="viewController">
+                <viewController id="OOC-Q3-bND" customClass="PersonViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pS1-tt-tHD"/>
                         <viewControllerLayoutGuide type="bottom" id="blf-n2-gTh"/>

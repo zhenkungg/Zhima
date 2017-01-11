@@ -15,6 +15,7 @@
 		166CBAE21E26209300E12865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166CBAE01E26209300E12865 /* LaunchScreen.storyboard */; };
 		166CBAED1E26209400E12865 /* ZhimaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAEC1E26209400E12865 /* ZhimaTests.m */; };
 		166CBAF81E26209400E12865 /* ZhimaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAF71E26209400E12865 /* ZhimaUITests.m */; };
+		F57675CF1E262CBE0069E9DA /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57675CE1E262CBE0069E9DA /* PersonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		166CBAF31E26209400E12865 /* ZhimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		166CBAF71E26209400E12865 /* ZhimaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhimaUITests.m; sourceTree = "<group>"; };
 		166CBAF91E26209400E12865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57675CD1E262CBE0069E9DA /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		F57675CE1E262CBE0069E9DA /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 		166CBB061E26291900E12865 /* Personage */ = {
 			isa = PBXGroup;
 			children = (
+				F57675CD1E262CBE0069E9DA /* PersonViewController.h */,
+				F57675CE1E262CBE0069E9DA /* PersonViewController.m */,
 			);
 			name = Personage;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				166CBADA1E26209300E12865 /* ViewController.m in Sources */,
 				166CBAD71E26209300E12865 /* AppDelegate.m in Sources */,
 				166CBAD41E26209300E12865 /* main.m in Sources */,
+				F57675CF1E262CBE0069E9DA /* PersonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
