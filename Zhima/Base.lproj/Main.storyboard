@@ -86,7 +86,7 @@
         <!--消息-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NewsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -94,13 +94,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-WA-d9e">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" id="kiY-sD-zNd" customClass="NewsTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kiY-sD-zNd" id="j8T-fE-wSr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="A9e-TM-xMW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="M0q-Au-Qht"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.60655368922528496" blue="0.89606069630162521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wIs-WA-d9e" secondAttribute="bottom" id="2G5-bm-6Hg"/>
+                            <constraint firstItem="wIs-WA-d9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c2y-b1-Mvn"/>
+                            <constraint firstAttribute="trailing" secondItem="wIs-WA-d9e" secondAttribute="trailing" id="pp1-H4-x5q"/>
+                            <constraint firstItem="wIs-WA-d9e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vHZ-Lq-hiK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="消息" id="TqP-eu-rrA"/>
+                    <connections>
+                        <outlet property="newstableV" destination="wIs-WA-d9e" id="phv-vw-jot"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1516" y="434"/>
+            <point key="canvasLocation" x="-1516" y="408.84557721139436"/>
         </scene>
     </scenes>
 </document>
