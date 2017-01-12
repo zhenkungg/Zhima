@@ -12,7 +12,7 @@
 
 @interface NewsViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *newstableV;
-@property (weak, nonatomic) IBOutlet UIImageView *newsImage;
+
 @property(strong,nonatomic)NSMutableArray *dataArray;
 
 @end
@@ -30,18 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor lightGrayColor];
-   _newstableV.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    
-    [_newstableV registerClass:[UITableViewCell class]  forCellReuseIdentifier:@"NewsCell"];
-//    UINib *nib = [UINib nibWithNibName:@"NewsTableViewCell" bundle:nil];
-//    [_newstableV registerNib:nib forCellReuseIdentifier:@"NewsCell"];
-//    
-    
-//    NewsModel *newsmodel = [[NewsModel alloc]init];
-    
-    [self.view addSubview:self.newstableV];
-}
+  }
 
 -(NSInteger )tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -52,18 +41,21 @@
 {
     return 20;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 120;
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *strID = @"NewsCell";
-//    NewsTableViewCell *newscell = [tableView dequeueReusableCellWithIdentifier:strID];
-    UITableViewCell *newscell = [tableView dequeueReusableCellWithIdentifier:strID];
+    NewsTableViewCell *newscell = [tableView dequeueReusableCellWithIdentifier:strID];
+//    UITableViewCell *newscell = [tableView dequeueReusableCellWithIdentifier:strID];
     if (newscell == nil) {
-        newscell = [[NewsTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:strID];
+        newscell = [[[NSBundle mainBundle]loadNibNamed:@"NewsTableViewCell" owner:nil options:nil]lastObject];
     }
     newscell.selectionStyle = UITableViewCellSelectionStyleNone;
 //  NewsModel  *model = self.dataArray[indexPath.section];
-   newscell.textLabel.text = @"lll";
+   
     
     return newscell ;
 }

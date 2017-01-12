@@ -96,18 +96,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-WA-d9e">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" id="kiY-sD-zNd" customClass="NewsTableViewCell">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kiY-sD-zNd" id="j8T-fE-wSr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="A9e-TM-xMW"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="M0q-Au-Qht"/>
@@ -116,10 +106,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.60655368922528496" blue="0.89606069630162521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wIs-WA-d9e" secondAttribute="bottom" id="2G5-bm-6Hg"/>
-                            <constraint firstItem="wIs-WA-d9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c2y-b1-Mvn"/>
-                            <constraint firstAttribute="trailing" secondItem="wIs-WA-d9e" secondAttribute="trailing" id="pp1-H4-x5q"/>
-                            <constraint firstItem="wIs-WA-d9e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vHZ-Lq-hiK"/>
+                            <constraint firstItem="wIs-WA-d9e" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="EE5-xJ-tOf"/>
+                            <constraint firstItem="wIs-WA-d9e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FCP-Kq-45Z"/>
+                            <constraint firstItem="wIs-WA-d9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a3K-SQ-fOa"/>
+                            <constraint firstAttribute="trailing" secondItem="wIs-WA-d9e" secondAttribute="trailing" id="k99-aP-ns1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="消息" id="TqP-eu-rrA"/>

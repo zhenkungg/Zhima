@@ -15,9 +15,10 @@
 		166CBAE21E26209300E12865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166CBAE01E26209300E12865 /* LaunchScreen.storyboard */; };
 		166CBAED1E26209400E12865 /* ZhimaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAEC1E26209400E12865 /* ZhimaTests.m */; };
 		166CBAF81E26209400E12865 /* ZhimaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAF71E26209400E12865 /* ZhimaUITests.m */; };
-		166CBB201E2642DB00E12865 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBB1F1E2642DB00E12865 /* NewsTableViewCell.m */; };
 		166CBB231E2642EA00E12865 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBB221E2642EA00E12865 /* NewsViewController.m */; };
 		16DE45FA1E270E7500CBA8A1 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE45F91E270E7500CBA8A1 /* NewsModel.m */; };
+		16DE46181E2772AB00CBA8A1 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE46161E2772AB00CBA8A1 /* NewsTableViewCell.m */; };
+		16DE46191E2772AB00CBA8A1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DE46171E2772AB00CBA8A1 /* NewsTableViewCell.xib */; };
 		F57675CF1E262CBE0069E9DA /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57675CE1E262CBE0069E9DA /* PersonViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -55,12 +56,13 @@
 		166CBAF31E26209400E12865 /* ZhimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		166CBAF71E26209400E12865 /* ZhimaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhimaUITests.m; sourceTree = "<group>"; };
 		166CBAF91E26209400E12865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		166CBB1E1E2642DB00E12865 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
-		166CBB1F1E2642DB00E12865 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 		166CBB211E2642EA00E12865 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		166CBB221E2642EA00E12865 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		16DE45F81E270E7500CBA8A1 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		16DE45F91E270E7500CBA8A1 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		16DE46151E2772AB00CBA8A1 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		16DE46161E2772AB00CBA8A1 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		16DE46171E2772AB00CBA8A1 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		F57675CD1E262CBE0069E9DA /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		F57675CE1E262CBE0069E9DA /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,8 +202,9 @@
 		166CBB1B1E26427400E12865 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				166CBB1E1E2642DB00E12865 /* NewsTableViewCell.h */,
-				166CBB1F1E2642DB00E12865 /* NewsTableViewCell.m */,
+				16DE46151E2772AB00CBA8A1 /* NewsTableViewCell.h */,
+				16DE46161E2772AB00CBA8A1 /* NewsTableViewCell.m */,
+				16DE46171E2772AB00CBA8A1 /* NewsTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			files = (
 				166CBAE21E26209300E12865 /* LaunchScreen.storyboard in Resources */,
 				166CBADF1E26209300E12865 /* Assets.xcassets in Resources */,
+				16DE46191E2772AB00CBA8A1 /* NewsTableViewCell.xib in Resources */,
 				166CBADD1E26209300E12865 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,12 +365,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				166CBADA1E26209300E12865 /* ViewController.m in Sources */,
-				166CBB201E2642DB00E12865 /* NewsTableViewCell.m in Sources */,
 				166CBAD71E26209300E12865 /* AppDelegate.m in Sources */,
 				166CBB231E2642EA00E12865 /* NewsViewController.m in Sources */,
 				166CBAD41E26209300E12865 /* main.m in Sources */,
 				F57675CF1E262CBE0069E9DA /* PersonViewController.m in Sources */,
 				16DE45FA1E270E7500CBA8A1 /* NewsModel.m in Sources */,
+				16DE46181E2772AB00CBA8A1 /* NewsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
