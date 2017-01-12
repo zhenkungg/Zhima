@@ -19,6 +19,8 @@
 		16DE45FA1E270E7500CBA8A1 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE45F91E270E7500CBA8A1 /* NewsModel.m */; };
 		16DE46181E2772AB00CBA8A1 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE46161E2772AB00CBA8A1 /* NewsTableViewCell.m */; };
 		16DE46191E2772AB00CBA8A1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DE46171E2772AB00CBA8A1 /* NewsTableViewCell.xib */; };
+		16DE461F1E27775D00CBA8A1 /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE461E1E27775D00CBA8A1 /* CourseViewController.m */; };
+		16DE46231E2777E200CBA8A1 /* CourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */; };
 		F57675CF1E262CBE0069E9DA /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57675CE1E262CBE0069E9DA /* PersonViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,10 @@
 		16DE46151E2772AB00CBA8A1 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
 		16DE46161E2772AB00CBA8A1 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 		16DE46171E2772AB00CBA8A1 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		16DE461D1E27775D00CBA8A1 /* CourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseViewController.h; sourceTree = "<group>"; };
+		16DE461E1E27775D00CBA8A1 /* CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseViewController.m; sourceTree = "<group>"; };
+		16DE46201E2777E200CBA8A1 /* CourseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTableViewController.h; sourceTree = "<group>"; };
+		16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTableViewController.m; sourceTree = "<group>"; };
 		F57675CD1E262CBE0069E9DA /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		F57675CE1E262CBE0069E9DA /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +187,9 @@
 		166CBB071E26296400E12865 /* Course */ = {
 			isa = PBXGroup;
 			children = (
+				16DE461C1E2776E200CBA8A1 /* View */,
+				16DE461B1E2776C800CBA8A1 /* Controller */,
+				16DE461A1E27769700CBA8A1 /* Model */,
 			);
 			name = Course;
 			sourceTree = "<group>";
@@ -225,6 +234,31 @@
 				16DE45F91E270E7500CBA8A1 /* NewsModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		16DE461A1E27769700CBA8A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		16DE461B1E2776C800CBA8A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16DE46201E2777E200CBA8A1 /* CourseTableViewController.h */,
+				16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */,
+				16DE461D1E27775D00CBA8A1 /* CourseViewController.h */,
+				16DE461E1E27775D00CBA8A1 /* CourseViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		16DE461C1E2776E200CBA8A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,7 +398,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16DE46231E2777E200CBA8A1 /* CourseTableViewController.m in Sources */,
 				166CBADA1E26209300E12865 /* ViewController.m in Sources */,
+				16DE461F1E27775D00CBA8A1 /* CourseViewController.m in Sources */,
 				166CBAD71E26209300E12865 /* AppDelegate.m in Sources */,
 				166CBB231E2642EA00E12865 /* NewsViewController.m in Sources */,
 				166CBAD41E26209300E12865 /* main.m in Sources */,

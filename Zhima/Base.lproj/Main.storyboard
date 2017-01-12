@@ -31,7 +31,7 @@
         <!--课程-->
         <scene sceneID="xVE-Ab-WKn">
             <objects>
-                <viewController id="5bv-l0-3SJ" sceneMemberID="viewController">
+                <viewController id="5bv-l0-3SJ" customClass="CourseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gr0-9H-NB6"/>
                         <viewControllerLayoutGuide type="bottom" id="xJN-nk-MkO"/>

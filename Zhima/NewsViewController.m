@@ -49,12 +49,11 @@
 {
     static NSString *strID = @"NewsCell";
     NewsTableViewCell *newscell = [tableView dequeueReusableCellWithIdentifier:strID];
-//    UITableViewCell *newscell = [tableView dequeueReusableCellWithIdentifier:strID];
+
     if (newscell == nil) {
         newscell = [[[NSBundle mainBundle]loadNibNamed:@"NewsTableViewCell" owner:nil options:nil]lastObject];
     }
     newscell.selectionStyle = UITableViewCellSelectionStyleNone;
-//  NewsModel  *model = self.dataArray[indexPath.section];
    
     
     return newscell ;
