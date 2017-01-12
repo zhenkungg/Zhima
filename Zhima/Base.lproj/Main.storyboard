@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Efx-4U-Ike" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-676" y="42"/>
+            <point key="canvasLocation" x="263.19999999999999" y="41.829085457271368"/>
         </scene>
         <!--课程-->
         <scene sceneID="xVE-Ab-WKn">
@@ -58,7 +58,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xK9-2W-ENl"/>
+                        <segue destination="Mei-xu-wWF" kind="relationship" relationship="viewControllers" id="xK9-2W-ENl"/>
                         <segue destination="5bv-l0-3SJ" kind="relationship" relationship="viewControllers" id="es0-pX-z46"/>
                         <segue destination="OOC-Q3-bND" kind="relationship" relationship="viewControllers" id="mOO-KO-acb"/>
                     </connections>
@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="-2274" y="-279"/>
         </scene>
-        <!--消息-->
+        <!--News View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="NewsViewController" sceneMemberID="viewController">
@@ -112,12 +112,31 @@
                             <constraint firstAttribute="trailing" secondItem="wIs-WA-d9e" secondAttribute="trailing" id="k99-aP-ns1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="消息" id="TqP-eu-rrA"/>
+                    <navigationItem key="navigationItem" id="hhf-g3-a5u"/>
                     <connections>
                         <outlet property="newstableV" destination="wIs-WA-d9e" id="phv-vw-jot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-576.79999999999995" y="408.84557721139436"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="o9d-as-mT5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mei-xu-wWF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消息" id="TqP-eu-rrA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Rr-X0-dFj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Hht-28-5z3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xg5-GR-77h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1516" y="408.84557721139436"/>
         </scene>
