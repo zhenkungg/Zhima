@@ -16,12 +16,15 @@
             <rect key="frame" x="0.0" y="0.0" width="386" height="108"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="386" height="108"/>
+                <rect key="frame" x="0.0" y="0.0" width="386" height="107"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mazoo-logo" highlightedImage="mazoo-logo" translatesAutoresizingMaskIntoConstraints="NO" id="mJo-nL-F39">
-                        <rect key="frame" x="8" y="8" width="90" height="92"/>
+                        <rect key="frame" x="8" y="8" width="90" height="91"/>
                         <color key="backgroundColor" red="0.67635925779999995" green="0.93490185010000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="049-fa-sHi"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张大宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkP-rz-8v6">
                         <rect key="frame" x="106" y="16" width="149" height="30"/>
@@ -34,7 +37,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLayoutConstraint:0x600000096800 UIImageView:0x7fa77ed30660.bottom == UITableViewCellContentVie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmQ-WQ-vSn">
-                        <rect key="frame" x="106" y="54" width="244" height="46"/>
+                        <rect key="frame" x="106" y="54" width="244" height="43"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -47,21 +50,18 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="nmQ-WQ-vSn" firstAttribute="bottom" secondItem="mJo-nL-F39" secondAttribute="bottom" id="2bT-ug-qlA"/>
-                    <constraint firstItem="mJo-nL-F39" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="JX6-Km-fCo"/>
-                    <constraint firstItem="mJo-nL-F39" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="MMK-do-iGc"/>
-                    <constraint firstItem="SkP-rz-8v6" firstAttribute="leading" secondItem="mJo-nL-F39" secondAttribute="trailing" constant="8" symbolic="YES" id="NjM-Xg-p5J"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="nmQ-WQ-vSn" secondAttribute="bottom" constant="-1" id="XVx-AU-MUm"/>
+                    <constraint firstItem="mJo-nL-F39" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Gig-JB-8gJ"/>
+                    <constraint firstItem="mJo-nL-F39" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="WGw-B0-H58"/>
                     <constraint firstItem="gdX-x8-TtW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="Y8f-99-CUO"/>
                     <constraint firstItem="nmQ-WQ-vSn" firstAttribute="leading" secondItem="SkP-rz-8v6" secondAttribute="leading" id="YGG-FC-eih"/>
                     <constraint firstItem="gdX-x8-TtW" firstAttribute="leading" secondItem="SkP-rz-8v6" secondAttribute="trailing" constant="19" id="gKl-dO-9OS"/>
                     <constraint firstItem="SkP-rz-8v6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="kkW-2k-wuB"/>
-                    <constraint firstItem="mJo-nL-F39" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="oGG-Wb-XKh"/>
+                    <constraint firstItem="mJo-nL-F39" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nL8-6P-xTX"/>
                     <constraint firstAttribute="trailingMargin" secondItem="nmQ-WQ-vSn" secondAttribute="trailing" constant="28" id="qba-sf-QAv"/>
                     <constraint firstItem="nmQ-WQ-vSn" firstAttribute="top" secondItem="gdX-x8-TtW" secondAttribute="bottom" constant="8" id="r0K-0v-I9L"/>
                     <constraint firstItem="nmQ-WQ-vSn" firstAttribute="top" secondItem="SkP-rz-8v6" secondAttribute="bottom" constant="8" symbolic="YES" id="tjK-Jd-BNR"/>
                     <constraint firstAttribute="trailingMargin" secondItem="gdX-x8-TtW" secondAttribute="trailing" constant="28" id="vjj-Db-uBh"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="mJo-nL-F39" secondAttribute="trailing" constant="280" id="vs4-mq-mW6"/>
+                    <constraint firstItem="SkP-rz-8v6" firstAttribute="leading" secondItem="mJo-nL-F39" secondAttribute="trailing" constant="8" symbolic="YES" id="y50-Tw-ne8"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

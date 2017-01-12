@@ -7,7 +7,7 @@
 //
 
 #import "CourseTableViewController.h"
-
+#import "NewsTableViewCell.h"
 @interface CourseTableViewController ()
 
 @property(nonatomic,strong)NSMutableArray *courseARR;
@@ -34,20 +34,24 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 20;
 }
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 120;
 }
-
-
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc]init];
-    cell.textLabel.text = @"000";
-    return cell;
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *strID = @"NewsCell";
+    NewsTableViewCell *newscell = [tableView dequeueReusableCellWithIdentifier:strID];
+    
+    if (newscell == nil) {
+        newscell = [[[NSBundle mainBundle]loadNibNamed:@"NewsTableViewCell" owner:nil options:nil]lastObject];
+    }
+    newscell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    
+    return newscell ;
 }
-
 
 /*
 // Override to support conditional editing of the table view.

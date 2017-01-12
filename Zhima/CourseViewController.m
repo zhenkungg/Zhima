@@ -8,7 +8,7 @@
 
 #import "CourseViewController.h"
 #import "CourseTableViewController.h"
-
+#import "NewsTableViewCell.h"
 #define Screen_Width [UIScreen mainScreen].bounds.size.width
 #define Screen_Height [UIScreen mainScreen].bounds.size.height
 
@@ -42,16 +42,23 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 120;
 }
 
--(UITableViewCell  *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc]init];
-    cell.textLabel.text = @"aaa";
-    return cell;
+    static NSString *strID = @"NewsCell";
+    NewsTableViewCell *newscell = [tableView dequeueReusableCellWithIdentifier:strID];
+    
+    if (newscell == nil) {
+        newscell = [[[NSBundle mainBundle]loadNibNamed:@"NewsTableViewCell" owner:nil options:nil]lastObject];
+    }
+    newscell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    
+    return newscell ;
 }
-
 //自定义导航栏
 -(void)setUpNav
 {
