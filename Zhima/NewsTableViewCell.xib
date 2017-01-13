@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,10 +19,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="386" height="107"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mazoo-logo" highlightedImage="mazoo-logo" translatesAutoresizingMaskIntoConstraints="NO" id="mJo-nL-F39">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mazoo-logo" highlightedImage="mazoo-logo" translatesAutoresizingMaskIntoConstraints="NO" id="mJo-nL-F39">
                         <rect key="frame" x="8" y="8" width="90" height="91"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.67635925779999995" green="0.93490185010000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="VWQ-Xl-401"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="50"/>
@@ -29,29 +32,42 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="张大宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkP-rz-8v6">
-                        <rect key="frame" x="106" y="16" width="99" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SLayoutConstraint:0x600000096800 UIImageView:0x7fa77ed30660.bottom == UITableViewCellContentVie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmQ-WQ-vSn">
-                        <rect key="frame" x="106" y="51" width="272" height="43"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLayoutConstraint:0x600000096800 UIImageView:0x7fa77ed30660.bottom == UITableViewCellContentVie" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmQ-WQ-vSn">
+                        <rect key="frame" x="117" y="49" width="261" height="43"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" text="18:22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="76" translatesAutoresizingMaskIntoConstraints="NO" id="gdX-x8-TtW">
-                        <rect key="frame" x="244" y="20" width="72" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="18:22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="76" translatesAutoresizingMaskIntoConstraints="NO" id="gdX-x8-TtW">
+                        <rect key="frame" x="244" y="20" width="42.5" height="21"/>
                         <color key="backgroundColor" red="1" green="0.60655368919999997" blue="0.89606069629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张大宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkP-rz-8v6">
+                        <rect key="frame" x="117" y="15" width="99" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Hx1-po-SBW"/>
+                            <constraint firstAttribute="width" constant="99" id="xLp-PL-IPR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="SkP-rz-8v6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="0wl-iU-IKl"/>
+                    <constraint firstItem="nmQ-WQ-vSn" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="3VU-7y-e34"/>
+                    <constraint firstItem="nmQ-WQ-vSn" firstAttribute="leading" secondItem="SkP-rz-8v6" secondAttribute="leading" id="3dT-XA-0by"/>
+                    <constraint firstItem="mJo-nL-F39" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="6yQ-0c-vz2"/>
+                    <constraint firstItem="mJo-nL-F39" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="DUP-Sb-ZPP"/>
+                    <constraint firstItem="nmQ-WQ-vSn" firstAttribute="top" secondItem="gdX-x8-TtW" secondAttribute="bottom" constant="8" symbolic="YES" id="Yfl-1G-Wsd"/>
+                    <constraint firstItem="mJo-nL-F39" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="atr-xa-hY4"/>
+                    <constraint firstItem="nmQ-WQ-vSn" firstAttribute="leading" secondItem="mJo-nL-F39" secondAttribute="trailing" constant="19" id="cF2-Ka-eYu"/>
+                    <constraint firstItem="SkP-rz-8v6" firstAttribute="centerY" secondItem="gdX-x8-TtW" secondAttribute="centerY" id="exZ-nd-IEl"/>
+                    <constraint firstItem="gdX-x8-TtW" firstAttribute="leading" secondItem="SkP-rz-8v6" secondAttribute="trailing" constant="28" id="qH4-C2-xRA"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="newsimage" destination="mJo-nL-F39" id="GxI-nf-rxX"/>

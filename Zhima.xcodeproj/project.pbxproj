@@ -331,7 +331,7 @@
 				TargetAttributes = {
 					166CBACE1E26209300E12865 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = TBFF9Q8DV8;
+						DevelopmentTeam = 2RMQU53STV;
 						ProvisioningStyle = Automatic;
 					};
 					166CBAE71E26209400E12865 = {
@@ -559,11 +559,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TBFF9Q8DV8;
+				DEVELOPMENT_TEAM = 2RMQU53STV;
 				INFOPLIST_FILE = Zhima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.guzhenkun.Zhima;
+				PRODUCT_BUNDLE_IDENTIFIER = guzhenkun.Zhima;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -572,11 +572,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TBFF9Q8DV8;
+				DEVELOPMENT_TEAM = 2RMQU53STV;
 				INFOPLIST_FILE = Zhima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.guzhenkun.Zhima;
+				PRODUCT_BUNDLE_IDENTIFIER = guzhenkun.Zhima;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
