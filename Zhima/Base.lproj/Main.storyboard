@@ -28,6 +28,26 @@
             </objects>
             <point key="canvasLocation" x="263.19999999999999" y="41.829085457271368"/>
         </scene>
+        <!--直播-->
+        <scene sceneID="G5c-Jb-piy">
+            <objects>
+                <viewController title="直播" id="keF-72-4y7" customClass="PushStremViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M8M-vD-lt5"/>
+                        <viewControllerLayoutGuide type="bottom" id="SPs-p8-TkX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XY4-yo-vvw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="直播" id="8Qq-Nq-3Q9"/>
+                    <navigationItem key="navigationItem" id="ZvU-nZ-Bl3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVC-cj-OvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1465" y="-870"/>
+        </scene>
         <!--课程-->
         <scene sceneID="xVE-Ab-WKn">
             <objects>
@@ -60,12 +80,13 @@
                     <connections>
                         <segue destination="Mei-xu-wWF" kind="relationship" relationship="viewControllers" id="xK9-2W-ENl"/>
                         <segue destination="5bv-l0-3SJ" kind="relationship" relationship="viewControllers" id="es0-pX-z46"/>
-                        <segue destination="OOC-Q3-bND" kind="relationship" relationship="viewControllers" id="mOO-KO-acb"/>
+                        <segue destination="keF-72-4y7" kind="relationship" relationship="viewControllers" id="7nC-ya-I6d"/>
+                        <segue destination="OOC-Q3-bND" kind="relationship" relationship="viewControllers" id="8E0-aH-3eh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cv-nf-qth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1516" y="-279"/>
+            <point key="canvasLocation" x="-1516" y="-199"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h8R-yh-tm6">

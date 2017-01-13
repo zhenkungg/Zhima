@@ -21,6 +21,7 @@
 		16DE46191E2772AB00CBA8A1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DE46171E2772AB00CBA8A1 /* NewsTableViewCell.xib */; };
 		16DE461F1E27775D00CBA8A1 /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE461E1E27775D00CBA8A1 /* CourseViewController.m */; };
 		16DE46231E2777E200CBA8A1 /* CourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */; };
+		F505B5491E28DC8700FF8049 /* PushStremViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F505B5481E28DC8700FF8049 /* PushStremViewController.m */; };
 		F5B169831E2788480068BE12 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B169811E2788480068BE12 /* PersonViewController.m */; };
 		F5B169841E2788480068BE12 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B169821E2788480068BE12 /* HeaderView.xib */; };
 /* End PBXBuildFile section */
@@ -70,6 +71,8 @@
 		16DE461E1E27775D00CBA8A1 /* CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseViewController.m; sourceTree = "<group>"; };
 		16DE46201E2777E200CBA8A1 /* CourseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTableViewController.h; sourceTree = "<group>"; };
 		16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTableViewController.m; sourceTree = "<group>"; };
+		F505B5471E28DC8700FF8049 /* PushStremViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushStremViewController.h; sourceTree = "<group>"; };
+		F505B5481E28DC8700FF8049 /* PushStremViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushStremViewController.m; sourceTree = "<group>"; };
 		F5B169801E2788480068BE12 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		F5B169811E2788480068BE12 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		F5B169821E2788480068BE12 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -129,6 +132,7 @@
 				166CBAD61E26209300E12865 /* AppDelegate.m */,
 				166CBAD81E26209300E12865 /* ViewController.h */,
 				166CBAD91E26209300E12865 /* ViewController.m */,
+				F505B5461E28D5F500FF8049 /* PushStrem */,
 				166CBB061E26291900E12865 /* Personage */,
 				166CBB071E26296400E12865 /* Course */,
 				166CBB051E26277A00E12865 /* News */,
@@ -262,6 +266,15 @@
 			children = (
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F505B5461E28D5F500FF8049 /* PushStrem */ = {
+			isa = PBXGroup;
+			children = (
+				F505B5471E28DC8700FF8049 /* PushStremViewController.h */,
+				F505B5481E28DC8700FF8049 /* PushStremViewController.m */,
+			);
+			name = PushStrem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +419,7 @@
 				166CBADA1E26209300E12865 /* ViewController.m in Sources */,
 				16DE461F1E27775D00CBA8A1 /* CourseViewController.m in Sources */,
 				166CBAD71E26209300E12865 /* AppDelegate.m in Sources */,
+				F505B5491E28DC8700FF8049 /* PushStremViewController.m in Sources */,
 				166CBB231E2642EA00E12865 /* NewsViewController.m in Sources */,
 				F5B169831E2788480068BE12 /* PersonViewController.m in Sources */,
 				166CBAD41E26209300E12865 /* main.m in Sources */,
