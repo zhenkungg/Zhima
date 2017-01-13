@@ -70,7 +70,7 @@
     }else if(indexPath.section == 2){
         cell.textLabel.text = _titles[5];
     }else
-    cell.textLabel.text = _titles[indexPath.row];
+    cell.textLabel.text = _titles[indexPath.row+1];
     
     cell.imageView.image = [UIImage imageNamed:@"doc"];
     

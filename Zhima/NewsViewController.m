@@ -29,6 +29,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //self.navigationController.title = @"消息";
+    
     // Do any additional setup after loading the view.
   }
 

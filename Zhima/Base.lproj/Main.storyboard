@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.6763592577948867" green="0.93490185007786575" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="个人中心" id="yo5-Zc-Lx2"/>
+                    <tabBarItem key="tabBarItem" title="个人中心" image="doc" id="yo5-Zc-Lx2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Efx-4U-Ike" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.7939603797" green="1" blue="0.63957022460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="课程" id="pob-pk-CNs"/>
+                    <tabBarItem key="tabBarItem" title="课程" image="doc" id="pob-pk-CNs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3M-Uf-pn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,7 +125,7 @@
         <scene sceneID="o9d-as-mT5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mei-xu-wWF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="消息" id="TqP-eu-rrA"/>
+                    <tabBarItem key="tabBarItem" title="消息" image="doc" id="TqP-eu-rrA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Rr-X0-dFj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -141,4 +141,7 @@
             <point key="canvasLocation" x="-1516" y="408.84557721139436"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="doc" width="24" height="22"/>
+    </resources>
 </document>
