@@ -96,7 +96,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-WA-d9e">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="A9e-TM-xMW"/>
@@ -106,10 +106,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.60655368922528496" blue="0.89606069630162521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wIs-WA-d9e" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="EE5-xJ-tOf"/>
-                            <constraint firstItem="wIs-WA-d9e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FCP-Kq-45Z"/>
-                            <constraint firstItem="wIs-WA-d9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a3K-SQ-fOa"/>
-                            <constraint firstAttribute="trailing" secondItem="wIs-WA-d9e" secondAttribute="trailing" id="k99-aP-ns1"/>
+                            <constraint firstAttribute="bottom" secondItem="wIs-WA-d9e" secondAttribute="bottom" id="Con-2O-tGa"/>
+                            <constraint firstItem="wIs-WA-d9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XIA-0d-fFq"/>
+                            <constraint firstItem="wIs-WA-d9e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sfQ-s0-QMH"/>
+                            <constraint firstAttribute="trailing" secondItem="wIs-WA-d9e" secondAttribute="trailing" id="vmx-ZF-KU5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hhf-g3-a5u"/>

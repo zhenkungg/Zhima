@@ -59,10 +59,14 @@
     
     return newscell ;
 }
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    self.navigationController.navigationBar.hidden = YES;
+}
 //自定义导航栏
 -(void)setUpNav
 {
-    self.navigationController.navigationBar.hidden = YES;
     UIView *navView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 100)];
     
     navView.backgroundColor = [UIColor grayColor];
@@ -73,11 +77,11 @@
     title.textColor = [UIColor whiteColor];
     [self.view addSubview:title];
     
-    UIButton *search = [[UIButton alloc]initWithFrame:CGRectMake(Screen_Width-40-10, 20, 40, 40)];
-    
-    [search setImage:[UIImage imageNamed:@"search_btn_unpre_bg"] forState:UIControlStateNormal];
-    
-    [self.view addSubview:search];
+//    UIButton *search = [[UIButton alloc]initWithFrame:CGRectMake(Screen_Width-40-10, 20, 40, 40)];
+//    
+//    [search setImage:[UIImage imageNamed:@"search_btn_unpre_bg"] forState:UIControlStateNormal];
+//    
+//    [self.view addSubview:search];
     
     
     //分段控制器
