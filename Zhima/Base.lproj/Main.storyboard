@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="直播" id="8Qq-Nq-3Q9"/>
+                    <tabBarItem key="tabBarItem" title="直播" image="doc" id="8Qq-Nq-3Q9"/>
                     <navigationItem key="navigationItem" id="ZvU-nZ-Bl3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVC-cj-OvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
