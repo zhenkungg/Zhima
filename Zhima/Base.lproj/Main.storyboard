@@ -145,7 +145,7 @@
         <!--消息-->
         <scene sceneID="o9d-as-mT5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mei-xu-wWF" sceneMemberID="viewController">
+                <navigationController title="消息" automaticallyAdjustsScrollViewInsets="NO" id="Mei-xu-wWF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="消息" image="doc" id="TqP-eu-rrA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Rr-X0-dFj">

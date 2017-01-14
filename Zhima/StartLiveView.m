@@ -4,7 +4,8 @@
 #import "UIControl+Add.h"
 #import "UIView+Add.h"
 #import "View+MASAdditions.h"
-
+//直播地址
+#define URL @"rtmp://118.89.45.205:1935/live/stream2"
 #define XJScreenH [UIScreen mainScreen].bounds.size.height
 #define XJScreenW [UIScreen mainScreen].bounds.size.width
 @interface StartLiveView() <LFLiveSessionDelegate>
@@ -270,7 +271,7 @@ static int padding = 30;
                 [_self.startLiveButton setTitle:@"结束直播" forState:UIControlStateNormal];
                 LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
                 //stream.url = @"rtmp://202.117.80.19:1935/live/live4";
-                stream.url = @"rtmp://118.89.45.205:1935/live/stream2";
+                stream.url = URL;
                 [_self.session startLive:stream];
             }else{
                 [_self.session stopLive];
