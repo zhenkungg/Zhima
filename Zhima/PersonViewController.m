@@ -19,6 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setTableView];
+    
+    
+    _titles = @[@"个人资料",@"课程设置",@"我的好友",@"我的订单",@"我的收入",@"设置"];
+}
+
+-(void)setTableView{
     _tableView = [[UITableView alloc]init];
     //_tableView.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+64, CGRectGetMaxX(self.view.frame), CGRectGetMaxY(self.view.frame));
     _tableView.frame = self.view.frame;
@@ -28,11 +36,8 @@
     _tableView.tableHeaderView.frame = CGRectMake(CGRectGetMinX(_tableView.frame), CGRectGetMinY(_tableView.frame), CGRectGetMaxX(_tableView.frame), 200);
     [self.view addSubview:_tableView];
     _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    
     _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    
-    
-    
-    _titles = @[@"个人资料",@"课程设置",@"我的好友",@"我的订单",@"我的收入",@"设置"];
 }
 
 - (void)didReceiveMemoryWarning {

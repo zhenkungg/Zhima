@@ -8,15 +8,28 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<EMCallManagerDelegate>
 
 @end
 
 @implementation AppDelegate
 
++ (AppDelegate *)getAppDelegate
+{
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSString *appKey = @"fdd#yishi";
+    
+    [[EaseSDKHelper shareHelper] easemobApplication:application didFinishLaunchingWithOptions:launchOptions appkey:appKey apnsCertName:nil otherConfig:@{kSDKConfigEnableConsoleLogger : [NSNumber numberWithBool:YES]}];
+    
+    EMOptions *options = [EMOptions optionsWithAppkey:appKey];
+    //    options.apnsCertName = @"";
+    [[EMClient sharedClient] initializeSDKWithOptions:options];
+    
+    
+    [[EMClient sharedClient] addDelegate:self delegateQueue:nil];
     return YES;
 }
 
@@ -28,13 +41,11 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[EMClient sharedClient] applicationDidEnterBackground:application];
 }
 
-
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    [[EMClient sharedClient] applicationWillEnterForeground:application];
 }
 
 
@@ -47,5 +58,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark  -- 环信delegate
+    /*
+     *  自动登录返回结果
+     *
+     *  @param aError 错误信息
+     */
+- (void)didAutoLoginWithError:(EMError *)aError{
+        NSLog(@"error   %@",aError);
+}
 
 @end
