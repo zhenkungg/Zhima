@@ -68,6 +68,31 @@
             </constraints>
             <point key="canvasLocation" x="-92" y="7"/>
         </view>
+        <view tag="1" contentMode="scaleToFill" id="Mmq-KJ-mfN">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9B-Fk-9XZ">
+                    <rect key="frame" x="135" y="15" width="105" height="30"/>
+                    <color key="backgroundColor" red="0.9983225758593296" green="1" blue="0.28585507144983646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="QtW-Xe-4cE"/>
+                        <constraint firstAttribute="width" constant="105" id="uf0-q5-j58"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="c9B-Fk-9XZ" firstAttribute="centerY" secondItem="Mmq-KJ-mfN" secondAttribute="centerY" id="QoH-Hz-fTq"/>
+                <constraint firstItem="c9B-Fk-9XZ" firstAttribute="centerX" secondItem="Mmq-KJ-mfN" secondAttribute="centerX" id="cVu-Ym-svG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="433.5" y="-17"/>
+        </view>
     </objects>
     <resources>
         <image name="HeaderImage" width="50" height="50"/>
