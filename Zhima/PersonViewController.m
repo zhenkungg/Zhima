@@ -7,7 +7,8 @@
 //
 
 #import "PersonViewController.h"
-
+#import "MyInformationTableViewController.h"
+#import "HeaderView.h"
 @interface PersonViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)UITableView *tableView;
@@ -16,6 +17,11 @@
 @end
 
 @implementation PersonViewController
+
+-(void)pushToMyInformationVC{
+    MyInformationTableViewController *vc = [[MyInformationTableViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,7 +38,9 @@
     _tableView.frame = self.view.frame;
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    _tableView.tableHeaderView = [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:nil options:nil][0];
+    HeaderView *headerView = [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:nil options:nil][0];
+    headerView.delegate = self;
+    _tableView.tableHeaderView = headerView;
     _tableView.tableHeaderView.frame = CGRectMake(CGRectGetMinX(_tableView.frame), CGRectGetMinY(_tableView.frame), CGRectGetMaxX(_tableView.frame), 200);
     [self.view addSubview:_tableView];
     

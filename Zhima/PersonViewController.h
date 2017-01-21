@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PersonViewController : UIViewController
-
+-(void)pushToMyInformationVC;
 @end

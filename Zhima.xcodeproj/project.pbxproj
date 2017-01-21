@@ -22,6 +22,10 @@
 		16DE461F1E27775D00CBA8A1 /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE461E1E27775D00CBA8A1 /* CourseViewController.m */; };
 		16DE46231E2777E200CBA8A1 /* CourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */; };
 		F505B5491E28DC8700FF8049 /* PushStremViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F505B5481E28DC8700FF8049 /* PushStremViewController.m */; };
+		F522E5BD1E31D78600B34B46 /* MyInformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F522E5BC1E31D78600B34B46 /* MyInformationTableViewController.m */; };
+		F522E5C21E31D88F00B34B46 /* MyInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F522E5C01E31D88F00B34B46 /* MyInformationCell.m */; };
+		F522E5C31E31D88F00B34B46 /* MyInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F522E5C11E31D88F00B34B46 /* MyInformationCell.xib */; };
+		F522E5C61E31E4F100B34B46 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F522E5C51E31E4F100B34B46 /* HeaderView.m */; };
 		F568954B1E2C98330042B4D9 /* EaseUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F56894291E2C98320042B4D9 /* EaseUI.m */; };
 		F568954C1E2C98330042B4D9 /* EMAudioPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F56894331E2C98330042B4D9 /* EMAudioPlayerUtil.m */; };
 		F568954D1E2C98330042B4D9 /* EMAudioRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F56894351E2C98330042B4D9 /* EMAudioRecorderUtil.m */; };
@@ -499,6 +503,13 @@
 		16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTableViewController.m; sourceTree = "<group>"; };
 		F505B5471E28DC8700FF8049 /* PushStremViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushStremViewController.h; sourceTree = "<group>"; };
 		F505B5481E28DC8700FF8049 /* PushStremViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushStremViewController.m; sourceTree = "<group>"; };
+		F522E5BB1E31D78600B34B46 /* MyInformationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInformationTableViewController.h; sourceTree = "<group>"; };
+		F522E5BC1E31D78600B34B46 /* MyInformationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInformationTableViewController.m; sourceTree = "<group>"; };
+		F522E5BF1E31D88F00B34B46 /* MyInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInformationCell.h; sourceTree = "<group>"; };
+		F522E5C01E31D88F00B34B46 /* MyInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInformationCell.m; sourceTree = "<group>"; };
+		F522E5C11E31D88F00B34B46 /* MyInformationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyInformationCell.xib; sourceTree = "<group>"; };
+		F522E5C41E31E4F100B34B46 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		F522E5C51E31E4F100B34B46 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		F56894271E2C98320042B4D9 /* EaseUI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EaseUI-Prefix.pch"; sourceTree = "<group>"; };
 		F56894281E2C98320042B4D9 /* EaseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseUI.h; sourceTree = "<group>"; };
 		F56894291E2C98320042B4D9 /* EaseUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseUI.m; sourceTree = "<group>"; };
@@ -1465,9 +1476,10 @@
 		166CBB061E26291900E12865 /* Personage */ = {
 			isa = PBXGroup;
 			children = (
-				F5B169801E2788480068BE12 /* PersonViewController.h */,
-				F5B169811E2788480068BE12 /* PersonViewController.m */,
+				F5757B8D1E31C0700038A561 /* Controller */,
 				F5B169821E2788480068BE12 /* HeaderView.xib */,
+				F522E5C41E31E4F100B34B46 /* HeaderView.h */,
+				F522E5C51E31E4F100B34B46 /* HeaderView.m */,
 			);
 			name = Personage;
 			sourceTree = "<group>";
@@ -1563,6 +1575,16 @@
 				F56D32B31E2A05F600239DF6 /* UIControl+Add.m */,
 			);
 			name = PushStrem;
+			sourceTree = "<group>";
+		};
+		F522E5BE1E31D81A00B34B46 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F522E5BF1E31D88F00B34B46 /* MyInformationCell.h */,
+				F522E5C01E31D88F00B34B46 /* MyInformationCell.m */,
+				F522E5C11E31D88F00B34B46 /* MyInformationCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		F56894251E2C977D0042B4D9 /* HuanXin */ = {
@@ -2957,6 +2979,18 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		F5757B8D1E31C0700038A561 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5B169801E2788480068BE12 /* PersonViewController.h */,
+				F5B169811E2788480068BE12 /* PersonViewController.m */,
+				F522E5BB1E31D78600B34B46 /* MyInformationTableViewController.h */,
+				F522E5BC1E31D78600B34B46 /* MyInformationTableViewController.m */,
+				F522E5BE1E31D81A00B34B46 /* Cell */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3125,6 +3159,7 @@
 				F568965B1E2C98740042B4D9 /* chatBar_more@2x.png in Resources */,
 				F56896811E2C98740042B4D9 /* VoiceSearchFeedback020@2x.png in Resources */,
 				F56896821E2C98740042B4D9 /* chat_sender_audio_playing_000@2x.png in Resources */,
+				F522E5C31E31D88F00B34B46 /* MyInformationCell.xib in Resources */,
 				F568966D1E2C98740042B4D9 /* chat_receiver_bg@2x.png in Resources */,
 				F56896641E2C98740042B4D9 /* group@2x.png in Resources */,
 				F56896761E2C98740042B4D9 /* VoiceSearchFeedback009@2x.png in Resources */,
@@ -3356,6 +3391,7 @@
 				F56D32771E2A04B600239DF6 /* GPUImageRGBFilter.m in Sources */,
 				F56D30381E2A018C00239DF6 /* StartViewController.m in Sources */,
 				F568957F1E2C98330042B4D9 /* UIButton+EMWebCache.m in Sources */,
+				F522E5BD1E31D78600B34B46 /* MyInformationTableViewController.m in Sources */,
 				F56D31EE1E2A04B600239DF6 /* LFH264VideoEncoder.mm in Sources */,
 				F568957C1E2C98330042B4D9 /* EMSDWebImagePrefetcher.m in Sources */,
 				F56896A81E2CBEE10042B4D9 /* ChatDemoHelper.m in Sources */,
@@ -3427,6 +3463,7 @@
 				F56895BF1E2C98330042B4D9 /* EaseRecordView.m in Sources */,
 				F56D32841E2A04B600239DF6 /* GPUImageSoftEleganceFilter.m in Sources */,
 				F56D33141E2A134200239DF6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				F522E5C61E31E4F100B34B46 /* HeaderView.m in Sources */,
 				F56D327A1E2A04B600239DF6 /* GPUImageSaturationFilter.m in Sources */,
 				F56895AC1E2C98330042B4D9 /* EaseBaseMessageCell.m in Sources */,
 				F56D31EB1E2A04B600239DF6 /* LFMP4Atom.m in Sources */,
@@ -3498,6 +3535,7 @@
 				F56895961E2C98330042B4D9 /* EaseMessageModel.m in Sources */,
 				F56895921E2C98330042B4D9 /* PSTGridLayoutSection.m in Sources */,
 				F56D32001E2A04B600239DF6 /* GPUImage3x3TextureSamplingFilter.m in Sources */,
+				F522E5C21E31D88F00B34B46 /* MyInformationCell.m in Sources */,
 				F568959D1E2C98330042B4D9 /* EaseChineseToPinyin.m in Sources */,
 				F56896AB1E2CC1C50042B4D9 /* NewsConversationListViewController.m in Sources */,
 				F56D32271E2A04B600239DF6 /* GPUImageErosionFilter.m in Sources */,
