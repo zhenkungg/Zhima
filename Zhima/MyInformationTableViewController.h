@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PersonViewController.h"
 @interface MyInformationTableViewController : UITableViewController
-
+@property (nonatomic,strong)UIImage *image;
+@property (nonatomic,strong)PersonViewController *delegate;
 @end

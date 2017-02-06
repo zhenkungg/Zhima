@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface PersonViewController : UIViewController
+
+@property (nonatomic,strong)UIImage *image;
+
 -(void)pushToMyInformationVC;
+
+-(void)mysetImage;
 @end

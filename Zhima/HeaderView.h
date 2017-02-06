@@ -10,4 +10,5 @@
 #import "PersonViewController.h"
 @interface HeaderView : UIView
 @property (nonatomic,strong)PersonViewController *delegate;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @end

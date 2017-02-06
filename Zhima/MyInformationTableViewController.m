@@ -7,18 +7,34 @@
 //
 
 #import "MyInformationTableViewController.h"
-
-@interface MyInformationTableViewController ()
+#import "MyInformationCell.h"
+#import "PersonViewController.h"
+@interface MyInformationTableViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @end
 
 @implementation MyInformationTableViewController
 
+-(UIImage *)image{
+    if (_image == nil) {
+        _image = [UIImage imageNamed:@"HeaderImage"];
+    }
+    return _image;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"我的信息";
     self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+}
+
+-(void)back{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    self.delegate.image = self.image;
+    [self.delegate mysetImage];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,7 +60,9 @@
     UITableViewCell *cell = nil;
     
     if (indexPath.section == 0) {
-        cell = [[NSBundle mainBundle] loadNibNamed:@"MyInformationCell" owner:nil options:nil][0];
+        MyInformationCell *newcell = [[NSBundle mainBundle] loadNibNamed:@"MyInformationCell" owner:nil options:nil][0];
+        newcell.headerImageView.image = self.image;
+        cell = newcell;
     }else if (indexPath.section == 1){
         if (indexPath.row == 0) {
             cell = [[NSBundle mainBundle] loadNibNamed:@"MyInformationCell" owner:nil options:nil][1];
@@ -68,6 +86,18 @@
         return 77;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0&&indexPath.row == 0) {
+        UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
+        imagePicker.delegate = self;
+        imagePicker.allowsEditing = YES;
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+        [self presentViewController:imagePicker animated:YES completion:nil];
+        
+    }
+}
+
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 10;
 }
@@ -84,6 +114,18 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     self.navigationController.navigationBarHidden = YES;
+}
+
+#pragma mark UIImagePickerController 代理方法
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    [picker dismissViewControllerAnimated:YES completion:^{
+        self.image = [info objectForKey:UIImagePickerControllerEditedImage];
+        [self.tableView reloadData];
+    }];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

@@ -13,6 +13,7 @@
 
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSArray *titles;
+@property (nonatomic,strong)HeaderView *headerView;
 
 @end
 
@@ -20,7 +21,15 @@
 
 -(void)pushToMyInformationVC{
     MyInformationTableViewController *vc = [[MyInformationTableViewController alloc]init];
+    vc.image = self.headerView.imageView.image;
+    vc.delegate = self;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)mysetImage{
+    if (self.image) {
+        self.headerView.imageView.image = self.image;
+    }
 }
 
 - (void)viewDidLoad {
@@ -38,9 +47,9 @@
     _tableView.frame = self.view.frame;
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    HeaderView *headerView = [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:nil options:nil][0];
-    headerView.delegate = self;
-    _tableView.tableHeaderView = headerView;
+    self.headerView = [[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:nil options:nil][0];
+    self.headerView.delegate = self;
+    _tableView.tableHeaderView = self.headerView;
     _tableView.tableHeaderView.frame = CGRectMake(CGRectGetMinX(_tableView.frame), CGRectGetMinY(_tableView.frame), CGRectGetMaxX(_tableView.frame), 200);
     [self.view addSubview:_tableView];
     
