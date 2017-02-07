@@ -3712,7 +3712,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TBFF9Q8DV8;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = /Users/json/Desktop/Zhima/Zhima/PrefixHeader.pch;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Zhima/PrefixHeader.pch";
 				INFOPLIST_FILE = Zhima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3734,7 +3735,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TBFF9Q8DV8;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = /Users/json/Desktop/Zhima/Zhima/PrefixHeader.pch;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Zhima/PrefixHeader.pch";
 				INFOPLIST_FILE = Zhima/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
