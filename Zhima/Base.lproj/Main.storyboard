@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DXg-tE-2jc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DXg-tE-2jc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -147,6 +147,7 @@
                                 <state key="normal" title="注册"/>
                                 <connections>
                                     <action selector="registeredClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B5Y-yZ-Jn9"/>
+                                    <segue destination="YSt-aG-Xta" kind="push" id="UoQ-x4-EtE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEN-yT-5Xt">
@@ -182,7 +183,115 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-576.79999999999995" y="408.84557721139436"/>
+            <point key="canvasLocation" x="-561" y="417"/>
+        </scene>
+        <!--Regisr View Controller-->
+        <scene sceneID="dtb-g3-xF8">
+            <objects>
+                <viewController id="YSt-aG-Xta" customClass="RegisrViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NBP-Vh-ZIb"/>
+                        <viewControllerLayoutGuide type="bottom" id="8m7-B5-1Mc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vvc-P2-mm7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="✅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irS-HR-rwE">
+                                <rect key="frame" x="117" y="196" width="34" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="完成注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glw-ie-AHj">
+                                <rect key="frame" x="143" y="201" width="119" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxV-aQ-aga">
+                                <rect key="frame" x="93" y="362" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7939603797" green="1" blue="0.63957022460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="请完善个人资料"/>
+                                <connections>
+                                    <action selector="regist:" destination="YSt-aG-Xta" eventType="touchUpInside" id="blX-rC-KHa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我已经同意xxxx的协议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AU-RV-b9q">
+                                <rect key="frame" x="59" y="415" width="173" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-ug-40Z">
+                                <rect key="frame" x="223" y="411" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="《xxxxx》"/>
+                                <connections>
+                                    <segue destination="Ca8-6M-fwo" kind="modal" id="Pew-cr-Ezw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="完成注册需要完善个人资料才可以成为我们的伴友" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X2-Hy-9Qk">
+                                <rect key="frame" x="16" y="270" width="343" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gi2-id-Cbg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNZ-K9-zTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="687.7061469265368"/>
+        </scene>
+        <!--xxx协议-->
+        <scene sceneID="dXU-75-cLv">
+            <objects>
+                <viewController id="Ca8-6M-fwo" customClass="AgreementViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jd3-mP-LWA"/>
+                        <viewControllerLayoutGuide type="bottom" id="O0l-a7-dee"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wh7-np-RJh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRb-ud-hDZ">
+                                <rect key="frame" x="3" y="46" width="368" height="188"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmK-FY-MCt">
+                                <rect key="frame" x="142" y="390" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="同意"/>
+                                <connections>
+                                    <action selector="Agreem:" destination="Ca8-6M-fwo" eventType="touchUpInside" id="5to-V5-Ssx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fRb-ud-hDZ" secondAttribute="trailing" constant="4" id="BNe-jU-18j"/>
+                            <constraint firstItem="fRb-ud-hDZ" firstAttribute="top" secondItem="jd3-mP-LWA" secondAttribute="bottom" constant="26" id="fq0-kz-FZs"/>
+                            <constraint firstItem="O0l-a7-dee" firstAttribute="top" secondItem="fRb-ud-hDZ" secondAttribute="bottom" constant="433" id="jj9-Ea-tIq"/>
+                            <constraint firstItem="fRb-ud-hDZ" firstAttribute="leading" secondItem="wh7-np-RJh" secondAttribute="leading" constant="3" id="wre-np-mF3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="xxx协议" id="9SI-oN-jlH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIp-dK-fCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="706.59670164917543"/>
         </scene>
         <!--消息-->
         <scene sceneID="o9d-as-mT5">
@@ -201,7 +310,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xg5-GR-77h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1516" y="408.84557721139436"/>
+            <point key="canvasLocation" x="-1516" y="473"/>
         </scene>
     </scenes>
     <resources>

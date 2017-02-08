@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="230" id="KGk-i7-Jjw" customClass="Per3TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="229"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="参考照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PM-jX-MIx">
+                        <rect key="frame" x="70" y="23" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你的照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ3-2G-R3x">
+                        <rect key="frame" x="276" y="23" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mazoo-logo" translatesAutoresizingMaskIntoConstraints="NO" id="fkg-cg-xsK">
+                        <rect key="frame" x="20" y="52" width="165" height="167.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="165" id="J1n-Ce-B3D"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Knf-qU-BAL">
+                        <rect key="frame" x="230" y="52" width="165" height="167.5"/>
+                        <color key="backgroundColor" red="1" green="0.60655368919999997" blue="0.89606069629999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Knf-qU-BAL" secondAttribute="trailing" constant="1" id="0tu-s1-vJC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fkg-cg-xsK" secondAttribute="bottom" constant="2" id="3AI-qI-8Xp"/>
+                    <constraint firstItem="5PM-jX-MIx" firstAttribute="baseline" secondItem="bJ3-2G-R3x" secondAttribute="baseline" id="7EM-Qe-bIf"/>
+                    <constraint firstItem="Knf-qU-BAL" firstAttribute="leading" secondItem="fkg-cg-xsK" secondAttribute="trailing" constant="45" id="BXr-Rg-5Ih"/>
+                    <constraint firstItem="fkg-cg-xsK" firstAttribute="top" secondItem="5PM-jX-MIx" secondAttribute="bottom" constant="8" symbolic="YES" id="M5d-ab-H5k"/>
+                    <constraint firstItem="fkg-cg-xsK" firstAttribute="bottom" secondItem="Knf-qU-BAL" secondAttribute="bottom" id="NXY-pc-nBk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bJ3-2G-R3x" secondAttribute="trailing" constant="50" id="Oec-Kf-99S"/>
+                    <constraint firstItem="5PM-jX-MIx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="62" id="VPd-Fe-YgK"/>
+                    <constraint firstItem="fkg-cg-xsK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="dfo-Ol-QA5"/>
+                    <constraint firstItem="fkg-cg-xsK" firstAttribute="top" secondItem="Knf-qU-BAL" secondAttribute="top" id="mRa-KC-g4N"/>
+                    <constraint firstItem="bJ3-2G-R3x" firstAttribute="baseline" secondItem="5PM-jX-MIx" secondAttribute="firstBaseline" id="ngV-6n-Lmm"/>
+                    <constraint firstItem="5PM-jX-MIx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="pbY-m5-xXh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="per3Imag" destination="Knf-qU-BAL" id="fCl-hn-e3k"/>
+            </connections>
+            <point key="canvasLocation" x="-7" y="40.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mazoo-logo" width="204" height="220"/>
+    </resources>
+</document>

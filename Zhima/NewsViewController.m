@@ -12,7 +12,7 @@
 #import "NewsConversationListViewController.h"
 #import "AppDelegate.h"
 #import "ChatDemoHelper.h"
-
+#import "PersonalViewController.h"
 
 @interface NewsViewController ()<UITableViewDataSource,UITableViewDelegate>
 //@property (weak, nonatomic) IBOutlet UITableView *newstableV;
@@ -47,10 +47,12 @@
             NSLog(@"注册成功");
         }else{
             NSLog(@"注册失败 :%@",error);
+           
         }
     }
     
 }
+
 
 - (IBAction)loginClick:(id)sender {
     if(self.accountTF.text && self.accountTF.text){

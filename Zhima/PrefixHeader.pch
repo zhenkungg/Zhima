@@ -21,7 +21,13 @@
 #import "EaseUI.h"
 #import "MBProgressHUD.h"
 #import "Masonry.h"
+#import "UIViewExt.h"
 
+
+#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define windowColor  [UIColor colorWithRed:0 green:0 blue:0 alpha:0.2]
 
 #define DEMO_CALL 1
 
