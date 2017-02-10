@@ -11,6 +11,7 @@
 
 #import "PerfourViewController.h"
 #import "PersoneTableViewCell.h"
+#import "PeraTableViewCell.h"
 #import "PerTableViewCell.h"
 #import "EducViewController.h"
 #import "SchoolViewController.h"
@@ -27,7 +28,6 @@
 @property(nonatomic,strong)NSArray *PertfArr;
 @property(nonatomic,strong)NSData *image4;
 @property(nonatomic,strong)UIImageView *per4Image;
-
 //
 @property(nonatomic,strong)NSString *EduStr;
 @property(nonatomic,strong)NSString *EduSchool;
@@ -46,14 +46,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self setUpNav];
     [self perFtableview];
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.automaticallyAdjustsScrollViewInsets = YES;
     
 }
 -(void)perFtableview {
     _PerfTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height) style:UITableViewStyleGrouped];
     _PerfTableView.delegate = self;
     _PerfTableView.dataSource = self;
-    _per4Image = [[UIImageView alloc]initWithFrame:CGRectMake(Screen_Width-95, 205, 85, 110)];
+    _per4Image = [[UIImageView alloc]initWithFrame:CGRectMake(Screen_Width-95, 200, 85, 110)];
     _per4Image.backgroundColor = [UIColor redColor];
     [self.PerfTableView addSubview:_per4Image];
     [self.view addSubview:_PerfTableView];
@@ -94,16 +94,15 @@
 }
 -(void) searCh {
     [self.navigationController  popViewControllerAnimated:YES];
-    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
+    return 3;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (section == 0) {
-        return 3;
+    if (section == 1) {
+        return 2;
     }
     return 1;
 }
@@ -113,21 +112,24 @@
     if (indexPath.section == 0) {
         PersoneTableViewCell *Pcell = [tableView dequeueReusableCellWithIdentifier:strId];
         Pcell =[[[NSBundle mainBundle]loadNibNamed:@"PersoneTableViewCell" owner:nil options:nil]lastObject];
-            Pcell.textLabel.text = _PertfArr[indexPath.row];
+        Pcell.name.text = @"学校";
+        Pcell.Peron.text =  self.EduSchool;
+        return Pcell;
+    }else if (indexPath.section ==1){
+        PeraTableViewCell *Pcell = [tableView dequeueReusableCellWithIdentifier:strId];
+        Pcell =[[[NSBundle mainBundle]loadNibNamed:@"PeraTableViewCell" owner:nil options:nil]lastObject];
         if (indexPath.row == 0) {
-            Pcell.name.text = @"学历";
-            Pcell.Peron.text = self.EduStr;
+            Pcell.Pera.text = @"学历";
+            Pcell.Perl.text = self.EduStr;
         }
         else if (indexPath.row == 1){
-            Pcell.name.text = @"学校";
-            Pcell.Peron.text =  self.EduSchool;
-            
-        }else if (indexPath.row == 2){
-            Pcell.name.text  = @"在校时间";
-            Pcell.Peron.text =self.EduTime;
+            Pcell.Pera.text  = @"在校时间";
+            Pcell.Perl.text =self.EduTime;
         }
         return Pcell;
-    }else{
+    }
+    
+    else{
         PerTableViewCell *Pcell = [tableView dequeueReusableCellWithIdentifier:strId];
         Pcell =[[[NSBundle mainBundle]loadNibNamed:@"PerTableViewCell" owner:nil options:nil]lastObject];
         Pcell.imageView.image= self.per4Image.image;
@@ -138,13 +140,21 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
      NSInteger tag = indexPath.row;
-    if (indexPath.section>0) {
+    if (indexPath.section>1) {
         if (tag == 0) {
             UIActionSheet *action = [[UIActionSheet alloc] initWithTitle:@"选择相片" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"相机" otherButtonTitles:@"本地相册", nil];
             [action showInView:self.view];
         }
+    }else if (indexPath.section ==0){
+        SchoolViewController *schoolVC = [SchoolViewController new];
+        schoolVC.NextSchool = ^(NSString *meStr){
+            self.EduSchool=meStr;
+            NSLog(@"%@",meStr);
+            [self viewDidLoad];
+        };
+        [self.navigationController pushViewController:schoolVC animated:YES];
     }
-    else if (indexPath.section==0){
+    else if (indexPath.section==1){
         if (tag ==0) {
             EducViewController *EduVC= [EducViewController new];
             EduVC.nextEdu = ^(NSString *meStr){
@@ -154,16 +164,7 @@
             };
             [self.navigationController pushViewController:EduVC animated:YES];
         }
-        else if (tag ==1){
-            SchoolViewController *schoolVC = [SchoolViewController new];
-            schoolVC.NextSchool = ^(NSString *meStr){
-                self.EduSchool=meStr;
-                NSLog(@"%@",meStr);
-                [self viewDidLoad];
-            };
-            [self.navigationController pushViewController:schoolVC animated:YES];
-            
-        }else if (tag==2){
+        else if (tag==1){
             CCPPickerViewTwo *pickerViewTwo = [[CCPPickerViewTwo alloc] initWithpickerViewWithCenterTitle:@"选择时间" andCancel:@"取消" andSure:@"确定"];
             
             [pickerViewTwo pickerVIewClickCancelBtnBlock:^{
@@ -227,7 +228,7 @@
 }
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section >0) {
+    if (indexPath.section >1) {
         return 120;
     }
     return 44;
@@ -235,29 +236,35 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     
     
-    if (section==0) {
+    if (section == 0) {
         return 30;
-    }return 20;
+    }else if (section == 1){
+        return 0.0001;
+    }else{
+        return 30;
+    }
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    if (section == 0) {
-        return 0;
-    }else{
+    if (section == 3) {
         return 200;
+    }else{
+        return 0.0001;
     }
 }
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
         return @"请填写学历信息";
-    }else
+    }else if (section == 2)
     {
         return @"请上传学历证明或是职业资格证明";
+    }else{
+        return 0;
     }
 }
 -(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
 {
-    if (section>0) {
+    if (section>1) {
         return @"如果你是学生请上传你的学历证明，如果你是在职老师请上传职业资格证明，如果你是兼职老师请上传你的最高学历证明";
     }
     return 0;

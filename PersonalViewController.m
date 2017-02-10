@@ -36,6 +36,7 @@
 @property(nonatomic,strong)NSString *perGender;
 @property(nonatomic,strong)NSString *perAddress;
 @property (nonatomic,strong)NSString *perPlace;
+@property(nonatomic,strong)NSString *PerPhone;
 
 //
 @property(nonatomic,strong)UITextField *teF;
@@ -57,6 +58,8 @@
     _PonetableView =[[UITableView alloc]initWithFrame:CGRectMake(0, 64, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
     _PonetableView.dataSource= self;
     _PonetableView.delegate = self ;
+    //cell 分割线设置         
+    _PonetableView.separatorStyle = NO;
     self.view.backgroundColor =[UIColor whiteColor];
    
     _perImage = [[UIImageView alloc]init];
@@ -111,7 +114,7 @@
 }
 -(void)searCh1 {
     [_PonetableView reloadData];
-    NSLog(@"%@,%@,%@",self.perGender,self.perName,self.perAddress);
+    NSLog(@"%@,%@,%@",self.perGender,self.perName,self.PerPhone);
     PerstontwoViewController *pertwoVC= [[PerstontwoViewController alloc]init];
     [self.navigationController pushViewController:pertwoVC animated:YES];
 }
@@ -130,7 +133,7 @@
     }
    
    else if  (section == 1) {
-        return 2;
+        return 3;
    }else{
        return 2;
    }
@@ -164,6 +167,13 @@
                 self.perGender = TextName;
             }];
             NSLog(@"%@",Pcell.Peron.text);
+        }else{
+            Pcell.name.text = @"电话号码";
+            Pcell.Peron.text = self.PerPhone;
+            [Pcell setBlock:^(NSString *TextName) {
+                self.PerPhone = TextName;
+                [self valiMobile:self.PerPhone];
+            }];
         }
         return Pcell;
         }
@@ -180,6 +190,45 @@
        
    return Pcell;
     }
+}
+-(NSString *)valiMobile:(NSString *)mobile{
+    if (mobile.length != 11)
+    {
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"手机号长度只能是11位" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        [alert show];
+       
+        
+    }else{
+        /**
+         * 移动号段正则表达式
+         */
+        NSString *CM_NUM = @"^((13[4-9])|(147)|(15[0-2,7-9])|(178)|(18[2-4,7-8]))\\d{8}|(1705)\\d{7}$";
+        /**
+         * 联通号段正则表达式
+         */
+        NSString *CU_NUM = @"^((13[0-2])|(145)|(15[5-6])|(176)|(18[5,6]))\\d{8}|(1709)\\d{7}$";
+        /**
+         * 电信号段正则表达式
+         */
+        NSString *CT_NUM = @"^((133)|(153)|(177)|(18[0,1,9]))\\d{8}$";
+        NSPredicate *pred1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CM_NUM];
+        BOOL isMatch1 = [pred1 evaluateWithObject:mobile];
+        NSPredicate *pred2 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CU_NUM];
+        BOOL isMatch2 = [pred2 evaluateWithObject:mobile];
+        NSPredicate *pred3 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CT_NUM];
+        BOOL isMatch3 = [pred3 evaluateWithObject:mobile];
+        
+        if (isMatch1 || isMatch2 || isMatch3) {
+            return nil;
+        }else{
+            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请输入正确的电话号码" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            
+            [alert show];
+        
+        }
+    }
+    return nil;
 }
 //Cell点击事件
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -301,11 +350,6 @@
 #pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
-    
-//    UIImage *infoImage = info[UIImagePickerControllerEditedImage];
-//    self.perImage.image = infoImage;
-//    [self saveChangeData];
-//    [self dismissViewControllerAnimated:YES completion:nil];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
     UIImage *image = [[UIImage alloc] init];

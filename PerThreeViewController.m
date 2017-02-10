@@ -120,7 +120,7 @@
             Pcell.Peron.text = self.UserId;
             [Pcell setBlock:^(NSString *TextName) {
                 self.UserId = TextName;
-                [self checkIdentityCardNo:self.UserId];
+                [self CheckIsIdentityCard:self.UserId];
             }];
             NSLog( @"ff%@",self.UserId);
 
@@ -173,60 +173,81 @@
     }
 }
 
-//验证身份证
-- (BOOL)checkIdentityCardNo:(NSString*)cardNo
-
+//身份证号
+- (BOOL)CheckIsIdentityCard: (NSString *)identityCard
 {
-    if (cardNo.length != 18) {
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"对不起!省份证的位数不够或过多" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    if (identityCard.length != 18) {
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"对不起!身份证的位数不够或过多" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         
         [alert show];
         return  NO;
-        
     }
-    
-    NSArray* codeArray = [NSArray arrayWithObjects:@"7",@"9",@"10",@"5",@"8",@"4",@"2",@"1",@"6",@"3",@"7",@"9",@"10",@"5",@"8",@"4",@"2", nil];
-    
-    NSDictionary* checkCodeDic = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"1",@"0",@"X",@"9",@"8",@"7",@"6",@"5",@"4",@"3",@"2", nil]  forKeys:[NSArray arrayWithObjects:@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10", nil]];
-    
-    
-    
-    NSScanner* scan = [NSScanner scannerWithString:[cardNo substringToIndex:17]];
-     int val;
-    
-    BOOL isNum = [scan scanInt:&val] && [scan isAtEnd];
-    
-    if (!isNum) {
-        NSLog(@"输入的省份证号码不对");
+    //判断是否为空
+    if (identityCard==nil||identityCard.length <= 0) {
+        
+        return NO;
+    }
+    //判断是否是18位，末尾是否是x
+    NSString *regex2 = @"^(\\d{14}|\\d{17})(\\d|[xX])$";
+    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex2];
+    if(![identityCardPredicate evaluateWithObject:identityCard]){
+       
+        return NO;
+    }
+    //判断生日是否合法
+    NSRange range = NSMakeRange(6,8);
+    NSString *datestr = [identityCard substringWithRange:range];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat : @"yyyyMMdd"];
+    if([formatter dateFromString:datestr]==nil){
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"生日不合法" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        [alert show];
         return NO;
     }
     
-    int sumValue = 0;
-    
-    for (int i =0; i<17; i++) {
+    //判断校验位
+    if(identityCard.length==18)
+    {
+        NSArray *idCardWi= @[ @"7", @"9", @"10", @"5", @"8", @"4", @"2", @"1", @"6", @"3", @"7", @"9", @"10", @"5", @"8", @"4", @"2" ]; //将前17位加权因子保存在数组里
+        NSArray * idCardY=@[ @"1", @"0", @"10", @"9", @"8", @"7", @"6", @"5", @"4", @"3", @"2" ]; //这是除以11后，可能产生的11位余数、验证码，也保存成数组
+        int idCardWiSum=0; //用来保存前17位各自乖以加权因子后的总和
+        for(int i=0;i<17;i++){
+            idCardWiSum+=[[identityCard substringWithRange:NSMakeRange(i,1)] intValue]*[idCardWi[i] intValue];
+        }
         
-        sumValue+=[[cardNo substringWithRange:NSMakeRange(i , 1) ] intValue]* [[codeArray objectAtIndex:i] intValue];
+        int idCardMod=idCardWiSum%11;//计算出校验码所在数组的位置
+        NSString *idCardLast=[identityCard substringWithRange:NSMakeRange(17,1)];//得到最后一位身份证号码
         
+        //如果等于2，则说明校验码是10，身份证号码最后一位应该是X
+        if(idCardMod==2){
+            if([idCardLast isEqualToString:@"X"]||[idCardLast isEqualToString:@"x"]){
+                return YES;
+            }else{
+                UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"身份证错误" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+                
+                [alert show];
+                return NO;
+            }
+        }else{
+            //用计算出的验证码与最后一位身份证号码匹配，如果一致，说明通过，否则是无效的身份证号码
+            if([idCardLast intValue]==[idCardY[idCardMod] intValue]){
+                return YES;
+            }else{
+                UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"你输入的身份证无效" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+                
+                [alert show];
+                return NO;
+            }
+        }
+    }else{
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"你输入的身份证无效" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        [alert show];
+  
+    return NO;
     }
-    
-    
-    
-    NSString* strlast = [checkCodeDic objectForKey:[NSString stringWithFormat:@"%d",sumValue%11]];
-    
-    
-    
-    if ([strlast isEqualToString: [[cardNo substringWithRange:NSMakeRange(17, 1)]uppercaseString]]) {
-        NSLog(@"验证省份证号码可用");
-        return YES;
-        
-    }
-    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"省份证份证号码错误" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    
-    [alert show];
-    return  NO;
-    
 }
-
 #pragma mark - UIActionSheet代理
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     
