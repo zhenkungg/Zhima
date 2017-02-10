@@ -46,8 +46,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="Pera" destination="Ov9-lf-4ao" id="NI9-kn-JHN"/>
-                <outlet property="Perl" destination="0i1-oi-9Yz" id="WVN-tF-xIx"/>
+                <outlet property="Pera" destination="0i1-oi-9Yz" id="ZXw-jn-ITP"/>
+                <outlet property="Perl" destination="Ov9-lf-4ao" id="6dJ-KU-7uf"/>
             </connections>
             <point key="canvasLocation" x="-156" y="17"/>
         </tableViewCell>

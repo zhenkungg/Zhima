@@ -31,6 +31,7 @@
 @property (nonatomic, strong)UILabel *wordCountLabel;
 
 @property(nonatomic,strong)UITextView *HonorTF;
+@property(nonatomic,strong)NSString *HonorIcon;
 
 @end
 

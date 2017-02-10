@@ -110,6 +110,8 @@
    
 }
 -(void)searCh1 {
+    [_PonetableView reloadData];
+    NSLog(@"%@,%@,%@",self.perGender,self.perName,self.perAddress);
     PerstontwoViewController *pertwoVC= [[PerstontwoViewController alloc]init];
     [self.navigationController pushViewController:pertwoVC animated:YES];
 }
@@ -152,9 +154,15 @@
         if (indexPath.row ==0) {
             Pcell.name.text = @"姓名";
             Pcell.Peron.text = self.perName;
+            [Pcell setBlock:^(NSString *TextName) {
+                self.perName = TextName;
+            }];
         }else if (indexPath.row == 1) {
             Pcell.name.text = @"性别";
             Pcell.Peron.text = self.perGender;
+            [Pcell setBlock:^(NSString *TextName) {
+                self.perGender = TextName;
+            }];
             NSLog(@"%@",Pcell.Peron.text);
         }
         return Pcell;
@@ -163,11 +171,11 @@
         PeraTableViewCell *Pcell = [tableView dequeueReusableCellWithIdentifier:strId];
         Pcell =[[[NSBundle mainBundle]loadNibNamed:@"PeraTableViewCell" owner:nil options:nil]lastObject];
         if (indexPath.row ==0) {
-            Pcell.Perl.text = @"地址";
-            Pcell.Pera.text = self.perAddress;
+            Pcell.Pera.text = @"地址";
+            Pcell.Perl.text = self.perAddress;
         }else if (indexPath.row == 1) {
-            Pcell.Perl.text = @"自我介绍";
-            Pcell.Pera.text = self.perPlace;
+            Pcell.Pera.text = @"自我介绍";
+            Pcell.Perl.text = self.perPlace;
         }
        
    return Pcell;
@@ -200,8 +208,8 @@
 //           };
 //              [self.navigationController pushViewController:BlockVC animated:YES];
            
-           self.perName = self.teF.text;
-           [self viewDidLoad];
+//           self.perName = self.teF.text;
+//           [self viewDidLoad];
            
        }
        else if (tag == 1) {
@@ -220,8 +228,8 @@
            
            //        [self.navigationController pushViewController:BlockVC animated:YES];
            
-           self.perGender = @"ddd";
-           [self viewDidLoad];
+//           self.perGender = @"ddd";
+//           [self viewDidLoad];
            
        }
 

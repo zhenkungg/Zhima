@@ -44,14 +44,14 @@
     
 }
 -(void)Per3TableView{
-    _Per3tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height) style:UITableViewStylePlain];
+    _Per3tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height) style:UITableViewStyleGrouped];
     _Per3tableview.delegate = self;
     _Per3tableview.dataSource = self;
     [self.view addSubview:_Per3tableview];
     _pere3Image = [[UIImageView alloc]init];
     _pere3Image.frame =CGRectMake(Screen_Width-185, 200, 180, 175);
     _pere3Image.backgroundColor = [UIColor redColor];
-    _Per3Arr = @[@"真实姓名",@"身份证号"];
+ 
     [self.Per3tableview addSubview:_pere3Image];
 //    self.pere3Image.image =[UIImage imageWithData:_image3];
 }
@@ -110,11 +110,18 @@
         if (indexPath.row ==0) {
             Pcell.name.text  = @"个人真实姓名";
             Pcell.Peron.text= self.UserName;
+            [Pcell setBlock:^(NSString *TextName) {
+                self.UserName = TextName;
+            }];
           NSLog( @"ff%@",self.UserName);
         }else if (indexPath.row == 1)
         {
             Pcell.name.text = @"身份证号码";
             Pcell.Peron.text = self.UserId;
+            [Pcell setBlock:^(NSString *TextName) {
+                self.UserId = TextName;
+                [self checkIdentityCardNo:self.UserId];
+            }];
             NSLog( @"ff%@",self.UserId);
 
         }
@@ -134,26 +141,26 @@
 {
     if (indexPath.section ==0) {
         if (indexPath.row == 0) {
-            TNameViewController *TnaVc= [TNameViewController new];
-            TnaVc.nextName=^(NSString *meStr){
-               
-                self.UserName= meStr;
-                NSLog( @"fsf%@",self.UserName);
-                [self viewDidLoad];
-                
-            };
-            [self.navigationController pushViewController:TnaVc animated:YES];
+//            TNameViewController *TnaVc= [TNameViewController new];
+//            TnaVc.nextName=^(NSString *meStr){
+//               
+//                self.UserName= meStr;
+//                NSLog( @"fsf%@",self.UserName);
+//                [self viewDidLoad];
+//                
+//            };
+//            [self.navigationController pushViewController:TnaVc animated:YES];
         }
         else if (indexPath.row==1)
         {
-            IDcardViewController *IDCVC= [IDcardViewController new];
-            IDCVC.nextid = ^(NSString *meStr){
-                self.UserId = meStr;
-                  [self checkIdentityCardNo:self.UserId];
-                NSLog( @"ff%@",self.UserId);
-                [self viewDidLoad];
-            };
-            [self.navigationController pushViewController:IDCVC animated:YES];
+//            IDcardViewController *IDCVC= [IDcardViewController new];
+//            IDCVC.nextid = ^(NSString *meStr){
+//                self.UserId = meStr;
+//                  [self checkIdentityCardNo:self.UserId];
+//                NSLog( @"ff%@",self.UserId);
+//                [self viewDidLoad];
+//            };
+//            [self.navigationController pushViewController:IDCVC animated:YES];
         }
     }
     

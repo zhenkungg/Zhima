@@ -8,6 +8,7 @@
 
 #import "PerstontwoViewController.h"
 #import "PersoneTableViewCell.h"
+#import "PeraTableViewCell.h"
 #import "PerThreeViewController.h"
 #import "PhaseViewController.h"
 #import "SubjectsViewController.h"
@@ -48,7 +49,7 @@
     _Per1tableview.delegate = self;
     _Per1tableview.dataSource = self ;
     [self.view addSubview:_Per1tableview];
-    _Perarr = @[@"教授年级",@"教授科目"];
+   
 }
 //自定义导航栏
 -(void)setUpNav
@@ -98,19 +99,21 @@
     //    if (section == 0) {
     //        return 1;
     //    }
-    return _Perarr.count;
+    return 2;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *strId = @"pCello";
-    PersoneTableViewCell *Pcell = [tableView dequeueReusableCellWithIdentifier:strId];
-    Pcell =[[[NSBundle mainBundle]loadNibNamed:@"PersoneTableViewCell" owner:nil options:nil]lastObject];
-    Pcell.textLabel.text = _Perarr[indexPath.row];
+    PeraTableViewCell *Pcell = [tableView dequeueReusableCellWithIdentifier:strId];
+    Pcell =[[[NSBundle mainBundle]loadNibNamed:@"PeraTableViewCell" owner:nil options:nil]lastObject];
+ 
     //    Pcell =[[[NSBundle mainBundle]loadNibNamed:@"PerTableViewCell" owner:nil options:nil]lastObject];
     if (indexPath.row ==0) {
-        Pcell.Peron.text = self.PHClass;
+        Pcell.Pera.text = @"教授年级";
+        Pcell.Perl.text = self.PHClass;
     }else if (indexPath.row==1){
-        Pcell.Peron.text =self.PHSub;
+        Pcell.Pera.text = @"教授科目";
+        Pcell.Perl.text =self.PHSub;
     }
 
     return Pcell;
