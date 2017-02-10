@@ -9,6 +9,9 @@
 #import "PersonViewController.h"
 #import "MyInformationTableViewController.h"
 #import "HeaderView.h"
+#import "PersonInformationTableViewController.h"
+#import "CourseSetViewController.h"
+#import "MyOrderTableViewController.h"
 @interface PersonViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)UITableView *tableView;
@@ -100,12 +103,30 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0&&indexPath.row == 0) {
+        PersonInformationTableViewController *vc = [[PersonInformationTableViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if(indexPath.section == 1&&indexPath.row == 0){
+        CourseSetViewController *vc = [[CourseSetViewController alloc]init];
+        vc.title = self.titles[1];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.section == 1&&indexPath.row == 2){
+        MyOrderTableViewController *vc = [[MyOrderTableViewController alloc]init];
+        vc.title = self.titles[3];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+
+
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 10;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 1;
 }
+
+
 
 /*
 #pragma mark - Navigation
