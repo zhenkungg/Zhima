@@ -17,7 +17,7 @@
 @interface NewsViewController ()<UITableViewDataSource,UITableViewDelegate>
 //@property (weak, nonatomic) IBOutlet UITableView *newstableV;
 
-@property(strong,nonatomic) NSMutableArray *dataArray;
+@property(strong,nonatomic)NSMutableArray *dataArray;
 @property (weak, nonatomic) IBOutlet UITextField *accountTF;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTF;
 
@@ -27,7 +27,7 @@
 #pragma mark  数据源懒加载
 -(NSMutableArray *)dataArray
 {
-    if (_dataArray == nil) {
+    if (_dataArray ==nil) {
         _dataArray = [NSMutableArray alloc];
     }
     return _dataArray;
@@ -47,6 +47,7 @@
             NSLog(@"注册成功");
         }else{
             NSLog(@"注册失败 :%@",error);
+           
         }
     }
     

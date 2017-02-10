@@ -8,22 +8,11 @@
 
 #import "PersoneTableViewCell.h"
 
-
-@interface PersoneTableViewCell () <UITextFieldDelegate>
-
-@end
-
 @implementation PersoneTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-     self.Peron.delegate = self;
-}
--(void)textFieldDidEndEditing:(UITextField *)textField
-{
-    if (self.Block) {
-        self.Block (textField.text);
-    }
+    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

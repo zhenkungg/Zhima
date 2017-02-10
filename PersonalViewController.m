@@ -22,7 +22,7 @@
 
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
-@interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate,ChangeDelegate>
+@interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate,ChangeDelegate,UITextFieldDelegate>
 
 @property(strong, nonatomic)BlockViewController * BlockVC;
 @property(strong,nonatomic)CityViewController *BlockCity;
@@ -69,7 +69,7 @@
     _gende.backgroundColor= [UIColor redColor];
     [_PonetableView addSubview:_gende];
     [_PonetableView addSubview:_perImage];
-  
+    _PonedataArr = @[@"个人真实头像",@"姓名",@"性别",@"所在地区",@"个人介绍"];
     [self.view addSubview:_PonetableView];
      self.view.translatesAutoresizingMaskIntoConstraints= NO;
     
@@ -110,11 +110,8 @@
    
 }
 -(void)searCh1 {
-    [self.PonetableView reloadData];
-    NSLog(@"1%@,1%@,1%@",self.perName,self.perGender,self.perAddress);
     PerstontwoViewController *pertwoVC= [[PerstontwoViewController alloc]init];
     [self.navigationController pushViewController:pertwoVC animated:YES];
-    
 }
 -(void)searCh {
     [self.navigationController  popViewControllerAnimated:YES];
@@ -155,19 +152,10 @@
         if (indexPath.row ==0) {
             Pcell.name.text = @"姓名";
             Pcell.Peron.text = self.perName;
-            [Pcell setBlock:^(NSString * TextNa) {
-                self.perName = TextNa;
-
-            }];
-
-//            Pcell.Peron.text = self.perName;
         }else if (indexPath.row == 1) {
             Pcell.name.text = @"性别";
             Pcell.Peron.text = self.perGender;
-            [Pcell setBlock:^(NSString *TextName) {
-                self.perGender = TextName;
-            }];
-  
+            NSLog(@"%@",Pcell.Peron.text);
         }
         return Pcell;
         }
@@ -212,8 +200,9 @@
 //           };
 //              [self.navigationController pushViewController:BlockVC animated:YES];
            
-//           self.perName = self.teF.text;
-//           [self viewDidLoad];
+           self.perName = self.teF.text;
+           [self viewDidLoad];
+           
        }
        else if (tag == 1) {
 //           BlockViewController * BlockVC = [BlockViewController new];
@@ -231,9 +220,9 @@
            
            //        [self.navigationController pushViewController:BlockVC animated:YES];
            
-//           self.perGender = @"ddd";
-//           [self viewDidLoad];
-        
+           self.perGender = @"ddd";
+           [self viewDidLoad];
+           
        }
 
    }else{
@@ -244,8 +233,8 @@
            [self.view addSubview:addressPickView];
            addressPickView.block = ^(NSString *province,NSString *city,NSString *town){
                self.perAddress= [NSString stringWithFormat:@"%@%@%@",province,city,town] ;
-               NSIndexPath *path =[NSIndexPath indexPathForRow:0 inSection:2];
-               [_PonetableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:path, nil] withRowAnimation:UITableViewRowAnimationNone];
+               [self viewDidLoad];
+               
            };
            
        } else if (tag ==1)
@@ -256,8 +245,7 @@
            BlockVC.NextBt= ^(NSString * meStr){
                NSLog(@"我是block传来的值 == %@",meStr);
                self.perPlace =@"已填写";
-               NSIndexPath *path =[NSIndexPath indexPathForRow:1 inSection:2];
-               [_PonetableView reloadRowsAtIndexPaths:[NSArray arrayWithObjects:path, nil] withRowAnimation:UITableViewRowAnimationNone];
+               [self viewDidLoad];
                
            };
            

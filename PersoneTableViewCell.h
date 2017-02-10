@@ -12,5 +12,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UITextField *Peron;
 
-@property (nonatomic,copy) void (^Block) (NSString *TextName);
 @end

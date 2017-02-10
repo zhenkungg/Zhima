@@ -30,9 +30,8 @@
 
 //
 @property(nonatomic,strong)NSString *EduStr;
-@property(nonatomic,strong)NSString *EduSchool;
-@property(nonatomic,strong)NSString *EduTime;
-@property(nonatomic,strong) NSString *EduIcon;
+@property(nonatomic,strong)NSString *EduStr1;
+@property(nonatomic,strong)NSString *EduStr2;
 
 @end
 
@@ -50,14 +49,14 @@
     
 }
 -(void)perFtableview {
-    _PerfTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height) style:UITableViewStyleGrouped];
+    _PerfTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, Screen_Width, Screen_Height) style:UITableViewStylePlain];
     _PerfTableView.delegate = self;
     _PerfTableView.dataSource = self;
-    _per4Image = [[UIImageView alloc]initWithFrame:CGRectMake(Screen_Width-95, 210, 85, 110)];
+    _per4Image = [[UIImageView alloc]initWithFrame:CGRectMake(Screen_Width-95, 200, 85, 110)];
     _per4Image.backgroundColor = [UIColor redColor];
     [self.PerfTableView addSubview:_per4Image];
     [self.view addSubview:_PerfTableView];
-
+    _PertfArr = @[@"学历",@"学校",@"在校时间"];
 }
 
 //自定义导航栏
@@ -88,7 +87,6 @@
 }
 
 -(void)searCh1 {
-    [_PerfTableView reloadData];
     PerFiveViewController *pertwoVC= [[PerFiveViewController alloc]init];
     [self.navigationController pushViewController:pertwoVC animated:YES];
     
@@ -114,21 +112,15 @@
     if (indexPath.section == 0) {
         PersoneTableViewCell *Pcell = [tableView dequeueReusableCellWithIdentifier:strId];
         Pcell =[[[NSBundle mainBundle]loadNibNamed:@"PersoneTableViewCell" owner:nil options:nil]lastObject];
-        
+            Pcell.textLabel.text = _PertfArr[indexPath.row];
         if (indexPath.row == 0) {
-            Pcell.name.text = @"学历";
             Pcell.Peron.text = self.EduStr;
         }
         else if (indexPath.row == 1){
-            Pcell.name.text = @"学校";
-            Pcell.Peron.text =  self.EduSchool;
-            [Pcell setBlock:^(NSString *TextNa) {
-                self.EduSchool = TextNa;
-            }];
+            Pcell.Peron.text =  self.EduStr1;
             
         }else if (indexPath.row == 2){
-            Pcell.name.text = @"在校时间";
-            Pcell.Peron.text =self.EduTime;
+            Pcell.Peron.text =self.EduStr2;
         }
         return Pcell;
     }else{
@@ -159,13 +151,13 @@
             [self.navigationController pushViewController:EduVC animated:YES];
         }
         else if (tag ==1){
-//            SchoolViewController *schoolVC = [SchoolViewController new];
-//            schoolVC.NextSchool = ^(NSString *meStr){
-//                self.EduSchool =meStr;
-//                NSLog(@"%@",meStr);
-//                [self viewDidLoad];
-//            };
-//            [self.navigationController pushViewController:schoolVC animated:YES];
+            SchoolViewController *schoolVC = [SchoolViewController new];
+            schoolVC.NextSchool = ^(NSString *meStr){
+                self.EduStr1 =meStr;
+                NSLog(@"%@",meStr);
+                [self viewDidLoad];
+            };
+            [self.navigationController pushViewController:schoolVC animated:YES];
             
         }else if (tag==2){
             CCPPickerViewTwo *pickerViewTwo = [[CCPPickerViewTwo alloc] initWithpickerViewWithCenterTitle:@"选择时间" andCancel:@"取消" andSure:@"确定"];
@@ -175,8 +167,8 @@
                 
             } sureBtClcik:^(NSString *leftString, NSString *rightString, NSString *leftAndRightString) {
                 
-                NSLog(@"%@",leftAndRightString);
-                self.EduTime=leftAndRightString;
+                NSLog(@"%@=======%@=======%@",leftString,rightString,leftAndRightString);
+                self.EduStr2 =leftAndRightString;
                 [self viewDidLoad];
             }];
         }
@@ -237,18 +229,14 @@
     return 44;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if (section == 0) {
-        return 35;
-    }
-    else{
-        return 20;
-    }
+    
+    return 30;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     if (section == 0) {
         return 0;
     }else{
-        return 100;
+        return 400;
     }
 }
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -275,7 +263,7 @@
         return nil;
     }
     UILabel *lable = [[UILabel alloc]init];
-    lable.frame =CGRectMake(20, -35, CGRectGetWidth(tableView.frame)-20, 120);
+    lable.frame =CGRectMake(20, -40, CGRectGetWidth(tableView.frame)-20, 120);
     lable.numberOfLines = 0;
     lable.shadowOffset = CGSizeMake(0.0, 1.0);
    lable.font = [UIFont boldSystemFontOfSize:14];
