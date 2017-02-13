@@ -58,11 +58,15 @@
 		166CBAED1E26209400E12865 /* ZhimaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAEC1E26209400E12865 /* ZhimaTests.m */; };
 		166CBAF81E26209400E12865 /* ZhimaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAF71E26209400E12865 /* ZhimaUITests.m */; };
 		166CBB231E2642EA00E12865 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBB221E2642EA00E12865 /* NewsViewController.m */; };
+		16C127721E51ACE9007093A1 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C127711E51ACE9007093A1 /* libAFNetworking.a */; };
+		16C127741E51ACF2007093A1 /* libSVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C127731E51ACF2007093A1 /* libSVProgressHUD.a */; };
 		16DE45FA1E270E7500CBA8A1 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE45F91E270E7500CBA8A1 /* NewsModel.m */; };
 		16DE46181E2772AB00CBA8A1 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE46161E2772AB00CBA8A1 /* NewsTableViewCell.m */; };
 		16DE46191E2772AB00CBA8A1 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16DE46171E2772AB00CBA8A1 /* NewsTableViewCell.xib */; };
 		16DE461F1E27775D00CBA8A1 /* CourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE461E1E27775D00CBA8A1 /* CourseViewController.m */; };
 		16DE46231E2777E200CBA8A1 /* CourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */; };
+		5C8CBB9E22D40744C2E8663C /* libPods-ZhimaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 502F67009C50020EE305361F /* libPods-ZhimaTests.a */; };
+		676CACAD06103970D1AA8DE8 /* libPods-Zhima.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0A87E763F8BD0325E191DB /* libPods-Zhima.a */; };
 		F505B5491E28DC8700FF8049 /* PushStremViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F505B5481E28DC8700FF8049 /* PushStremViewController.m */; };
 		F522E5BD1E31D78600B34B46 /* MyInformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F522E5BC1E31D78600B34B46 /* MyInformationTableViewController.m */; };
 		F522E5C21E31D88F00B34B46 /* MyInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F522E5C01E31D88F00B34B46 /* MyInformationCell.m */; };
@@ -506,6 +510,7 @@
 		F56D33171E2A134200239DF6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F56D330B1E2A134200239DF6 /* README.md */; };
 		F5B169831E2788480068BE12 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B169811E2788480068BE12 /* PersonViewController.m */; };
 		F5B169841E2788480068BE12 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B169821E2788480068BE12 /* HeaderView.xib */; };
+		FFB62AA99EEAB0C9FCCB814F /* libPods-ZhimaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 634FA6DBDB020F19607259D9 /* libPods-ZhimaUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -526,6 +531,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B7A6907AEA6F585935F3F0 /* Pods-ZhimaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhimaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhimaUITests/Pods-ZhimaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		164462CB1E4AB22900C76031 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		164462CC1E4AB22900C76031 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		164462CE1E4AB28600C76031 /* Address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Address.plist; sourceTree = "<group>"; };
@@ -621,6 +627,8 @@
 		166CBAF91E26209400E12865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		166CBB211E2642EA00E12865 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		166CBB221E2642EA00E12865 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		16C127711E51ACE9007093A1 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/Zhima-bjzmtcvlurajenejymvbgmrzmapq/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		16C127731E51ACF2007093A1 /* libSVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVProgressHUD.a; path = "Pods/../build/Debug-iphoneos/SVProgressHUD/libSVProgressHUD.a"; sourceTree = "<group>"; };
 		16DE45F81E270E7500CBA8A1 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		16DE45F91E270E7500CBA8A1 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		16DE46151E2772AB00CBA8A1 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
@@ -630,6 +638,14 @@
 		16DE461E1E27775D00CBA8A1 /* CourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseViewController.m; sourceTree = "<group>"; };
 		16DE46201E2777E200CBA8A1 /* CourseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseTableViewController.h; sourceTree = "<group>"; };
 		16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseTableViewController.m; sourceTree = "<group>"; };
+		27644A9DAE0E6773A789C658 /* Pods-Zhima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhima.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zhima/Pods-Zhima.release.xcconfig"; sourceTree = "<group>"; };
+		3C0A87E763F8BD0325E191DB /* libPods-Zhima.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zhima.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		431CF5DFBDAAF2E19FF0FBD3 /* Pods-ZhimaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhimaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhimaUITests/Pods-ZhimaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		502F67009C50020EE305361F /* libPods-ZhimaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhimaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52033FC580CBE0AF9B1E6DBD /* Pods-Zhima.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zhima.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zhima/Pods-Zhima.debug.xcconfig"; sourceTree = "<group>"; };
+		634FA6DBDB020F19607259D9 /* libPods-ZhimaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhimaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		830D9A9C5B35464D2AC24004 /* Pods-ZhimaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhimaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhimaTests/Pods-ZhimaTests.release.xcconfig"; sourceTree = "<group>"; };
+		A642A8F3E8F2407E57F85154 /* Pods-ZhimaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhimaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhimaTests/Pods-ZhimaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F505B5471E28DC8700FF8049 /* PushStremViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushStremViewController.h; sourceTree = "<group>"; };
 		F505B5481E28DC8700FF8049 /* PushStremViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushStremViewController.m; sourceTree = "<group>"; };
 		F522E5BB1E31D78600B34B46 /* MyInformationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInformationTableViewController.h; sourceTree = "<group>"; };
@@ -1500,6 +1516,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C127741E51ACF2007093A1 /* libSVProgressHUD.a in Frameworks */,
+				16C127721E51ACE9007093A1 /* libAFNetworking.a in Frameworks */,
 				F56896A01E2C9A1E0042B4D9 /* libc++.tbd in Frameworks */,
 				F568969E1E2C9A110042B4D9 /* libresolv.tbd in Frameworks */,
 				F568969C1E2C99FF0042B4D9 /* libz.tbd in Frameworks */,
@@ -1519,6 +1537,7 @@
 				F56895571E2C98330042B4D9 /* libopencore-amrwb.a in Frameworks */,
 				F56895F61E2C98690042B4D9 /* libHyphenateFullSDK_armv7s.a in Frameworks */,
 				F56895561E2C98330042B4D9 /* libopencore-amrnb.a in Frameworks */,
+				676CACAD06103970D1AA8DE8 /* libPods-Zhima.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1526,6 +1545,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8CBB9E22D40744C2E8663C /* libPods-ZhimaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1533,6 +1553,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB62AA99EEAB0C9FCCB814F /* libPods-ZhimaUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1729,6 +1750,7 @@
 				166CBAF61E26209400E12865 /* ZhimaUITests */,
 				166CBAD01E26209300E12865 /* Products */,
 				F56D32EA1E2A0A6700239DF6 /* Frameworks */,
+				D21A4CE8900245F7CB1CA860 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1892,6 +1914,19 @@
 			children = (
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		D21A4CE8900245F7CB1CA860 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52033FC580CBE0AF9B1E6DBD /* Pods-Zhima.debug.xcconfig */,
+				27644A9DAE0E6773A789C658 /* Pods-Zhima.release.xcconfig */,
+				A642A8F3E8F2407E57F85154 /* Pods-ZhimaTests.debug.xcconfig */,
+				830D9A9C5B35464D2AC24004 /* Pods-ZhimaTests.release.xcconfig */,
+				00B7A6907AEA6F585935F3F0 /* Pods-ZhimaUITests.debug.xcconfig */,
+				431CF5DFBDAAF2E19FF0FBD3 /* Pods-ZhimaUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		F505B5461E28D5F500FF8049 /* PushStrem */ = {
@@ -3281,6 +3316,8 @@
 		F56D32EA1E2A0A6700239DF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16C127731E51ACF2007093A1 /* libSVProgressHUD.a */,
+				16C127711E51ACE9007093A1 /* libAFNetworking.a */,
 				F568969F1E2C9A1E0042B4D9 /* libc++.tbd */,
 				F568969D1E2C9A110042B4D9 /* libresolv.tbd */,
 				F568969B1E2C99FF0042B4D9 /* libz.tbd */,
@@ -3294,6 +3331,9 @@
 				F568968B1E2C99500042B4D9 /* ImageIO.framework */,
 				F56896891E2C993D0042B4D9 /* SystemConfiguration.framework */,
 				F56D32EB1E2A0A6700239DF6 /* Foundation.framework */,
+				3C0A87E763F8BD0325E191DB /* libPods-Zhima.a */,
+				502F67009C50020EE305361F /* libPods-ZhimaTests.a */,
+				634FA6DBDB020F19607259D9 /* libPods-ZhimaUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3366,9 +3406,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 166CBAFC1E26209400E12865 /* Build configuration list for PBXNativeTarget "Zhima" */;
 			buildPhases = (
+				440B5656B0D23E242647DFFA /* 📦 Check Pods Manifest.lock */,
 				166CBACB1E26209300E12865 /* Sources */,
 				166CBACC1E26209300E12865 /* Frameworks */,
 				166CBACD1E26209300E12865 /* Resources */,
+				195BC561E9091C2F8D9A90AB /* 📦 Embed Pods Frameworks */,
+				F3BF60672DC4EC2F41EB4066 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -3383,9 +3426,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 166CBAFF1E26209400E12865 /* Build configuration list for PBXNativeTarget "ZhimaTests" */;
 			buildPhases = (
+				26E129146959C1F04A1862BB /* 📦 Check Pods Manifest.lock */,
 				166CBAE41E26209400E12865 /* Sources */,
 				166CBAE51E26209400E12865 /* Frameworks */,
 				166CBAE61E26209400E12865 /* Resources */,
+				90D9DB91B96FAFC81506DEFC /* 📦 Embed Pods Frameworks */,
+				79F02332CE107D2DAD372183 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -3401,9 +3447,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 166CBB021E26209400E12865 /* Build configuration list for PBXNativeTarget "ZhimaUITests" */;
 			buildPhases = (
+				93ECBCFFF93A4A299C5A7952 /* 📦 Check Pods Manifest.lock */,
 				166CBAEF1E26209400E12865 /* Sources */,
 				166CBAF01E26209400E12865 /* Frameworks */,
 				166CBAF11E26209400E12865 /* Resources */,
+				A9DE955B5BD64380546DDE2B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -3577,6 +3625,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		195BC561E9091C2F8D9A90AB /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zhima/Pods-Zhima-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26E129146959C1F04A1862BB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		440B5656B0D23E242647DFFA /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		79F02332CE107D2DAD372183 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhimaTests/Pods-ZhimaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90D9DB91B96FAFC81506DEFC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhimaTests/Pods-ZhimaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93ECBCFFF93A4A299C5A7952 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9DE955B5BD64380546DDE2B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhimaUITests/Pods-ZhimaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3BF60672DC4EC2F41EB4066 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zhima/Pods-Zhima-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		166CBACB1E26209300E12865 /* Sources */ = {
@@ -4128,6 +4299,7 @@
 		};
 		166CBAFD1E26209400E12865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52033FC580CBE0AF9B1E6DBD /* Pods-Zhima.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2RMQU53STV;
@@ -4142,6 +4314,7 @@
 					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
 					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 					"$(PROJECT_DIR)/HyphenateFullSDK/HyphenateFullSDK/lib",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SVProgressHUD",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.y.n.demo;
@@ -4151,6 +4324,7 @@
 		};
 		166CBAFE1E26209400E12865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27644A9DAE0E6773A789C658 /* Pods-Zhima.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2RMQU53STV;
@@ -4165,6 +4339,7 @@
 					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
 					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 					"$(PROJECT_DIR)/HyphenateFullSDK/HyphenateFullSDK/lib",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SVProgressHUD",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.y.n.demo;
@@ -4174,6 +4349,7 @@
 		};
 		166CBB001E26209400E12865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A642A8F3E8F2407E57F85154 /* Pods-ZhimaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2RMQU53STV;
@@ -4187,6 +4363,7 @@
 		};
 		166CBB011E26209400E12865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 830D9A9C5B35464D2AC24004 /* Pods-ZhimaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2RMQU53STV;
@@ -4200,6 +4377,7 @@
 		};
 		166CBB031E26209400E12865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B7A6907AEA6F585935F3F0 /* Pods-ZhimaUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 2RMQU53STV;
 				INFOPLIST_FILE = ZhimaUITests/Info.plist;
@@ -4212,6 +4390,7 @@
 		};
 		166CBB041E26209400E12865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431CF5DFBDAAF2E19FF0FBD3 /* Pods-ZhimaUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 2RMQU53STV;
 				INFOPLIST_FILE = ZhimaUITests/Info.plist;
