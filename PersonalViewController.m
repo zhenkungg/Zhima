@@ -19,7 +19,7 @@
 #import "PerCollectionViewCell.h"
 #import "PeraTableViewCell.h"
 #import "AddressPickView.h"
-
+#import <AFNetworking.h>
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate,ChangeDelegate,UITextFieldDelegate>
@@ -37,6 +37,7 @@
 @property(nonatomic,strong)NSString *perAddress;
 @property (nonatomic,strong)NSString *perPlace;
 @property(nonatomic,strong)NSString *PerPhone;
+@property(nonatomic,strong)NSFileManager *fileManager;
 
 //
 @property(nonatomic,strong)UITextField *teF;
@@ -112,15 +113,7 @@
         [self.view addSubview:search];
    
 }
--(void)searCh1 {
-    [_PonetableView reloadData];
-    NSLog(@"%@,%@,%@",self.perGender,self.perName,self.PerPhone);
-    PerstontwoViewController *pertwoVC= [[PerstontwoViewController alloc]init];
-    [self.navigationController pushViewController:pertwoVC animated:YES];
-}
--(void)searCh {
-    [self.navigationController  popViewControllerAnimated:YES];
-}
+
 
 #pragma mark - UITableViewDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -350,7 +343,7 @@
 #pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
-    NSFileManager *fileManager = [NSFileManager defaultManager];
+    self.fileManager = [NSFileManager defaultManager];
     NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
     UIImage *image = [[UIImage alloc] init];
     if ([mediaType isEqualToString:@"public.image"]){
@@ -372,7 +365,7 @@
         
         NSString *imageString = [data base64EncodedStringWithOptions:0];
 //        转成base64字符串imageString，再传给给后台，在传参中需要添加图片的类型（@“png”或@“jpg”等）
-        [fileManager createFileAtPath:[imageString stringByAppendingString:@"/image.png"] contents:data attributes:nil];  //将图片保存为PNG格式
+        [self.fileManager createFileAtPath:[imageString stringByAppendingString:@"/image.png"] contents:data attributes:nil];  //将图片保存为PNG格式
         
     }
     
@@ -409,7 +402,48 @@
     NSLog(@"保存");
    
 }
+-(void)searCh1 {
+    [_PonetableView reloadData];
+    NSLog(@"%@,%@,%@",self.perGender,self.perName,self.PerPhone);
+    
+    NSString *url = @"http://118.89.45.205/users/updateTeacherDetail";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [manager.requestSerializer setValue:@"ios" forHTTPHeaderField:@"User-Agent"];
+    NSDictionary *parameters = @{@"username":@"2",
+                                  @"identname":self.perName,
+                                 @"phone":self.PerPhone,
+                                 @"gender":self.perGender,
+                                 @"address":self.perAddress,
+                                 @"resume":self.perPlace};
+    
+    [manager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        [formData appendPartWithFileURL:[NSURL fileURLWithPath:self.fileManager] name:@"avatar" fileName:@"1.png" mimeType:@"image/png" error:nil];
 
+        NSLog(@"%@",formData);
+        
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        //打印下上传进度
+        NSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"请求成功：%@",responseObject);
+        NSString *str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+        NSLog(@"1111111%@",str);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败:%@",error);
+    }];
+    
+
+    
+    PerstontwoViewController *pertwoVC= [[PerstontwoViewController alloc]init];
+    [self.navigationController pushViewController:pertwoVC animated:YES];
+}
+-(void)searCh {
+    [self.navigationController  popViewControllerAnimated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

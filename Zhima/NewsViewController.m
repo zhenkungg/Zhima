@@ -15,7 +15,7 @@
 #import "PersonalViewController.h"
 #import <AFNetworking.h>
 #import <SVProgressHUD.h>
-@interface NewsViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface NewsViewController ()<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 //@property (weak, nonatomic) IBOutlet UITableView *newstableV;
 
 @property(strong,nonatomic)NSMutableArray *dataArray;
@@ -69,23 +69,11 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"请求成功：%@",responseObject);
         NSString *str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSLog(@"%@",str);
+        NSLog(@"1111111%@",str);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败:%@",error);
     }];
-
-    
-//    if(self.accountTF.text && self.accountTF.text){
-//        EMError *error = [[EMClient sharedClient] registerWithUsername:self.accountTF.text password:self.passwordTF.text];
-//        
-//        if (error==nil) {
-//            NSLog(@"注册成功");
-//        }else{
-//            NSLog(@"注册失败 :%@",error);
-//           
-//        }
-//    }
-    
+ 
 }
 
 
