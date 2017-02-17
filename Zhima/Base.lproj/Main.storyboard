@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVC-cj-OvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1465" y="-870"/>
+            <point key="canvasLocation" x="-1190" y="-945"/>
         </scene>
         <!--课程-->
         <scene sceneID="xVE-Ab-WKn">
@@ -86,7 +86,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cv-nf-qth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1516" y="-199"/>
+            <point key="canvasLocation" x="-2482" y="-389"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h8R-yh-tm6">
@@ -102,7 +102,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXt-Hj-myy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2274" y="-279"/>
+            <point key="canvasLocation" x="-3308" y="-389"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="tne-QT-ifu">

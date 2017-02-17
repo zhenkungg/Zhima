@@ -405,24 +405,32 @@
 -(void)searCh1 {
     [_PonetableView reloadData];
     NSLog(@"%@,%@,%@",self.perGender,self.perName,self.PerPhone);
-    
+    [self Updata];
+   PerstontwoViewController *pertwoVC= [[PerstontwoViewController alloc]init];
+    [self.navigationController pushViewController:pertwoVC animated:YES];
+}
+-(void)Updata{
     NSString *url = @"http://118.89.45.205/users/updateTeacherDetail";
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
     [manager.requestSerializer setValue:@"ios" forHTTPHeaderField:@"User-Agent"];
     NSDictionary *parameters = @{@"username":@"2",
-                                  @"identname":self.perName,
-                                 @"phone":self.PerPhone,
-                                 @"gender":self.perGender,
-                                 @"address":self.perAddress,
-                                 @"resume":self.perPlace};
-    
+                                 @"token":@"ea2ded9df2a5b28e97b8ccc5bbe09c1b",
+                                 @"identname":@"ff",
+                                 @"phone":@"13450747644",
+                                 @"gender":@"男",
+                                 @"address":@"ssss",
+                                 @"resume":@"222"};
+    //    NSDictionary *parameters = @{@"username":@"25",
+    //                                 @"identname":@"gu",
+    //                                @"token":@"ef2223b00ed848ccb1645c9daaa0154b",
+    //                                 @"resume":@"ddd"};
     [manager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        [formData appendPartWithFileURL:[NSURL fileURLWithPath:self.fileManager] name:@"avatar" fileName:@"1.png" mimeType:@"image/png" error:nil];
-
+        [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"/Users/guzhenkun/Desktop/image/mazoo-logo.png"] name:@"avatar" fileName:@"2.png" mimeType:@"image/png" error:nil];
         NSLog(@"%@",formData);
         
     } progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -435,11 +443,6 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败:%@",error);
     }];
-    
-
-    
-    PerstontwoViewController *pertwoVC= [[PerstontwoViewController alloc]init];
-    [self.navigationController pushViewController:pertwoVC animated:YES];
 }
 -(void)searCh {
     [self.navigationController  popViewControllerAnimated:YES];

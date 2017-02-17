@@ -58,6 +58,7 @@
 		166CBAED1E26209400E12865 /* ZhimaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAEC1E26209400E12865 /* ZhimaTests.m */; };
 		166CBAF81E26209400E12865 /* ZhimaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAF71E26209400E12865 /* ZhimaUITests.m */; };
 		166CBB231E2642EA00E12865 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBB221E2642EA00E12865 /* NewsViewController.m */; };
+		168555C51E56969C004D1918 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 168555C41E56969C004D1918 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		16C127721E51ACE9007093A1 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C127711E51ACE9007093A1 /* libAFNetworking.a */; };
 		16C127741E51ACF2007093A1 /* libSVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C127731E51ACF2007093A1 /* libSVProgressHUD.a */; };
 		16DE45FA1E270E7500CBA8A1 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE45F91E270E7500CBA8A1 /* NewsModel.m */; };
@@ -627,6 +628,8 @@
 		166CBAF91E26209400E12865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		166CBB211E2642EA00E12865 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		166CBB221E2642EA00E12865 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		168555C31E56969C004D1918 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		168555C41E56969C004D1918 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		16C127711E51ACE9007093A1 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/Zhima-bjzmtcvlurajenejymvbgmrzmapq/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		16C127731E51ACF2007093A1 /* libSVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVProgressHUD.a; path = "Pods/../build/Debug-iphoneos/SVProgressHUD/libSVProgressHUD.a"; sourceTree = "<group>"; };
 		16DE45F81E270E7500CBA8A1 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
@@ -1852,6 +1855,7 @@
 		166CBB091E26298700E12865 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				168555C21E5695EF004D1918 /* JsonKit */,
 				F54E9AA51E4D688A00E30E8A /* XHDatePicker */,
 				164462CA1E4AB0F800C76031 /* Certification */,
 				F56894251E2C977D0042B4D9 /* HuanXin */,
@@ -1889,6 +1893,15 @@
 				16DE45F91E270E7500CBA8A1 /* NewsModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		168555C21E5695EF004D1918 /* JsonKit */ = {
+			isa = PBXGroup;
+			children = (
+				168555C31E56969C004D1918 /* JSONKit.h */,
+				168555C41E56969C004D1918 /* JSONKit.m */,
+			);
+			name = JsonKit;
 			sourceTree = "<group>";
 		};
 		16DE461A1E27769700CBA8A1 /* Model */ = {
@@ -3833,6 +3846,7 @@
 				F56D32A01E2A04B600239DF6 /* GPUImageVoronoiConsumerFilter.m in Sources */,
 				F56D32921E2A04B600239DF6 /* GPUImageThresholdedNonMaximumSuppressionFilter.m in Sources */,
 				F56D32A41E2A04B600239DF6 /* GPUImageZoomBlurFilter.m in Sources */,
+				168555C51E56969C004D1918 /* JSONKit.m in Sources */,
 				164462D21E4AB43C00C76031 /* AddressPickView.m in Sources */,
 				F56D32381E2A04B600239DF6 /* GPUImageHalftoneFilter.m in Sources */,
 				F56895BE1E2C98330042B4D9 /* EaseChatBarMoreView.m in Sources */,
