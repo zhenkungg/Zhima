@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -76,7 +76,7 @@
                 <outlet property="texlable" destination="nmQ-WQ-vSn" id="X7q-Km-qzR"/>
                 <outlet property="tiemlable" destination="gdX-x8-TtW" id="HvR-k6-mwb"/>
             </connections>
-            <point key="canvasLocation" x="166" y="-22"/>
+            <point key="canvasLocation" x="40" y="-20"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -19,7 +19,12 @@
 #import "PerCollectionViewCell.h"
 #import "PeraTableViewCell.h"
 #import "AddressPickView.h"
+#import "Teacher.h"
 #import <AFNetworking.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <AssetsLibrary/ALAsset.h>
+#import <AssetsLibrary/ALAssetsGroup.h>
+#import <AssetsLibrary/ALAssetRepresentation.h>
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate,ChangeDelegate,UITextFieldDelegate>
@@ -38,6 +43,7 @@
 @property (nonatomic,strong)NSString *perPlace;
 @property(nonatomic,strong)NSString *PerPhone;
 @property(nonatomic,strong)NSFileManager *fileManager;
+@property(nonatomic,strong)NSData *data;
 
 //
 @property(nonatomic,strong)UITextField *teF;
@@ -350,22 +356,22 @@
         image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
         [_perImage setImage:image];
         //        [_changeBtn setImage:image forState:UIControlStateNormal];
-        NSData *data;
+       _data;
         
         if (UIImagePNGRepresentation(image) == nil) {
             
-            data = UIImageJPEGRepresentation(image, 1);
+            _data = UIImageJPEGRepresentation(image, 1);
             
         } else {
             
-            data = UIImageJPEGRepresentation(image, 0.001); //压缩图片，方便上传
+            _data = UIImageJPEGRepresentation(image, 0.001); //压缩图片，方便上传
         }
         
         //       //获取文件路径
         
-        NSString *imageString = [data base64EncodedStringWithOptions:0];
+        NSString *imageString = [_data base64EncodedStringWithOptions:0];
 //        转成base64字符串imageString，再传给给后台，在传参中需要添加图片的类型（@“png”或@“jpg”等）
-        [self.fileManager createFileAtPath:[imageString stringByAppendingString:@"/image.png"] contents:data attributes:nil];  //将图片保存为PNG格式
+        [self.fileManager createFileAtPath:[imageString stringByAppendingString:@"/image.png"] contents:_data attributes:nil];  //将图片保存为PNG格式
         
     }
     
@@ -404,7 +410,7 @@
 }
 -(void)searCh1 {
     [_PonetableView reloadData];
-    NSLog(@"%@,%@,%@",self.perGender,self.perName,self.PerPhone);
+  
     [self Updata];
    PerstontwoViewController *pertwoVC= [[PerstontwoViewController alloc]init];
     [self.navigationController pushViewController:pertwoVC animated:YES];
@@ -416,13 +422,15 @@
     
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    
     //    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
     [manager.requestSerializer setValue:@"ios" forHTTPHeaderField:@"User-Agent"];
     NSDictionary *parameters = @{@"username":@"2",
                                  @"token":@"ea2ded9df2a5b28e97b8ccc5bbe09c1b",
                                  @"identname":@"ff",
                                  @"phone":@"13450747644",
-                                 @"gender":@"男",
+                                 @"gender":@"m",
                                  @"address":@"ssss",
                                  @"resume":@"222"};
     //    NSDictionary *parameters = @{@"username":@"25",
@@ -430,8 +438,9 @@
     //                                @"token":@"ef2223b00ed848ccb1645c9daaa0154b",
     //                                 @"resume":@"ddd"};
     [manager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"/Users/guzhenkun/Desktop/image/mazoo-logo.png"] name:@"avatar" fileName:@"2.png" mimeType:@"image/png" error:nil];
-        NSLog(@"%@",formData);
+//        [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"/Users/guzhenkun/Desktop/image/mazoo-logo.png"] name:@"avatar" fileName:@"2.png" mimeType:@"image/png" error:nil];
+        [formData appendPartWithFileData:self.data name:@"avatar" fileName:@"2.png" mimeType:@"image/png"];
+        
         
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         //打印下上传进度
@@ -439,10 +448,31 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"请求成功：%@",responseObject);
         NSString *str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+        //获取路径
         NSLog(@"1111111%@",str);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败:%@",error);
     }];
+}
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range
+replacementString:(NSString *)string
+{
+    NSMutableString *newValue = [textField.text mutableCopy] ;
+    [newValue replaceCharactersInRange:range withString:string];
+    if ([newValue length]== 0) {
+        
+    }
+    else {
+        self.navigationItem.rightBarButtonItem.enabled = YES;
+        
+    }
+    
+    return YES;
+}
+- (BOOL)textFieldShouldClear:(UITextField *)textField{
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+    return YES;
+    
 }
 -(void)searCh {
     [self.navigationController  popViewControllerAnimated:YES];

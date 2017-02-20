@@ -53,6 +53,7 @@
     
     if (newscell == nil) {
         newscell = [[[NSBundle mainBundle]loadNibNamed:@"NewsTableViewCell" owner:nil options:nil]lastObject];
+        newscell.tiemlable.text = @"ss";
     }
     newscell.selectionStyle = UITableViewCellSelectionStyleNone;
     
@@ -76,13 +77,6 @@
     title.font = [UIFont systemFontOfSize:19];
     title.textColor = [UIColor whiteColor];
     [self.view addSubview:title];
-    
-//    UIButton *search = [[UIButton alloc]initWithFrame:CGRectMake(Screen_Width-40-10, 20, 40, 40)];
-//    
-//    [search setImage:[UIImage imageNamed:@"search_btn_unpre_bg"] forState:UIControlStateNormal];
-//    
-//    [self.view addSubview:search];
-    
     
     //分段控制器
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[@"已授课程",@"待授课程"]];

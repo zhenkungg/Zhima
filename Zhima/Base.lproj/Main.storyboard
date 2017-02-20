@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DXg-tE-2jc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vM7-EC-6ce">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,10 +23,28 @@
                         <color key="backgroundColor" red="0.6763592577948867" green="0.93490185007786575" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="个人中心" image="doc" id="yo5-Zc-Lx2"/>
+                    <navigationItem key="navigationItem" id="nzl-iG-TE3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Efx-4U-Ike" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="103" y="22"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="2EK-Fx-4rv">
+            <objects>
+                <navigationController id="AkG-hD-qAn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="jXW-1W-b9K"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w0v-Wd-X5w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="keF-72-4y7" kind="relationship" relationship="rootViewController" id="4ri-rh-Tt1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbx-YZ-68H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1898" y="-618"/>
         </scene>
         <!--直播-->
         <scene sceneID="G5c-Jb-piy">
@@ -46,7 +64,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVC-cj-OvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1190" y="-945"/>
+            <point key="canvasLocation" x="-578" y="-671"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="eEj-Gt-8Ch">
+            <objects>
+                <navigationController id="wCH-hT-dTo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="8L0-Fl-sWW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lia-9C-mH0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OOC-Q3-bND" kind="relationship" relationship="rootViewController" id="STJ-JR-5m9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAD-4I-5gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1239" y="-148"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="TCn-t8-FGA">
+            <objects>
+                <navigationController id="mdt-TX-pix" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="PDh-hH-tdL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iU2-Yi-ypz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5bv-l0-3SJ" kind="relationship" relationship="rootViewController" id="800-Et-LlS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEf-Wq-7Tp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2153" y="-1085"/>
         </scene>
         <!--课程-->
         <scene sceneID="xVE-Ab-WKn">
@@ -62,10 +114,11 @@
                         <color key="backgroundColor" red="0.7939603797" green="1" blue="0.63957022460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="课程" image="doc" id="pob-pk-CNs"/>
+                    <navigationItem key="navigationItem" id="1w1-45-7Nl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3M-Uf-pn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-676" y="-589"/>
+            <point key="canvasLocation" x="-1260" y="-1252"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4P7-k5-NP1">
@@ -79,30 +132,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="Mei-xu-wWF" kind="relationship" relationship="viewControllers" id="xK9-2W-ENl"/>
-                        <segue destination="5bv-l0-3SJ" kind="relationship" relationship="viewControllers" id="es0-pX-z46"/>
-                        <segue destination="keF-72-4y7" kind="relationship" relationship="viewControllers" id="7nC-ya-I6d"/>
-                        <segue destination="OOC-Q3-bND" kind="relationship" relationship="viewControllers" id="8E0-aH-3eh"/>
+                        <segue destination="mdt-TX-pix" kind="relationship" relationship="viewControllers" id="otM-Rl-v4e"/>
+                        <segue destination="AkG-hD-qAn" kind="relationship" relationship="viewControllers" id="Sdn-8v-xOE"/>
+                        <segue destination="wCH-hT-dTo" kind="relationship" relationship="viewControllers" id="fqN-wV-lW1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cv-nf-qth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2482" y="-389"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="h8R-yh-tm6">
-            <objects>
-                <navigationController id="DXg-tE-2jc" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5jS-kh-QvV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="vM7-EC-6ce" kind="relationship" relationship="rootViewController" id="RVH-VP-UJp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fXt-Hj-myy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3308" y="-389"/>
+            <point key="canvasLocation" x="-2914" y="-627"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="tne-QT-ifu">

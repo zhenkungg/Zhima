@@ -29,7 +29,7 @@
         
     } sureBtClcik:^(NSString *leftString, NSString *rightString, NSString *leftAndRightString) {
         
-        NSLog(@"%@=======%@=======%@",leftString,rightString,leftAndRightString);
+        NSLog(@"%@",leftAndRightString);
         _textLabel.text =leftAndRightString;
           _labelText =leftAndRightString;
         

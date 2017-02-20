@@ -59,6 +59,7 @@
 		166CBAF81E26209400E12865 /* ZhimaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAF71E26209400E12865 /* ZhimaUITests.m */; };
 		166CBB231E2642EA00E12865 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBB221E2642EA00E12865 /* NewsViewController.m */; };
 		168555C51E56969C004D1918 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 168555C41E56969C004D1918 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		168555C81E56A95D004D1918 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 168555C71E56A95D004D1918 /* Teacher.m */; };
 		16C127721E51ACE9007093A1 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C127711E51ACE9007093A1 /* libAFNetworking.a */; };
 		16C127741E51ACF2007093A1 /* libSVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C127731E51ACF2007093A1 /* libSVProgressHUD.a */; };
 		16DE45FA1E270E7500CBA8A1 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DE45F91E270E7500CBA8A1 /* NewsModel.m */; };
@@ -630,6 +631,8 @@
 		166CBB221E2642EA00E12865 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		168555C31E56969C004D1918 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		168555C41E56969C004D1918 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		168555C61E56A95D004D1918 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		168555C71E56A95D004D1918 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 		16C127711E51ACE9007093A1 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/Zhima-bjzmtcvlurajenejymvbgmrzmapq/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		16C127731E51ACF2007093A1 /* libSVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVProgressHUD.a; path = "Pods/../build/Debug-iphoneos/SVProgressHUD/libSVProgressHUD.a"; sourceTree = "<group>"; };
 		16DE45F81E270E7500CBA8A1 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
@@ -1571,6 +1574,8 @@
 				164463851E4B0A0800C76031 /* RegisrViewController.h */,
 				164463861E4B0A0800C76031 /* RegisrViewController.m */,
 				164462DA1E4AB78900C76031 /* Personal */,
+				168555C61E56A95D004D1918 /* Teacher.h */,
+				168555C71E56A95D004D1918 /* Teacher.m */,
 			);
 			name = Certification;
 			sourceTree = "<group>";
@@ -3921,6 +3926,7 @@
 				F56895B91E2C98330042B4D9 /* EaseChatToolbarItem.m in Sources */,
 				F56D330D1E2A134200239DF6 /* MASCompositeConstraint.m in Sources */,
 				164463511E4AE7AD00C76031 /* PhotofiveCollectionViewCell.m in Sources */,
+				168555C81E56A95D004D1918 /* Teacher.m in Sources */,
 				164462EB1E4AB80400C76031 /* PlaceholderTextView.m in Sources */,
 				F56D32AF1E2A04B600239DF6 /* rtmp.c in Sources */,
 				F56D32971E2A04B600239DF6 /* GPUImageTransformFilter.m in Sources */,
