@@ -11,7 +11,8 @@
 #import "NewsTableViewCell.h"
 #import "NewsConversationListViewController.h"
 #import "AppDelegate.h"
-#import "ChatDemoHelper.h"
+//#import "ChatDemoHelper.h"
+#import "ChatUIHelper.h"
 #import "PersonalViewController.h"
 #import <AFNetworking.h>
 #import <SVProgressHUD.h>
@@ -39,6 +40,10 @@
     
     // Do any additional setup after loading the view.
   }
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
 
 - (IBAction)registeredClick:(id)sender {
     NSString *url = @"http://118.89.45.205/users/reg";
@@ -109,36 +114,35 @@
         NSString *str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSLog(@"%@",str);
         
-        NewsConversationListViewController  *listVC = [[NewsConversationListViewController alloc] init];
-        listVC.title = @"消息列表";
+        if(self.accountTF.text && self.accountTF.text){
+            EMError *error = [[EMClient sharedClient] loginWithUsername:self.accountTF.text password:self.passwordTF.text];
+            
+            if (error==nil) {
+                NSLog(@"登录成功");
+                //切换聊天列表为跟控制器
+                NewsConversationListViewController  *listVC = [[NewsConversationListViewController alloc] init];
+                listVC.title = @"消息列表";
+                
+                [ChatUIHelper shareHelper].mainVC = listVC;
+                
+                
+                //[AppDelegate getAppDelegate].window.rootViewController = [[UINavigationController alloc] initWithRootViewController:listVC];
+                [self.navigationController pushViewController:listVC animated:YES];
+                
+            }else{
+                NSLog(@"登录失败 :%@",error);
+            }
+        }
         
-        [ChatDemoHelper shareHelper].mainVC = listVC;
+        
         
         //[AppDelegate getAppDelegate].window.rootViewController = [[UINavigationController alloc] initWithRootViewController:listVC];
-        [self.navigationController pushViewController:listVC animated:YES];
                 
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败:%@",error);
     }];
 
-//    if(self.accountTF.text && self.accountTF.text){
-//        EMError *error = [[EMClient sharedClient] loginWithUsername:self.accountTF.text password:self.passwordTF.text];
-//        
-//        if (error==nil) {
-//            NSLog(@"登录成功");
-//            //切换聊天列表为跟控制器
-//            NewsConversationListViewController  *listVC = [[NewsConversationListViewController alloc] init];
-//            listVC.title = @"消息列表";
-//            
-//            [ChatDemoHelper shareHelper].mainVC = listVC;
-//            
-//            //[AppDelegate getAppDelegate].window.rootViewController = [[UINavigationController alloc] initWithRootViewController:listVC];
-//            [self.navigationController pushViewController:listVC animated:YES];
-//            
-//        }else{
-//            NSLog(@"登录失败 :%@",error);
-//        }
-//    }
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

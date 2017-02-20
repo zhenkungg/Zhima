@@ -23,6 +23,15 @@
 #import "UIViewExt.h"
 
 
+#import <Foundation/Foundation.h>
+#import "EMAlertView.h"
+#import "TTGlobalUICommon.h"
+#import "ChatUIDefine.h"
+#import "UserCacheManager.h"
+#import "AVOSCloud/AVOSCloud.h"
+#import "UserWebManager.h"
+
+
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 

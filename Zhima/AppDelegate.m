@@ -23,7 +23,7 @@
   
     NSString *appKey = @"1129170203178077#zhima";
     
-    [[EaseSDKHelper shareHelper] easemobApplication:application didFinishLaunchingWithOptions:launchOptions appkey:appKey apnsCertName:nil otherConfig:@{kSDKConfigEnableConsoleLogger : [NSNumber numberWithBool:YES]}];
+    [[EaseSDKHelper shareHelper] hyphenateApplication:application didFinishLaunchingWithOptions:launchOptions appkey:appKey apnsCertName:nil otherConfig:@{kSDKConfigEnableConsoleLogger : [NSNumber numberWithBool:YES]}];
     
     EMOptions *options = [EMOptions optionsWithAppkey:appKey];
     //    options.apnsCertName = @"";

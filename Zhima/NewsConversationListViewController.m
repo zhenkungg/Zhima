@@ -7,7 +7,7 @@
 //
 
 #import "NewsConversationListViewController.h"
-
+#import "ChatUIHelper.h"
 @interface NewsConversationListViewController ()<EMChatManagerDelegate>
 
 @property (nonatomic, strong)   UITextField  *messageTF;
@@ -56,8 +56,12 @@
 - (void)messageClick:(UIButton *)btn
 {
     if(self.messageTF.text.length > 0){
-        EaseMessageViewController *message = [[EaseMessageViewController alloc] initWithConversationChatter:self.messageTF.text conversationType:EMConversationTypeChat];
-        [self.navigationController pushViewController:message animated:YES];
+//        EaseMessageViewController *message = [[EaseMessageViewController alloc] initWithConversationChatter:self.messageTF.text conversationType:EMConversationTypeChat];
+//        [self.navigationController pushViewController:message animated:YES];
+        ChatViewController *vc = [[ChatViewController alloc]initWithConversationChatter:self.messageTF.text conversationType:EMConversationTypeChat];
+        //[ChatUIHelper shareHelper].mainVC = vc;
+        self.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
 }
