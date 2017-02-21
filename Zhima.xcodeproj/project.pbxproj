@@ -662,6 +662,7 @@
 		F58F5E931E5A9BFF0004AAF7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F58F5E921E5A9BFF0004AAF7 /* libicucore.tbd */; };
 		F58F5E951E5A9C230004AAF7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58F5E941E5A9C230004AAF7 /* CoreTelephony.framework */; };
 		F58F5E971E5A9C2F0004AAF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58F5E961E5A9C2F0004AAF7 /* CoreLocation.framework */; };
+		F58F5E9B1E5AC0CA0004AAF7 /* libHyphenateFullSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F58F5E9A1E5AC0CA0004AAF7 /* libHyphenateFullSDK.a */; };
 		F5B169831E2788480068BE12 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B169811E2788480068BE12 /* PersonViewController.m */; };
 		F5B169841E2788480068BE12 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B169821E2788480068BE12 /* HeaderView.xib */; };
 		FFB62AA99EEAB0C9FCCB814F /* libPods-ZhimaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 634FA6DBDB020F19607259D9 /* libPods-ZhimaUITests.a */; };
@@ -1907,6 +1908,7 @@
 		F58F5E921E5A9BFF0004AAF7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		F58F5E941E5A9C230004AAF7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F58F5E961E5A9C2F0004AAF7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F58F5E9A1E5AC0CA0004AAF7 /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHyphenateFullSDK.a; sourceTree = "<group>"; };
 		F5B169801E2788480068BE12 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		F5B169811E2788480068BE12 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		F5B169821E2788480068BE12 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -1934,6 +1936,7 @@
 				F56896A01E2C9A1E0042B4D9 /* libc++.tbd in Frameworks */,
 				F568969E1E2C9A110042B4D9 /* libresolv.tbd in Frameworks */,
 				F58F5E031E5A99370004AAF7 /* libHyphenatePluginRecorder.a in Frameworks */,
+				F58F5E9B1E5AC0CA0004AAF7 /* libHyphenateFullSDK.a in Frameworks */,
 				F58F5DB81E5A99370004AAF7 /* AVOSCloud.framework in Frameworks */,
 				F568969C1E2C99FF0042B4D9 /* libz.tbd in Frameworks */,
 				F568969A1E2C99F00042B4D9 /* libstdc++.6.0.9.tbd in Frameworks */,
@@ -3707,6 +3710,7 @@
 		F58F5BC91E5A99360004AAF7 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				F58F5E9A1E5AC0CA0004AAF7 /* libHyphenateFullSDK.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -4488,7 +4492,7 @@
 				TargetAttributes = {
 					166CBACE1E26209300E12865 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2RMQU53STV;
+						DevelopmentTeam = TBFF9Q8DV8;
 						ProvisioningStyle = Automatic;
 					};
 					166CBAE71E26209400E12865 = {
@@ -5466,7 +5470,7 @@
 			baseConfigurationReference = 52033FC580CBE0AF9B1E6DBD /* Pods-Zhima.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2RMQU53STV;
+				DEVELOPMENT_TEAM = TBFF9Q8DV8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5492,7 +5496,7 @@
 					"$(PROJECT_DIR)/ChatUI/Class/Call/plugin",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.y.n.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.y.b.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -5502,7 +5506,7 @@
 			baseConfigurationReference = 27644A9DAE0E6773A789C658 /* Pods-Zhima.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2RMQU53STV;
+				DEVELOPMENT_TEAM = TBFF9Q8DV8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5528,7 +5532,7 @@
 					"$(PROJECT_DIR)/ChatUI/Class/Call/plugin",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.y.n.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.y.b.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
