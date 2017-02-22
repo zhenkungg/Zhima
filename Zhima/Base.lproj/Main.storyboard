@@ -111,14 +111,14 @@
                     <view key="view" contentMode="scaleToFill" id="AT9-s3-8uh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.7939603797" green="1" blue="0.63957022460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="课程" image="doc" id="pob-pk-CNs"/>
                     <navigationItem key="navigationItem" id="1w1-45-7Nl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3M-Uf-pn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1260" y="-1252"/>
+            <point key="canvasLocation" x="-1338" y="-1308"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4P7-k5-NP1">

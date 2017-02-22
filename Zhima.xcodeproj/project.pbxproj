@@ -81,6 +81,10 @@
 		F54E9AB51E4D8D7900E30E8A /* MyOrderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E9AB41E4D8D7900E30E8A /* MyOrderTableViewController.m */; };
 		F54E9ABC1E4D8E7B00E30E8A /* MyOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E9ABA1E4D8E7B00E30E8A /* MyOrderCell.m */; };
 		F54E9ABD1E4D8E7B00E30E8A /* MyOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54E9ABB1E4D8E7B00E30E8A /* MyOrderCell.xib */; };
+		F558D4E81E5D5DA800B036BA /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F558D4E71E5D5DA800B036BA /* NSDate+Common.m */; };
+		F558D4EC1E5D5DBA00B036BA /* NHCalender.m in Sources */ = {isa = PBXBuildFile; fileRef = F558D4EB1E5D5DBA00B036BA /* NHCalender.m */; };
+		F558D4F01E5D8FCB00B036BA /* WorkCourseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F558D4EE1E5D8FCB00B036BA /* WorkCourseSetViewController.m */; };
+		F558D4F11E5D8FCB00B036BA /* WorkCourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F558D4EF1E5D8FCB00B036BA /* WorkCourseSetViewController.xib */; };
 		F55E36C21E4C1B070004686B /* PersonInformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E36C11E4C1B070004686B /* PersonInformationTableViewController.m */; };
 		F55E36C61E4C47830004686B /* CourseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E36C41E4C47830004686B /* CourseSetViewController.m */; };
 		F55E36C71E4C47830004686B /* CourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55E36C51E4C47830004686B /* CourseSetViewController.xib */; };
@@ -826,6 +830,14 @@
 		F54E9AB91E4D8E7B00E30E8A /* MyOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderCell.h; sourceTree = "<group>"; };
 		F54E9ABA1E4D8E7B00E30E8A /* MyOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderCell.m; sourceTree = "<group>"; };
 		F54E9ABB1E4D8E7B00E30E8A /* MyOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderCell.xib; sourceTree = "<group>"; };
+		F558D4E61E5D5DA800B036BA /* NSDate+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Common.h"; sourceTree = "<group>"; };
+		F558D4E71E5D5DA800B036BA /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
+		F558D4E91E5D5DBA00B036BA /* NHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHConstants.h; sourceTree = "<group>"; };
+		F558D4EA1E5D5DBA00B036BA /* NHCalender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCalender.h; sourceTree = "<group>"; };
+		F558D4EB1E5D5DBA00B036BA /* NHCalender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCalender.m; sourceTree = "<group>"; };
+		F558D4ED1E5D8FCB00B036BA /* WorkCourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCourseSetViewController.h; sourceTree = "<group>"; };
+		F558D4EE1E5D8FCB00B036BA /* WorkCourseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCourseSetViewController.m; sourceTree = "<group>"; };
+		F558D4EF1E5D8FCB00B036BA /* WorkCourseSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCourseSetViewController.xib; sourceTree = "<group>"; };
 		F55E36C01E4C1B070004686B /* PersonInformationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInformationTableViewController.h; sourceTree = "<group>"; };
 		F55E36C11E4C1B070004686B /* PersonInformationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInformationTableViewController.m; sourceTree = "<group>"; };
 		F55E36C31E4C47830004686B /* CourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseSetViewController.h; sourceTree = "<group>"; };
@@ -2269,6 +2281,7 @@
 		166CBB091E26298700E12865 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F558D4E51E5D5D7300B036BA /* Calender */,
 				168555C21E5695EF004D1918 /* JsonKit */,
 				F54E9AA51E4D688A00E30E8A /* XHDatePicker */,
 				164462CA1E4AB0F800C76031 /* Certification */,
@@ -2332,6 +2345,9 @@
 				16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */,
 				16DE461D1E27775D00CBA8A1 /* CourseViewController.h */,
 				16DE461E1E27775D00CBA8A1 /* CourseViewController.m */,
+				F558D4ED1E5D8FCB00B036BA /* WorkCourseSetViewController.h */,
+				F558D4EE1E5D8FCB00B036BA /* WorkCourseSetViewController.m */,
+				F558D4EF1E5D8FCB00B036BA /* WorkCourseSetViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -2408,6 +2424,18 @@
 				F54E9AAE1E4D688B00E30E8A /* XHDatePickerView.xib */,
 			);
 			path = XHDatePicker;
+			sourceTree = "<group>";
+		};
+		F558D4E51E5D5D7300B036BA /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				F558D4E61E5D5DA800B036BA /* NSDate+Common.h */,
+				F558D4E71E5D5DA800B036BA /* NSDate+Common.m */,
+				F558D4E91E5D5DBA00B036BA /* NHConstants.h */,
+				F558D4EA1E5D5DBA00B036BA /* NHCalender.h */,
+				F558D4EB1E5D5DBA00B036BA /* NHCalender.m */,
+			);
+			name = Calender;
 			sourceTree = "<group>";
 		};
 		F56894251E2C977D0042B4D9 /* HuanXin */ = {
@@ -4582,6 +4610,7 @@
 				F58F5DEB1E5A99370004AAF7 /* Button_Mute active@3x.png in Resources */,
 				F58F5DEA1E5A99370004AAF7 /* Button_Mute active@2x.png in Resources */,
 				F58F5E711E5A99380004AAF7 /* icon_024_cover.png in Resources */,
+				F558D4F11E5D8FCB00B036BA /* WorkCourseSetViewController.xib in Resources */,
 				F58F5DD91E5A99370004AAF7 /* Button_Camera switch disabled@3x.png in Resources */,
 				F58F5E851E5A99380004AAF7 /* newFriends@2x.png in Resources */,
 				F56D330C1E2A134200239DF6 /* LICENSE in Resources */,
@@ -4917,6 +4946,7 @@
 				F58F5D871E5A99370004AAF7 /* EaseMessageReadManager.m in Sources */,
 				F56D324C1E2A04B600239DF6 /* GPUImageLevelsFilter.m in Sources */,
 				F58F5DC51E5A99370004AAF7 /* UIImageView+HeadImage.m in Sources */,
+				F558D4E81E5D5DA800B036BA /* NSDate+Common.m in Sources */,
 				1644638A1E4B0E9600C76031 /* AgreementViewController.m in Sources */,
 				164463871E4B0A0800C76031 /* RegisrViewController.m in Sources */,
 				1644631A1E4ACC5C00C76031 /* LMLReportHeadView.m in Sources */,
@@ -4956,6 +4986,7 @@
 				F58F5D521E5A99370004AAF7 /* UIScrollView+MJExtension.m in Sources */,
 				F58F5DBA1E5A99370004AAF7 /* FMDatabase.m in Sources */,
 				F58F5E041E5A99370004AAF7 /* ConversationListController.m in Sources */,
+				F558D4F01E5D8FCB00B036BA /* WorkCourseSetViewController.m in Sources */,
 				F56D31FD1E2A04B600239DF6 /* NSMutableArray+LFAdd.m in Sources */,
 				F56D33111E2A134200239DF6 /* MASViewAttribute.m in Sources */,
 				F58F5D6F1E5A99370004AAF7 /* PSTCollectionView.m in Sources */,
@@ -5292,6 +5323,7 @@
 				F58F5E0E1E5A99370004AAF7 /* PublicGroupDetailViewController.m in Sources */,
 				164462D51E4AB6D300C76031 /* UIViewController+DismissKeyboard.m in Sources */,
 				F58F5E2D1E5A99380004AAF7 /* EMTextView.m in Sources */,
+				F558D4EC1E5D5DBA00B036BA /* NHCalender.m in Sources */,
 				F58F5D9C1E5A99370004AAF7 /* EaseBubbleView+Text.m in Sources */,
 				F56D32001E2A04B600239DF6 /* GPUImage3x3TextureSamplingFilter.m in Sources */,
 				F522E5C21E31D88F00B34B46 /* MyInformationCell.m in Sources */,
@@ -5496,7 +5528,7 @@
 					"$(PROJECT_DIR)/ChatUI/Class/Call/plugin",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.y.b.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.y.ba.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -5532,7 +5564,7 @@
 					"$(PROJECT_DIR)/ChatUI/Class/Call/plugin",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.y.b.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.y.ba.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
