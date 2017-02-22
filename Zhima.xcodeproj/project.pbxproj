@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16217B901E5D8C670072877E /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16217B8F1E5D8C670072877E /* LoginController.m */; };
 		164462CD1E4AB22900C76031 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 164462CC1E4AB22900C76031 /* UIViewExt.m */; };
 		164462CF1E4AB28600C76031 /* Address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 164462CE1E4AB28600C76031 /* Address.plist */; };
 		164462D21E4AB43C00C76031 /* AddressPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 164462D11E4AB43C00C76031 /* AddressPickView.m */; };
@@ -691,6 +692,8 @@
 
 /* Begin PBXFileReference section */
 		00B7A6907AEA6F585935F3F0 /* Pods-ZhimaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhimaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhimaUITests/Pods-ZhimaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		16217B8E1E5D8C670072877E /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		16217B8F1E5D8C670072877E /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		164462CB1E4AB22900C76031 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		164462CC1E4AB22900C76031 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		164462CE1E4AB28600C76031 /* Address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Address.plist; sourceTree = "<group>"; };
@@ -1992,6 +1995,8 @@
 			children = (
 				164463881E4B0E9600C76031 /* AgreementViewController.h */,
 				164463891E4B0E9600C76031 /* AgreementViewController.m */,
+				16217B8E1E5D8C670072877E /* LoginController.h */,
+				16217B8F1E5D8C670072877E /* LoginController.m */,
 				164463851E4B0A0800C76031 /* RegisrViewController.h */,
 				164463861E4B0A0800C76031 /* RegisrViewController.m */,
 				164462DA1E4AB78900C76031 /* Personal */,
@@ -5345,6 +5350,7 @@
 				F58F5DA21E5A99370004AAF7 /* EaseImageView.m in Sources */,
 				164463831E4AF92E00C76031 /* PerTableViewCell.m in Sources */,
 				F58F5E281E5A99380004AAF7 /* PushNotificationViewController.m in Sources */,
+				16217B901E5D8C670072877E /* LoginController.m in Sources */,
 				F58F5D511E5A99370004AAF7 /* MJRefreshConst.m in Sources */,
 				F58F5E311E5A99380004AAF7 /* EMChooseViewController.m in Sources */,
 				F58F5D9F1E5A99370004AAF7 /* EaseBubbleView.m in Sources */,

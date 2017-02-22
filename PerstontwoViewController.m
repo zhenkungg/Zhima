@@ -13,12 +13,11 @@
 #import "PhaseViewController.h"
 #import "SubjectsViewController.h"
 #import "ClasssViewController.h"
+#import <AFNetworking.h>
 #define Screen_Width [UIScreen mainScreen].bounds.size.width
 #define Screen_Height [UIScreen mainScreen].bounds.size.height
 @interface PerstontwoViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)PhaseViewController *PHBlock;
-
-
 @property(nonatomic,strong)SubjectsViewController *SUbBlock;
 @property(nonatomic,strong)UITableView *Per1tableview;
 @property(nonatomic,strong)NSArray *Perarr;
@@ -81,10 +80,13 @@
     
 }
 -(void)searCh1 {
+    [self.Per1tableview reloadData];
+    [self Updata];
     PerThreeViewController *pertwoVC= [[PerThreeViewController alloc]init];
     [self.navigationController pushViewController:pertwoVC animated:YES];
     
 }
+
 -(void) searCh {
     
     [self.navigationController  popViewControllerAnimated:YES];
@@ -160,5 +162,34 @@
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     return @"请填写教学资料";
+}
+-(void)Updata{
+    NSString *url = @"http://118.89.45.205/users/updateTeacherSub";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [manager.requestSerializer setValue:@"ios" forHTTPHeaderField:@"User-Agent"];
+    NSDictionary *parameters = @{@"username":@"2",
+                                 @"token":@"ea2ded9df2a5b28e97b8ccc5bbe09c1b",
+                                 @"grade":@"一年级",
+                                 @"subject":@"数学"
+                                };
+    [manager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    
+        
+        
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        //打印下上传进度
+        NSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"请求成功：%@",responseObject);
+        NSString *str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+        //获取路径
+        NSLog(@"1111111%@",str);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败:%@",error);
+    }];
 }
 @end

@@ -9,6 +9,7 @@
 #import "PerFiveViewController.h"
 #import "PlaceholderTextView.h"
 #import "PhotofiveCollectionViewCell.h"
+#import <AFNetworking.h>
 #define kTextBorderColor RGBCOLOR(227,244,216)
 
 #undef  RGBCOLOR
@@ -31,7 +32,7 @@
 @property (nonatomic, strong)UILabel *wordCountLabel;
 
 @property(nonatomic,strong)UITextView *HonorTF;
-@property(nonatomic,strong)NSString *HonorIcon;
+
 
 @end
 
@@ -321,6 +322,40 @@
     [self.navigationController  popViewControllerAnimated:YES];
     
 }
+-(void)Updata{
+    NSString *url = @"http://118.89.45.205/users/updateTeacerAward";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    
+    //    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
+    [manager.requestSerializer setValue:@"ios" forHTTPHeaderField:@"User-Agent"];
+    NSDictionary *parameters = @{@"award":@"2",
+                                 
+                                 };
+    [manager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        for (int i = 0; i < self.photoArrayM.count;  i++) {
+            UIImage *image = self.photoArrayM[i];
+            NSData *data = UIImagePNGRepresentation(image);
+            
+            [formData appendPartWithFileData:data name:[NSString stringWithFormat:@"awardimg"] fileName:[NSString stringWithFormat:@"image%d.png",i] mimeType:@"image/png"];
+        }
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        //打印下上传进度
+        NSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"请求成功：%@",responseObject);
+        NSString *str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+        //获取路径
+        NSLog(@"1111111%@",str);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败:%@",error);
+    }];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

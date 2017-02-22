@@ -439,7 +439,15 @@
     //                                 @"resume":@"ddd"};
     [manager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
 //        [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"/Users/guzhenkun/Desktop/image/mazoo-logo.png"] name:@"avatar" fileName:@"2.png" mimeType:@"image/png" error:nil];
-        [formData appendPartWithFileData:self.data name:@"avatar" fileName:@"2.png" mimeType:@"image/png"];
+        // 可以在上传时使用当前的系统事件作为文件名
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+              // 设置时间格式
+    formatter.dateFormat = @"yyyyMMddHHmmss";
+    NSString *str = [formatter stringFromDate:[NSDate date]];
+    NSString *fileName = [NSString stringWithFormat:@"%@.png", str];
+        
+        
+        [formData appendPartWithFileData:self.data name:@"avatar" fileName:fileName mimeType:@"image/png"];
         
         
     } progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -447,9 +455,7 @@
         NSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"请求成功：%@",responseObject);
-        NSString *str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
-        //获取路径
-        NSLog(@"1111111%@",str);
+
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"请求失败:%@",error);
     }];

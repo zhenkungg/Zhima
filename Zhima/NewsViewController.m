@@ -114,7 +114,7 @@
         NSString *str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSLog(@"%@",str);
         
-        if(self.accountTF.text && self.accountTF.text){
+        if(self.accountTF.text && self.passwordTF.text){
             EMError *error = [[EMClient sharedClient] loginWithUsername:self.accountTF.text password:self.passwordTF.text];
             
             if (error==nil) {

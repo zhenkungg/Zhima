@@ -13,6 +13,7 @@
 #import "UserInfo.h"
 #import "IDcardViewController.h"
 #import "TNameViewController.h"
+#import <AFNetworking.h>
 #define Screen_Width [UIScreen mainScreen].bounds.size.width
 #define Screen_Height [UIScreen mainScreen].bounds.size.height
 @interface PerThreeViewController ()<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIActionSheetDelegate>
@@ -25,7 +26,8 @@
 @property(nonatomic,strong)NSString *UserName;
 @property(nonatomic,strong)NSString *UserId;
 @property(nonatomic,strong)NSString *UserIcon;
-
+@property(nonatomic,strong)NSFileManager *fileManager;
+@property(nonatomic,strong)NSData *data;
 @end
 
 @implementation PerThreeViewController
@@ -83,6 +85,9 @@
 }
 
 -(void)searCh1 {
+    [self.Per3tableview reloadData];
+    [self Updata];
+    
     PerfourViewController *pertwoVC= [[PerfourViewController alloc]init];
     [self.navigationController pushViewController:pertwoVC animated:YES];
     
@@ -132,7 +137,7 @@
     }else{
     Per3TableViewCell *Pcell = [tableView dequeueReusableCellWithIdentifier:strId];
     Pcell =[[[NSBundle mainBundle]loadNibNamed:@"Per3TableViewCell" owner:nil options:nil]lastObject];
-        Pcell.imageView.image= self.pere3Image.image;
+        Pcell.per3Imag.image= self.pere3Image.image;
     return Pcell;
     }
 }
@@ -285,9 +290,32 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
     
-    UIImage *infoImage = info[UIImagePickerControllerEditedImage];
-    self.pere3Image.image = infoImage;
-   [self saveChangeData];
+    self.fileManager = [NSFileManager defaultManager];
+    NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
+    UIImage *image = [[UIImage alloc] init];
+    if ([mediaType isEqualToString:@"public.image"]){
+        image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+        [_pere3Image setImage:image];
+        //        [_changeBtn setImage:image forState:UIControlStateNormal];
+        _data;
+        
+        if (UIImagePNGRepresentation(image) == nil) {
+            
+            _data = UIImageJPEGRepresentation(image, 1);
+            
+        } else {
+            
+            _data = UIImageJPEGRepresentation(image, 0.001); //压缩图片，方便上传
+        }
+        
+        //       //获取文件路径
+        
+        NSString *imageString = [_data base64EncodedStringWithOptions:0];
+        //        转成base64字符串imageString，再传给给后台，在传参中需要添加图片的类型（@“png”或@“jpg”等）
+        [self.fileManager createFileAtPath:[imageString stringByAppendingString:@"/image.png"] contents:_data attributes:nil];  //将图片保存为PNG格式
+        
+    }
+
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)saveChangeData {
@@ -300,6 +328,48 @@
     NSLog(@"保存");
     
 }
+-(void)Updata{
+    NSString *url = @"http://118.89.45.205/users/updateTeacherIdent";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    
+    //    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
+    [manager.requestSerializer setValue:@"ios" forHTTPHeaderField:@"User-Agent"];
+    NSDictionary *parameters = @{@"username":@"2",
+                                 @"token":@"ea2ded9df2a5b28e97b8ccc5bbe09c1b",
+                                 @"identname":@"ff",
+                                 
+                                 @"identnumber":@"441424199503195775"};
+    [manager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        
+        // 可以在上传时使用当前的系统事件作为文件名
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        // 设置时间格式
+        formatter.dateFormat = @"yyyyMMddHHmmss";
+        NSString *str = [formatter stringFromDate:[NSDate date]];
+        NSString *fileName = [NSString stringWithFormat:@"%@.png", str];
+        
+
+        [formData appendPartWithFileData:self.data name:@"identimg" fileName:fileName mimeType:@"image/png"];
+        
+        
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        //打印下上传进度
+        NSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"请求成功：%@",responseObject);
+        NSString *str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+        //获取路径
+        NSLog(@"1111111%@",str);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败:%@",error);
+    }];
+}
+
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
