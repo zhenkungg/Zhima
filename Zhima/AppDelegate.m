@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "NewsViewController.h"
+#import "PersonViewController.h"
+#import "PushStremViewController.h"
 
 @interface AppDelegate ()<EMCallManagerDelegate>
 
@@ -19,8 +22,45 @@
     return (AppDelegate *)[UIApplication sharedApplication].delegate;
 }
 
+- (UIViewController *)createVCwithClass:(Class )class
+                                  title:(NSString *)title
+                                 normal:(NSString *)normal
+                                 select:(NSString *)select
+{
+    UIViewController *vc = [[class alloc]init];
+    UIImage *normalImage = [UIImage imageNamed:normal];
+    normalImage = [normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UIImage *selectImage = [UIImage imageNamed:select];
+    selectImage = [selectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    vc.tabBarItem = [[UITabBarItem alloc]initWithTitle:title image:normalImage selectedImage:selectImage];
+    
+    return vc;
+}
+
+- (UITabBarController *)createTabbarController
+{
+    NewsViewController *VC = (NewsViewController *)[self createVCwithClass:[NewsViewController class] title:@"学习报告" normal:@"tab_message_normal.png" select:@"tab_message_selected.png"];
+    UINavigationController *NC = [[UINavigationController alloc]initWithRootViewController:VC];
+    
+    PersonViewController *OVC = (PersonViewController *)[self createVCwithClass:[PersonViewController class] title:@"我的" normal:@"tab_content_normal.png" select:@"tab_content_selected.png"];
+    UINavigationController *ONC = [[UINavigationController alloc]initWithRootViewController:OVC];
+    
+    PushStremViewController *TVC = (PushStremViewController *)[self createVCwithClass:[PushStremViewController class] title:@"课程表" normal:@"tab_Action_normal.png" select:@"tab_Action_selected.png"];
+    UINavigationController *TNC = [[UINavigationController alloc]initWithRootViewController:TVC];
+    
+    UITabBarController *tabbarVC = [[UITabBarController alloc]init];
+    tabbarVC.viewControllers = @[NC,ONC,TNC];
+    return tabbarVC;
+    
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  
+//    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+//    self.mainNavigationController = [self createTabbarController];
+    
     NSString *appKey = @"1129170203178077#zhima";
     
     [[EaseSDKHelper shareHelper] hyphenateApplication:application didFinishLaunchingWithOptions:launchOptions appkey:appKey apnsCertName:nil otherConfig:@{kSDKConfigEnableConsoleLogger : [NSNumber numberWithBool:YES]}];
