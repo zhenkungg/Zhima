@@ -43,7 +43,7 @@ typedef void(^doneBlock)(NSDate *,NSDate *);
     NSDate *_endDate;
 }
 @property (weak, nonatomic) IBOutlet UIView *buttomView;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentView;
+//@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentView;
 @property (weak, nonatomic) IBOutlet UILabel *showYearView;
 @property (weak, nonatomic) IBOutlet UIButton *doneBtn;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
@@ -79,8 +79,8 @@ typedef void(^doneBlock)(NSDate *,NSDate *);
 }
 
 -(void)setupUI {
-    self.segmentView.selectedSegmentIndex = 0;
-    [self.segmentView addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
+    self.dateType = 0;
+    //[self.segmentView addTarget:self action:@selector(segmentAction:) forControlEvents:UIControlEventValueChanged];
     
     self.buttomView.layer.cornerRadius = 10;
     self.buttomView.layer.masksToBounds = YES;
@@ -513,9 +513,9 @@ typedef void(^doneBlock)(NSDate *,NSDate *);
 
 
 
--(void)segmentAction:(UISegmentedControl *)segment {
-    self.dateType = (int)segment.selectedSegmentIndex;
-}
+//-(void)segmentAction:(UISegmentedControl *)segment {
+//    self.dateType = (int)segment.selectedSegmentIndex;
+//}
 
 - (IBAction)doneAction:(UIButton *)btn {
     
@@ -643,7 +643,7 @@ typedef void(^doneBlock)(NSDate *,NSDate *);
 
 -(void)setThemeColor:(UIColor *)themeColor {
     _themeColor = themeColor;
-    self.segmentView.tintColor = themeColor;
+    //self.segmentView.tintColor = themeColor;
     self.doneBtn.backgroundColor = themeColor;
 }
 
@@ -651,11 +651,11 @@ typedef void(^doneBlock)(NSDate *,NSDate *);
     _dateType = dateType;
     switch (dateType) {
         case DateTypeStartDate:
-            self.segmentView.selectedSegmentIndex = 0;
+            //self.segmentView.selectedSegmentIndex = 0;
             break;
             
         default:
-            self.segmentView.selectedSegmentIndex = 1;
+            //self.segmentView.selectedSegmentIndex = 1;
             break;
     }
 }

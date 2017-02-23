@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16217B901E5D8C670072877E /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16217B8F1E5D8C670072877E /* LoginController.m */; };
-		16217B931E5DA7B30072877E /* NHCalender.m in Sources */ = {isa = PBXBuildFile; fileRef = 16217B911E5DA7B30072877E /* NHCalender.m */; };
-		16217B941E5DA7B30072877E /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 16217B921E5DA7B30072877E /* NSDate+Common.m */; };
 		164462CD1E4AB22900C76031 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 164462CC1E4AB22900C76031 /* UIViewExt.m */; };
 		164462CF1E4AB28600C76031 /* Address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 164462CE1E4AB28600C76031 /* Address.plist */; };
 		164462D21E4AB43C00C76031 /* AddressPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 164462D11E4AB43C00C76031 /* AddressPickView.m */; };
@@ -84,6 +81,7 @@
 		F54E9AB51E4D8D7900E30E8A /* MyOrderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E9AB41E4D8D7900E30E8A /* MyOrderTableViewController.m */; };
 		F54E9ABC1E4D8E7B00E30E8A /* MyOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E9ABA1E4D8E7B00E30E8A /* MyOrderCell.m */; };
 		F54E9ABD1E4D8E7B00E30E8A /* MyOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54E9ABB1E4D8E7B00E30E8A /* MyOrderCell.xib */; };
+		F558D4F31E5DA4BC00B036BA /* (null) in Sources */ = {isa = PBXBuildFile; };
 		F55E36C21E4C1B070004686B /* PersonInformationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E36C11E4C1B070004686B /* PersonInformationTableViewController.m */; };
 		F55E36C61E4C47830004686B /* CourseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E36C41E4C47830004686B /* CourseSetViewController.m */; };
 		F55E36C71E4C47830004686B /* CourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55E36C51E4C47830004686B /* CourseSetViewController.xib */; };
@@ -666,8 +664,13 @@
 		F58F5E951E5A9C230004AAF7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58F5E941E5A9C230004AAF7 /* CoreTelephony.framework */; };
 		F58F5E971E5A9C2F0004AAF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58F5E961E5A9C2F0004AAF7 /* CoreLocation.framework */; };
 		F58F5E9B1E5AC0CA0004AAF7 /* libHyphenateFullSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F58F5E9A1E5AC0CA0004AAF7 /* libHyphenateFullSDK.a */; };
+		F59CFDD11E5E784200E93B43 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F59CFDD01E5E784200E93B43 /* LoginController.m */; };
+		F59CFDD31E5E785900E93B43 /* NSDate+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F59CFDD21E5E785900E93B43 /* NSDate+Common.m */; };
+		F59CFDD51E5E786500E93B43 /* NHCalender.m in Sources */ = {isa = PBXBuildFile; fileRef = F59CFDD41E5E786500E93B43 /* NHCalender.m */; };
 		F5B169831E2788480068BE12 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B169811E2788480068BE12 /* PersonViewController.m */; };
 		F5B169841E2788480068BE12 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B169821E2788480068BE12 /* HeaderView.xib */; };
+		F5C99EF61E5E7D8D000FD100 /* WorkCourseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C99EF41E5E7D8D000FD100 /* WorkCourseSetViewController.m */; };
+		F5C99EF71E5E7D8D000FD100 /* WorkCourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C99EF51E5E7D8D000FD100 /* WorkCourseSetViewController.xib */; };
 		FFB62AA99EEAB0C9FCCB814F /* libPods-ZhimaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 634FA6DBDB020F19607259D9 /* libPods-ZhimaUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -691,9 +694,6 @@
 /* Begin PBXFileReference section */
 		00B7A6907AEA6F585935F3F0 /* Pods-ZhimaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhimaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhimaUITests/Pods-ZhimaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		16217B8E1E5D8C670072877E /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
-		16217B8F1E5D8C670072877E /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
-		16217B911E5DA7B30072877E /* NHCalender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCalender.m; sourceTree = "<group>"; };
-		16217B921E5DA7B30072877E /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
 		164462CB1E4AB22900C76031 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		164462CC1E4AB22900C76031 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		164462CE1E4AB28600C76031 /* Address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Address.plist; sourceTree = "<group>"; };
@@ -1919,10 +1919,16 @@
 		F58F5E941E5A9C230004AAF7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F58F5E961E5A9C2F0004AAF7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F58F5E9A1E5AC0CA0004AAF7 /* libHyphenateFullSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHyphenateFullSDK.a; sourceTree = "<group>"; };
+		F59CFDD01E5E784200E93B43 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		F59CFDD21E5E785900E93B43 /* NSDate+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Common.m"; sourceTree = "<group>"; };
+		F59CFDD41E5E786500E93B43 /* NHCalender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCalender.m; sourceTree = "<group>"; };
 		F5B169801E2788480068BE12 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		F5B169811E2788480068BE12 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		F5B169821E2788480068BE12 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		F5B7FD641E49BB9200917D75 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F5C99EF31E5E7D8D000FD100 /* WorkCourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCourseSetViewController.h; sourceTree = "<group>"; };
+		F5C99EF41E5E7D8D000FD100 /* WorkCourseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCourseSetViewController.m; sourceTree = "<group>"; };
+		F5C99EF51E5E7D8D000FD100 /* WorkCourseSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCourseSetViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1991,7 +1997,7 @@
 				164463881E4B0E9600C76031 /* AgreementViewController.h */,
 				164463891E4B0E9600C76031 /* AgreementViewController.m */,
 				16217B8E1E5D8C670072877E /* LoginController.h */,
-				16217B8F1E5D8C670072877E /* LoginController.m */,
+				F59CFDD01E5E784200E93B43 /* LoginController.m */,
 				164463851E4B0A0800C76031 /* RegisrViewController.h */,
 				164463861E4B0A0800C76031 /* RegisrViewController.m */,
 				164462DA1E4AB78900C76031 /* Personal */,
@@ -2345,6 +2351,9 @@
 				16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */,
 				16DE461D1E27775D00CBA8A1 /* CourseViewController.h */,
 				16DE461E1E27775D00CBA8A1 /* CourseViewController.m */,
+				F5C99EF31E5E7D8D000FD100 /* WorkCourseSetViewController.h */,
+				F5C99EF41E5E7D8D000FD100 /* WorkCourseSetViewController.m */,
+				F5C99EF51E5E7D8D000FD100 /* WorkCourseSetViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -2426,11 +2435,11 @@
 		F558D4E51E5D5D7300B036BA /* Calender */ = {
 			isa = PBXGroup;
 			children = (
-				16217B911E5DA7B30072877E /* NHCalender.m */,
-				16217B921E5DA7B30072877E /* NSDate+Common.m */,
 				F558D4E61E5D5DA800B036BA /* NSDate+Common.h */,
+				F59CFDD21E5E785900E93B43 /* NSDate+Common.m */,
 				F558D4E91E5D5DBA00B036BA /* NHConstants.h */,
 				F558D4EA1E5D5DBA00B036BA /* NHCalender.h */,
+				F59CFDD41E5E786500E93B43 /* NHCalender.m */,
 			);
 			name = Calender;
 			sourceTree = "<group>";
@@ -4607,6 +4616,7 @@
 				F58F5DEB1E5A99370004AAF7 /* Button_Mute active@3x.png in Resources */,
 				F58F5DEA1E5A99370004AAF7 /* Button_Mute active@2x.png in Resources */,
 				F58F5E711E5A99380004AAF7 /* icon_024_cover.png in Resources */,
+				F5C99EF71E5E7D8D000FD100 /* WorkCourseSetViewController.xib in Resources */,
 				F58F5DD91E5A99370004AAF7 /* Button_Camera switch disabled@3x.png in Resources */,
 				F58F5E851E5A99380004AAF7 /* newFriends@2x.png in Resources */,
 				F56D330C1E2A134200239DF6 /* LICENSE in Resources */,
@@ -4931,6 +4941,7 @@
 				F56D323B1E2A04B600239DF6 /* GPUImageHazeFilter.m in Sources */,
 				F58F5E2A1E5A99380004AAF7 /* UserProfileEditViewController.m in Sources */,
 				F56D32811E2A04B600239DF6 /* GPUImageSkinToneFilter.m in Sources */,
+				F59CFDD11E5E784200E93B43 /* LoginController.m in Sources */,
 				F56D324B1E2A04B600239DF6 /* GPUImageLaplacianFilter.m in Sources */,
 				F56D32461E2A04B600239DF6 /* GPUImageiOSBlurFilter.m in Sources */,
 				F58F5D901E5A99370004AAF7 /* EaseRefreshTableViewController.m in Sources */,
@@ -5017,6 +5028,7 @@
 				F58F5D791E5A99370004AAF7 /* PSTGridLayoutRow.m in Sources */,
 				F56D32251E2A04B600239DF6 /* GPUImageDivideBlendFilter.m in Sources */,
 				F56D32631E2A04B600239DF6 /* GPUImageNormalBlendFilter.m in Sources */,
+				F558D4F31E5DA4BC00B036BA /* (null) in Sources */,
 				F56D320F1E2A04B600239DF6 /* GPUImageChromaKeyFilter.m in Sources */,
 				F58F5D6A1E5A99370004AAF7 /* UIImage+EMWebP.m in Sources */,
 				F58F5DC31E5A99370004AAF7 /* TTGlobalUICommon.m in Sources */,
@@ -5114,6 +5126,7 @@
 				F56D325E1E2A04B600239DF6 /* GPUImageMovie.m in Sources */,
 				F58F5E1C1E5A99370004AAF7 /* InvitationManager.m in Sources */,
 				F54E9AB11E4D688B00E30E8A /* XHDatePickerView.m in Sources */,
+				F5C99EF61E5E7D8D000FD100 /* WorkCourseSetViewController.m in Sources */,
 				F56D325B1E2A04B600239DF6 /* GPUImageMosaicFilter.m in Sources */,
 				F58F5D5A1E5A99370004AAF7 /* MWTapDetectingImageView.m in Sources */,
 				F58F5D331E5A99360004AAF7 /* EaseUI.m in Sources */,
@@ -5268,9 +5281,9 @@
 				164463501E4AE7AD00C76031 /* PerFiveViewController.m in Sources */,
 				F58F5D751E5A99370004AAF7 /* PSTCollectionViewLayout.m in Sources */,
 				F58F5DBD1E5A99370004AAF7 /* FMDatabaseQueue.m in Sources */,
+				F59CFDD31E5E785900E93B43 /* NSDate+Common.m in Sources */,
 				164463801E4AF92E00C76031 /* PersonalViewController.m in Sources */,
 				F56D327D1E2A04B600239DF6 /* GPUImageSharpenFilter.m in Sources */,
-				16217B941E5DA7B30072877E /* NSDate+Common.m in Sources */,
 				F56D32131E2A04B600239DF6 /* GPUImageColorConversion.m in Sources */,
 				F56D32641E2A04B600239DF6 /* GPUImageOpacityFilter.m in Sources */,
 				F56D32041E2A04B600239DF6 /* GPUImageAmatorkaFilter.m in Sources */,
@@ -5298,6 +5311,7 @@
 				F58F5D681E5A99370004AAF7 /* UIImage+EMGIF.m in Sources */,
 				F56D326E1E2A04B600239DF6 /* GPUImagePolarPixellateFilter.m in Sources */,
 				F56D32351E2A04B600239DF6 /* GPUImageGaussianSelectiveBlurFilter.m in Sources */,
+				F59CFDD51E5E786500E93B43 /* NHCalender.m in Sources */,
 				F56D32281E2A04B600239DF6 /* GPUImageExclusionBlendFilter.m in Sources */,
 				F58F5DA01E5A99370004AAF7 /* EaseChatToolbar.m in Sources */,
 				F56D329B1E2A04B600239DF6 /* GPUImageTwoPassTextureSamplingFilter.m in Sources */,
@@ -5319,7 +5333,6 @@
 				164462D51E4AB6D300C76031 /* UIViewController+DismissKeyboard.m in Sources */,
 				F58F5E2D1E5A99380004AAF7 /* EMTextView.m in Sources */,
 				F58F5D9C1E5A99370004AAF7 /* EaseBubbleView+Text.m in Sources */,
-				16217B931E5DA7B30072877E /* NHCalender.m in Sources */,
 				F56D32001E2A04B600239DF6 /* GPUImage3x3TextureSamplingFilter.m in Sources */,
 				F522E5C21E31D88F00B34B46 /* MyInformationCell.m in Sources */,
 				F56896AB1E2CC1C50042B4D9 /* NewsConversationListViewController.m in Sources */,
@@ -5340,7 +5353,6 @@
 				F58F5DA21E5A99370004AAF7 /* EaseImageView.m in Sources */,
 				164463831E4AF92E00C76031 /* PerTableViewCell.m in Sources */,
 				F58F5E281E5A99380004AAF7 /* PushNotificationViewController.m in Sources */,
-				16217B901E5D8C670072877E /* LoginController.m in Sources */,
 				F58F5D511E5A99370004AAF7 /* MJRefreshConst.m in Sources */,
 				F58F5E311E5A99380004AAF7 /* EMChooseViewController.m in Sources */,
 				F58F5D9F1E5A99370004AAF7 /* EaseBubbleView.m in Sources */,

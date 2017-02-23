@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Zhima/CourseViewController.m"
-            timestampString = "509442300.611905"
+            timestampString = "509513604.521223"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "-calendarChangedMonth"
             landmarkType = "7">
          </BreakpointContent>

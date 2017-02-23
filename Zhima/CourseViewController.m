@@ -13,6 +13,7 @@
 #import "NHConstants.h"
 #import "NSDate+Common.h"
 #import "NHCalender.h"
+#import "WorkCourseSetViewController.h"
 
 #define Screen_Width [UIScreen mainScreen].bounds.size.width
 #define Screen_Height [UIScreen mainScreen].bounds.size.height
@@ -239,7 +240,8 @@
 }
 
 -(void)addCourse{
-    
+    WorkCourseSetViewController *vc = [[WorkCourseSetViewController alloc]initWithNibName:@"WorkCourseSetViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)segmentChangePage :(UISegmentedControl *)sec;
