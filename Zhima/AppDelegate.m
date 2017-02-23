@@ -10,7 +10,8 @@
 #import "NewsViewController.h"
 #import "PersonViewController.h"
 #import "PushStremViewController.h"
-
+#import "LBTabBarController.h"
+#import "ViewController.h"
 @interface AppDelegate ()<EMCallManagerDelegate>
 
 @end
@@ -39,28 +40,48 @@
     return vc;
 }
 
-- (UITabBarController *)createTabbarController
-{
-    NewsViewController *VC = (NewsViewController *)[self createVCwithClass:[NewsViewController class] title:@"学习报告" normal:@"tab_message_normal.png" select:@"tab_message_selected.png"];
-    UINavigationController *NC = [[UINavigationController alloc]initWithRootViewController:VC];
-    
-    PersonViewController *OVC = (PersonViewController *)[self createVCwithClass:[PersonViewController class] title:@"我的" normal:@"tab_content_normal.png" select:@"tab_content_selected.png"];
-    UINavigationController *ONC = [[UINavigationController alloc]initWithRootViewController:OVC];
-    
-    PushStremViewController *TVC = (PushStremViewController *)[self createVCwithClass:[PushStremViewController class] title:@"课程表" normal:@"tab_Action_normal.png" select:@"tab_Action_selected.png"];
-    UINavigationController *TNC = [[UINavigationController alloc]initWithRootViewController:TVC];
-    
-    UITabBarController *tabbarVC = [[UITabBarController alloc]init];
-    tabbarVC.viewControllers = @[NC,ONC,TNC];
-    return tabbarVC;
-    
-}
+//- (UITabBarController *)createTabbarController
+//{
+//    NewsViewController *VC = (NewsViewController *)[self createVCwithClass:[NewsViewController class] title:@"学习报告" normal:@"tab_message_normal.png" select:@"tab_message_selected.png"];
+//    
+//    
+//    PersonViewController *OVC = (PersonViewController *)[self createVCwithClass:[PersonViewController class] title:@"我的" normal:@"tab_content_normal.png" select:@"tab_content_selected.png"];
+//    UINavigationController *ONC = [[UINavigationController alloc]initWithRootViewController:OVC];
+//    
+//    PushStremViewController *TVC = (PushStremViewController *)[self createVCwithClass:[PushStremViewController class] title:@"课程表" normal:@"tab_Action_normal.png" select:@"tab_Action_selected.png"];
+//    UINavigationController *TNC = [[UINavigationController alloc]initWithRootViewController:TVC];
+//    
+//    UITabBarController *tabbarVC = [[UITabBarController alloc]init];
+//    tabbarVC.viewControllers = @[NC,ONC,TNC];
+//    return tabbarVC;
+//    
+//}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];
 //    self.mainNavigationController = [self createTabbarController];
     
+    if (![[NSUserDefaults standardUserDefaults]boolForKey:@"firstLaunch"]) {
+        
+        NSLog(@"first time to launch ");
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"firstLaunch"];
+        [[NSUserDefaults standardUserDefaults]setBool:NO forKey:@"everLaunch"];
+        ViewController * vc = [[ViewController alloc]init];
+        self.window.backgroundColor = [UIColor colorWithRed:252/255.0f green:106/255.0f blue:8/225.0f alpha:1.0];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        self.window.rootViewController = nav;
+        
+    }else {
+        
+        NSLog(@"ever launched ");
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"everLaunch"];
+        LBTabBarController * vc = [[LBTabBarController alloc]init];
+        self.window.backgroundColor = [UIColor colorWithRed:252/255.0f green:106/255.0f blue:8/225.0f alpha:1.0];
+        self.window.rootViewController = vc;
+        
+       
+    }
     NSString *appKey = @"1129170203178077#zhima";
     
     [[EaseSDKHelper shareHelper] hyphenateApplication:application didFinishLaunchingWithOptions:launchOptions appkey:appKey apnsCertName:nil otherConfig:@{kSDKConfigEnableConsoleLogger : [NSNumber numberWithBool:YES]}];
@@ -73,6 +94,9 @@
     [[EMClient sharedClient] addDelegate:self delegateQueue:nil];
     return YES;
 }
+
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

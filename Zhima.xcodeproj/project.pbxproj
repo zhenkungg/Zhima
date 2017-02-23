@@ -49,6 +49,11 @@
 		164463841E4AF92E00C76031 /* PerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1644637B1E4AF92E00C76031 /* PerTableViewCell.xib */; };
 		164463871E4B0A0800C76031 /* RegisrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164463861E4B0A0800C76031 /* RegisrViewController.m */; };
 		1644638A1E4B0E9600C76031 /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164463891E4B0E9600C76031 /* AgreementViewController.m */; };
+		16613DD41E5EC49600B50D4F /* LBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DCB1E5EC49600B50D4F /* LBNavigationController.m */; };
+		16613DD51E5EC49600B50D4F /* LBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DCD1E5EC49600B50D4F /* LBTabBar.m */; };
+		16613DD61E5EC49600B50D4F /* LBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DCF1E5EC49600B50D4F /* LBTabBarController.m */; };
+		16613DD71E5EC49600B50D4F /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DD11E5EC49600B50D4F /* UIImage+Image.m */; };
+		16613DD81E5EC49600B50D4F /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DD31E5EC49600B50D4F /* UIView+LBExtension.m */; };
 		166CBAD41E26209300E12865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD31E26209300E12865 /* main.m */; };
 		166CBAD71E26209300E12865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD61E26209300E12865 /* AppDelegate.m */; };
 		166CBADA1E26209300E12865 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD91E26209300E12865 /* ViewController.m */; };
@@ -771,6 +776,16 @@
 		164463861E4B0A0800C76031 /* RegisrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisrViewController.m; sourceTree = "<group>"; };
 		164463881E4B0E9600C76031 /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
 		164463891E4B0E9600C76031 /* AgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgreementViewController.m; sourceTree = "<group>"; };
+		16613DCA1E5EC49600B50D4F /* LBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNavigationController.h; sourceTree = "<group>"; };
+		16613DCB1E5EC49600B50D4F /* LBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNavigationController.m; sourceTree = "<group>"; };
+		16613DCC1E5EC49600B50D4F /* LBTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTabBar.h; sourceTree = "<group>"; };
+		16613DCD1E5EC49600B50D4F /* LBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTabBar.m; sourceTree = "<group>"; };
+		16613DCE1E5EC49600B50D4F /* LBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTabBarController.h; sourceTree = "<group>"; };
+		16613DCF1E5EC49600B50D4F /* LBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTabBarController.m; sourceTree = "<group>"; };
+		16613DD01E5EC49600B50D4F /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		16613DD11E5EC49600B50D4F /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		16613DD21E5EC49600B50D4F /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
+		16613DD31E5EC49600B50D4F /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
 		166CBACF1E26209300E12865 /* Zhima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zhima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		166CBAD31E26209300E12865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		166CBAD51E26209300E12865 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -2174,6 +2189,23 @@
 			name = Entry;
 			sourceTree = "<group>";
 		};
+		16613DC91E5EC36100B50D4F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				16613DCA1E5EC49600B50D4F /* LBNavigationController.h */,
+				16613DCB1E5EC49600B50D4F /* LBNavigationController.m */,
+				16613DCC1E5EC49600B50D4F /* LBTabBar.h */,
+				16613DCD1E5EC49600B50D4F /* LBTabBar.m */,
+				16613DCE1E5EC49600B50D4F /* LBTabBarController.h */,
+				16613DCF1E5EC49600B50D4F /* LBTabBarController.m */,
+				16613DD01E5EC49600B50D4F /* UIImage+Image.h */,
+				16613DD11E5EC49600B50D4F /* UIImage+Image.m */,
+				16613DD21E5EC49600B50D4F /* UIView+LBExtension.h */,
+				16613DD31E5EC49600B50D4F /* UIView+LBExtension.m */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
 		166CBAC61E26209200E12865 = {
 			isa = PBXGroup;
 			children = (
@@ -2202,6 +2234,7 @@
 		166CBAD11E26209300E12865 /* Zhima */ = {
 			isa = PBXGroup;
 			children = (
+				16613DC91E5EC36100B50D4F /* TabBar */,
 				166CBAD51E26209300E12865 /* AppDelegate.h */,
 				166CBAD61E26209300E12865 /* AppDelegate.m */,
 				166CBAD81E26209300E12865 /* ViewController.h */,
@@ -4948,6 +4981,7 @@
 				F56D32521E2A04B600239DF6 /* GPUImageLowPassFilter.m in Sources */,
 				F58F5D641E5A99370004AAF7 /* EMSDWebImagePrefetcher.m in Sources */,
 				F58F5E051E5A99370004AAF7 /* ChatViewController.m in Sources */,
+				16613DD41E5EC49600B50D4F /* LBNavigationController.m in Sources */,
 				F58F5D821E5A99370004AAF7 /* NSString+Valid.m in Sources */,
 				F58F5D601E5A99370004AAF7 /* EMSDWebImageDecoder.m in Sources */,
 				F58F5D871E5A99370004AAF7 /* EaseMessageReadManager.m in Sources */,
@@ -4962,6 +4996,7 @@
 				F58F5E161E5A99370004AAF7 /* ContactListViewController.m in Sources */,
 				F58F5E201E5A99370004AAF7 /* EMRobotChatTextBubbleView.m in Sources */,
 				F56D327E1E2A04B600239DF6 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */,
+				16613DD71E5EC49600B50D4F /* UIImage+Image.m in Sources */,
 				F56D328D1E2A04B600239DF6 /* GPUImageSwirlFilter.m in Sources */,
 				F58F5DC81E5A99370004AAF7 /* EMCallViewController.m in Sources */,
 				F58F5E2C1E5A99380004AAF7 /* EMSearchBar.m in Sources */,
@@ -4982,6 +5017,7 @@
 				F58F5E0D1E5A99370004AAF7 /* GroupSubjectChangingViewController.m in Sources */,
 				F58F5E151E5A99370004AAF7 /* ContactListSelectViewController.m in Sources */,
 				F58F5E261E5A99370004AAF7 /* DebugViewController.m in Sources */,
+				16613DD51E5EC49600B50D4F /* LBTabBar.m in Sources */,
 				F58F5D6E1E5A99370004AAF7 /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
 				F58F5D3D1E5A99360004AAF7 /* EMVoiceConverter.mm in Sources */,
 				F54E9ABC1E4D8E7B00E30E8A /* MyOrderCell.m in Sources */,
@@ -5024,6 +5060,7 @@
 				F58F5DB21E5A99370004AAF7 /* TransferCell.m in Sources */,
 				F58F5D971E5A99370004AAF7 /* EaseMessageTimeCell.m in Sources */,
 				F56D31EF1E2A04B600239DF6 /* LFHardwareAudioEncoder.m in Sources */,
+				16613DD61E5EC49600B50D4F /* LBTabBarController.m in Sources */,
 				F56D326C1E2A04B600239DF6 /* GPUImagePixellatePositionFilter.m in Sources */,
 				F58F5D791E5A99370004AAF7 /* PSTGridLayoutRow.m in Sources */,
 				F56D32251E2A04B600239DF6 /* GPUImageDivideBlendFilter.m in Sources */,
@@ -5205,6 +5242,7 @@
 				F58F5E1A1E5A99370004AAF7 /* ApplyViewController.m in Sources */,
 				F58F5E291E5A99380004AAF7 /* SettingsViewController.m in Sources */,
 				F58F5D411E5A99370004AAF7 /* MBProgressHUD.m in Sources */,
+				16613DD81E5EC49600B50D4F /* UIView+LBExtension.m in Sources */,
 				164463401E4AE74B00C76031 /* EducViewController.m in Sources */,
 				F58F5E301E5A99380004AAF7 /* BaseViewController.m in Sources */,
 				F54E9AB01E4D688B00E30E8A /* UIView+Extension.m in Sources */,

@@ -29,6 +29,7 @@
 }
 
 -(void)redeview{
+  
     //
     self.restbutt = [[UIButton alloc]initWithFrame:CGRectMake(LR_Width/4, LR_Height/2-40, LR_Width/2, 35)];
     [self.restbutt setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
@@ -49,7 +50,7 @@
     //
     self.footLab = [[UILabel alloc]initWithFrame:CGRectMake(LR_Width/2, LR_Height-60, 100, 35)];
     self.footLab.text = @"芝麻学堂";
-    
+   
     [self.view addSubview:self.footLab];
     [self.view addSubview:self.footImage];
     [self.view addSubview:self.headImage];
