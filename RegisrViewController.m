@@ -9,7 +9,7 @@
 #import "RegisrViewController.h"
 #import "PersonalViewController.h"
 #import "AgreementViewController.h"
-
+#import <AFNetworking.h>
 #define  LR_Width  [UIScreen mainScreen].bounds.size.width
 #define  LR_Height [UIScreen mainScreen].bounds.size.height
 @interface RegisrViewController ()<UITextFieldDelegate>
@@ -43,7 +43,7 @@
     self.pwdtF = [[UITextField alloc]initWithFrame:CGRectMake(LR_Width/5, 180, LR_Width/4*3, 35)];
     self.pwdtF.backgroundColor = [UIColor whiteColor];
     self.pwdtF.borderStyle = UITextBorderStyleRoundedRect;
-    self.pwdtF.placeholder = @"请输入密码";
+    self.pwdtF.placeholder = @"请输入密码(不能少于六位)";
     self.pwdtF.secureTextEntry = YES;
     
     self.accBG = [[UIImageView alloc]initWithFrame:CGRectMake(LR_Width/5-35, 115, 30, 30)];
@@ -70,9 +70,7 @@
     [self.TextBut setTitle:@"《芝麻学堂协议》" forState:UIControlStateNormal];
     [self.TextBut setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.TextBut addTarget:self action:@selector(attribut) forControlEvents:UIControlEventTouchUpInside];
-    //设置通知
-    //    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(change:) name:UITextFieldTextDidChangeNotification object:_acctF ];
-    //    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(change:) name:UITextFieldTextDidChangeNotification object:_pwdtF ];
+    
     
     
     [self.view addSubview:self.TextBut];
@@ -86,16 +84,53 @@
     
 }
 -(void)perBut {
+    [self updata];
     PersonalViewController *pervc= [[PersonalViewController alloc]init];
     [self.navigationController pushViewController:pervc animated:YES];
+}
+-(void)updata{
+    NSString *url = @"http://118.89.45.205/users/reg";
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    [manager.requestSerializer setValue:@"ios" forHTTPHeaderField:@"User-Agent"];
+    NSDictionary *parameters = @{
+                                 @"username":self.acctF.text,
+                                 @"password":self.pwdtF.text,
+                                 @"usertype":@"1"
+                                 };
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:parameters options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc ]initWithData:jsonData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",jsonString);
+    
+    
+    [manager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        
+        NSLog(@"%@",formData);
+        
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        //打印下上传进度
+        NSLog(@"%lf",1.0 *uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"请求成功：%@",responseObject);
+        NSString *str = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+        NSLog(@"1111111%@",str);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"请求失败:%@",error);
+    }];
+    
+
 }
 -(void)attribut {
     AgreementViewController *agrVC = [[AgreementViewController alloc]init];
     [self.navigationController pushViewController:agrVC animated:YES];
 }
 -(void)chaad{
-    [self valiMobile:self.acctF.text];
-    
+//    [self valiMobile:self.acctF.text];
+//    [self vluePw:self.pwdtF.text];
     
     NSUInteger tag = !_yesBut.selected;
     if (tag) {
@@ -115,21 +150,27 @@
     
     
 }
--(void)change:(NSNotification *)notificantion{
-    
-    if (_acctF.text.length > 0 && _pwdtF.text.length > 0 ) {
+-(NSString *)vluePw:(NSString *)pwTF
+{
+    if (pwTF.length < 6) {
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"密码不能少于六位" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         
-    }else{
-        self.nextBut.userInteractionEnabled = NO;
-        self.nextBut.alpha = 0.5;
         
+        _yesBut.selected = !_yesBut.selected;
+        
+        [alert show];
     }
+    return nil;
 }
+
 
 -(NSString *)valiMobile:(NSString *)mobile{
     if (mobile.length != 11)
     {
         UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"手机号长度只能是11位" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        
+        _yesBut.selected = !_yesBut.selected;
         
         [alert show];
         
@@ -158,6 +199,8 @@
             return nil;
         }else{
             UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请输入正确的电话号码" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            
+            _yesBut.selected = !_yesBut.selected;
             
             [alert show];
             

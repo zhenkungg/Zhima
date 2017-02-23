@@ -16,11 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"芝麻学堂协议";
     // Do any additional setup after loading the view.
 }
-- (IBAction)Agreem:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

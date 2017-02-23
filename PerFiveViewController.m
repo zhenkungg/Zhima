@@ -9,6 +9,7 @@
 #import "PerFiveViewController.h"
 #import "PlaceholderTextView.h"
 #import "PhotofiveCollectionViewCell.h"
+#import "LoginController.h"
 #import <AFNetworking.h>
 #define kTextBorderColor RGBCOLOR(227,244,216)
 
@@ -218,10 +219,11 @@
         UIAlertAction *suer = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
         [alertLength addAction:suer];
         [self presentViewController:alertLength animated:YES completion:nil];
-        
-        
-        
+    }else{
+        LoginController  *logVC= [[LoginController alloc]init];
+        [self.navigationController pushViewController:logVC animated:YES];
     }
+    
 }
 
 #pragma mark textField的字数限制
@@ -315,8 +317,8 @@
     
 }
 -(void)searCh1 {
-    PerFiveViewController *pertwoVC= [[PerFiveViewController alloc]init];
-    [self.navigationController pushViewController:pertwoVC animated:YES];
+    LoginController  *logVC= [[LoginController alloc]init];
+    [self.navigationController pushViewController:logVC animated:YES];
 }
 -(void) searCh {
     [self.navigationController  popViewControllerAnimated:YES];

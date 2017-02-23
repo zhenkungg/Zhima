@@ -27,14 +27,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Efx-4U-Ike" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="22"/>
+            <point key="canvasLocation" x="-959" y="983"/>
         </scene>
         <!--Item-->
         <scene sceneID="2EK-Fx-4rv">
             <objects>
                 <navigationController id="AkG-hD-qAn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="jXW-1W-b9K"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="w0v-Wd-X5w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w0v-Wd-X5w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -64,14 +64,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVC-cj-OvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="360.80000000000001" y="-671.51424287856082"/>
+            <point key="canvasLocation" x="58" y="-627"/>
         </scene>
         <!--Item-->
         <scene sceneID="eEj-Gt-8Ch">
             <objects>
                 <navigationController id="wCH-hT-dTo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="8L0-Fl-sWW"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="lia-9C-mH0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lia-9C-mH0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -81,14 +81,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAD-4I-5gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-300" y="-148.87556221889056"/>
+            <point key="canvasLocation" x="-959" y="194"/>
         </scene>
         <!--Item-->
         <scene sceneID="TCn-t8-FGA">
             <objects>
                 <navigationController id="mdt-TX-pix" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="PDh-hH-tdL"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iU2-Yi-ypz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iU2-Yi-ypz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -98,7 +98,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEf-Wq-7Tp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1215.2" y="-1085.3073463268368"/>
+            <point key="canvasLocation" x="-959" y="-1328"/>
         </scene>
         <!--课程-->
         <scene sceneID="xVE-Ab-WKn">
@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3M-Uf-pn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-320.80000000000001" y="-1252.6236881559221"/>
+            <point key="canvasLocation" x="58" y="-1328"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xRK-uJ-8sY">
@@ -232,109 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-577" y="566"/>
-        </scene>
-        <!--Regisr View Controller-->
-        <scene sceneID="dtb-g3-xF8">
-            <objects>
-                <viewController id="YSt-aG-Xta" customClass="RegisrViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NBP-Vh-ZIb"/>
-                        <viewControllerLayoutGuide type="bottom" id="8m7-B5-1Mc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vvc-P2-mm7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="✅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irS-HR-rwE">
-                                <rect key="frame" x="117" y="196" width="34" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="完成注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glw-ie-AHj">
-                                <rect key="frame" x="143" y="201" width="119" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxV-aQ-aga">
-                                <rect key="frame" x="93" y="362" width="188" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.7939603797" green="1" blue="0.63957022460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="请完善个人资料"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我已经同意xxxx的协议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AU-RV-b9q">
-                                <rect key="frame" x="59" y="415" width="173" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-ug-40Z">
-                                <rect key="frame" x="223" y="411" width="69" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="《xxxxx》"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="完成注册需要完善个人资料才可以成为我们的伴友" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X2-Hy-9Qk">
-                                <rect key="frame" x="18" y="270" width="343" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gi2-id-Cbg"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uNZ-K9-zTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="180" y="687.7061469265368"/>
-        </scene>
-        <!--xxx协议-->
-        <scene sceneID="dXU-75-cLv">
-            <objects>
-                <viewController id="Ca8-6M-fwo" customClass="AgreementViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jd3-mP-LWA"/>
-                        <viewControllerLayoutGuide type="bottom" id="O0l-a7-dee"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wh7-np-RJh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRb-ud-hDZ">
-                                <rect key="frame" x="3" y="46" width="368" height="188"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmK-FY-MCt">
-                                <rect key="frame" x="142" y="390" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="同意"/>
-                                <connections>
-                                    <action selector="Agreem:" destination="Ca8-6M-fwo" eventType="touchUpInside" id="5to-V5-Ssx"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fRb-ud-hDZ" secondAttribute="trailing" constant="4" id="BNe-jU-18j"/>
-                            <constraint firstItem="fRb-ud-hDZ" firstAttribute="top" secondItem="jd3-mP-LWA" secondAttribute="bottom" constant="26" id="fq0-kz-FZs"/>
-                            <constraint firstItem="O0l-a7-dee" firstAttribute="top" secondItem="fRb-ud-hDZ" secondAttribute="bottom" constant="433" id="jj9-Ea-tIq"/>
-                            <constraint firstItem="fRb-ud-hDZ" firstAttribute="leading" secondItem="wh7-np-RJh" secondAttribute="leading" constant="3" id="wre-np-mF3"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="xxx协议" id="9SI-oN-jlH"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AIp-dK-fCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1052" y="706.59670164917543"/>
+            <point key="canvasLocation" x="-1975" y="958"/>
         </scene>
         <!--消息-->
         <scene sceneID="o9d-as-mT5">
@@ -342,7 +240,7 @@
                 <navigationController title="消息" automaticallyAdjustsScrollViewInsets="NO" id="Mei-xu-wWF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="消息" image="doc" id="TqP-eu-rrA"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1Rr-X0-dFj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Rr-X0-dFj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -353,14 +251,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xg5-GR-77h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1516" y="527"/>
+            <point key="canvasLocation" x="-1975" y="194"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eId-ar-d7T">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CFw-Ht-Mmw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VAH-Nb-IIH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VAH-Nb-IIH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
