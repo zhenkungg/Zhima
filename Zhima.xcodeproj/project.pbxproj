@@ -54,6 +54,8 @@
 		16613DD61E5EC49600B50D4F /* LBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DCF1E5EC49600B50D4F /* LBTabBarController.m */; };
 		16613DD71E5EC49600B50D4F /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DD11E5EC49600B50D4F /* UIImage+Image.m */; };
 		16613DD81E5EC49600B50D4F /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DD31E5EC49600B50D4F /* UIView+LBExtension.m */; };
+		16613DDC1E5ED5DA00B50D4F /* WorkCourseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */; };
+		16613DDD1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */; };
 		166CBAD41E26209300E12865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD31E26209300E12865 /* main.m */; };
 		166CBAD71E26209300E12865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD61E26209300E12865 /* AppDelegate.m */; };
 		166CBADA1E26209300E12865 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD91E26209300E12865 /* ViewController.m */; };
@@ -674,8 +676,6 @@
 		F59CFDD51E5E786500E93B43 /* NHCalender.m in Sources */ = {isa = PBXBuildFile; fileRef = F59CFDD41E5E786500E93B43 /* NHCalender.m */; };
 		F5B169831E2788480068BE12 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B169811E2788480068BE12 /* PersonViewController.m */; };
 		F5B169841E2788480068BE12 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B169821E2788480068BE12 /* HeaderView.xib */; };
-		F5C99EF61E5E7D8D000FD100 /* WorkCourseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C99EF41E5E7D8D000FD100 /* WorkCourseSetViewController.m */; };
-		F5C99EF71E5E7D8D000FD100 /* WorkCourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C99EF51E5E7D8D000FD100 /* WorkCourseSetViewController.xib */; };
 		FFB62AA99EEAB0C9FCCB814F /* libPods-ZhimaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 634FA6DBDB020F19607259D9 /* libPods-ZhimaUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -786,6 +786,9 @@
 		16613DD11E5EC49600B50D4F /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		16613DD21E5EC49600B50D4F /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
 		16613DD31E5EC49600B50D4F /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
+		16613DD91E5ED5DA00B50D4F /* WorkCourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCourseSetViewController.h; sourceTree = "<group>"; };
+		16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCourseSetViewController.m; sourceTree = "<group>"; };
+		16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCourseSetViewController.xib; sourceTree = "<group>"; };
 		166CBACF1E26209300E12865 /* Zhima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zhima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		166CBAD31E26209300E12865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		166CBAD51E26209300E12865 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1941,9 +1944,6 @@
 		F5B169811E2788480068BE12 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		F5B169821E2788480068BE12 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		F5B7FD641E49BB9200917D75 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		F5C99EF31E5E7D8D000FD100 /* WorkCourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCourseSetViewController.h; sourceTree = "<group>"; };
-		F5C99EF41E5E7D8D000FD100 /* WorkCourseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCourseSetViewController.m; sourceTree = "<group>"; };
-		F5C99EF51E5E7D8D000FD100 /* WorkCourseSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCourseSetViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2380,13 +2380,13 @@
 		16DE461B1E2776C800CBA8A1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				16613DD91E5ED5DA00B50D4F /* WorkCourseSetViewController.h */,
+				16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */,
+				16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */,
 				16DE46201E2777E200CBA8A1 /* CourseTableViewController.h */,
 				16DE46211E2777E200CBA8A1 /* CourseTableViewController.m */,
 				16DE461D1E27775D00CBA8A1 /* CourseViewController.h */,
 				16DE461E1E27775D00CBA8A1 /* CourseViewController.m */,
-				F5C99EF31E5E7D8D000FD100 /* WorkCourseSetViewController.h */,
-				F5C99EF41E5E7D8D000FD100 /* WorkCourseSetViewController.m */,
-				F5C99EF51E5E7D8D000FD100 /* WorkCourseSetViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -4649,7 +4649,7 @@
 				F58F5DEB1E5A99370004AAF7 /* Button_Mute active@3x.png in Resources */,
 				F58F5DEA1E5A99370004AAF7 /* Button_Mute active@2x.png in Resources */,
 				F58F5E711E5A99380004AAF7 /* icon_024_cover.png in Resources */,
-				F5C99EF71E5E7D8D000FD100 /* WorkCourseSetViewController.xib in Resources */,
+				16613DDD1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib in Resources */,
 				F58F5DD91E5A99370004AAF7 /* Button_Camera switch disabled@3x.png in Resources */,
 				F58F5E851E5A99380004AAF7 /* newFriends@2x.png in Resources */,
 				F56D330C1E2A134200239DF6 /* LICENSE in Resources */,
@@ -5163,7 +5163,6 @@
 				F56D325E1E2A04B600239DF6 /* GPUImageMovie.m in Sources */,
 				F58F5E1C1E5A99370004AAF7 /* InvitationManager.m in Sources */,
 				F54E9AB11E4D688B00E30E8A /* XHDatePickerView.m in Sources */,
-				F5C99EF61E5E7D8D000FD100 /* WorkCourseSetViewController.m in Sources */,
 				F56D325B1E2A04B600239DF6 /* GPUImageMosaicFilter.m in Sources */,
 				F58F5D5A1E5A99370004AAF7 /* MWTapDetectingImageView.m in Sources */,
 				F58F5D331E5A99360004AAF7 /* EaseUI.m in Sources */,
@@ -5189,6 +5188,7 @@
 				164463431E4AE74B00C76031 /* UIAlertView+XDExtension.m in Sources */,
 				F58F5D541E5A99370004AAF7 /* UIView+MJExtension.m in Sources */,
 				F56D32A11E2A04B600239DF6 /* GPUImageWeakPixelInclusionFilter.m in Sources */,
+				16613DDC1E5ED5DA00B50D4F /* WorkCourseSetViewController.m in Sources */,
 				F58F5DCE1E5A99370004AAF7 /* UserTableViewController.m in Sources */,
 				F56D31F51E2A04B600239DF6 /* LFLiveSession.m in Sources */,
 				F58F5E1E1E5A99370004AAF7 /* UserWebManager.m in Sources */,
