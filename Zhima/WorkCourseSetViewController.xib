@@ -191,7 +191,7 @@
         </tapGestureRecognizer>
         <tapGestureRecognizer id="9EP-me-ndS">
             <connections>
-                <action selector="setPrice:" destination="-1" id="2er-cG-Nvc"/>
+                <action selector="setCoursePrice:" destination="-1" id="hgE-Dg-G9P"/>
             </connections>
         </tapGestureRecognizer>
     </objects>

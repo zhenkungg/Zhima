@@ -49,11 +49,6 @@
 		164463841E4AF92E00C76031 /* PerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1644637B1E4AF92E00C76031 /* PerTableViewCell.xib */; };
 		164463871E4B0A0800C76031 /* RegisrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164463861E4B0A0800C76031 /* RegisrViewController.m */; };
 		1644638A1E4B0E9600C76031 /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164463891E4B0E9600C76031 /* AgreementViewController.m */; };
-		16613DD41E5EC49600B50D4F /* LBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DCB1E5EC49600B50D4F /* LBNavigationController.m */; };
-		16613DD51E5EC49600B50D4F /* LBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DCD1E5EC49600B50D4F /* LBTabBar.m */; };
-		16613DD61E5EC49600B50D4F /* LBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DCF1E5EC49600B50D4F /* LBTabBarController.m */; };
-		16613DD71E5EC49600B50D4F /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DD11E5EC49600B50D4F /* UIImage+Image.m */; };
-		16613DD81E5EC49600B50D4F /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DD31E5EC49600B50D4F /* UIView+LBExtension.m */; };
 		16613DDC1E5ED5DA00B50D4F /* WorkCourseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */; };
 		16613DDD1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */; };
 		166CBAD41E26209300E12865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD31E26209300E12865 /* main.m */; };
@@ -676,6 +671,11 @@
 		F59CFDD51E5E786500E93B43 /* NHCalender.m in Sources */ = {isa = PBXBuildFile; fileRef = F59CFDD41E5E786500E93B43 /* NHCalender.m */; };
 		F5B169831E2788480068BE12 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B169811E2788480068BE12 /* PersonViewController.m */; };
 		F5B169841E2788480068BE12 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B169821E2788480068BE12 /* HeaderView.xib */; };
+		F5C99F021E5EDDEF000FD100 /* LBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C99EF91E5EDDEF000FD100 /* LBNavigationController.m */; };
+		F5C99F031E5EDDEF000FD100 /* LBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C99EFB1E5EDDEF000FD100 /* LBTabBar.m */; };
+		F5C99F041E5EDDEF000FD100 /* LBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C99EFD1E5EDDEF000FD100 /* LBTabBarController.m */; };
+		F5C99F051E5EDDEF000FD100 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C99EFF1E5EDDEF000FD100 /* UIImage+Image.m */; };
+		F5C99F061E5EDDEF000FD100 /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C99F011E5EDDEF000FD100 /* UIView+LBExtension.m */; };
 		FFB62AA99EEAB0C9FCCB814F /* libPods-ZhimaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 634FA6DBDB020F19607259D9 /* libPods-ZhimaUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -776,16 +776,6 @@
 		164463861E4B0A0800C76031 /* RegisrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisrViewController.m; sourceTree = "<group>"; };
 		164463881E4B0E9600C76031 /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
 		164463891E4B0E9600C76031 /* AgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgreementViewController.m; sourceTree = "<group>"; };
-		16613DCA1E5EC49600B50D4F /* LBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNavigationController.h; sourceTree = "<group>"; };
-		16613DCB1E5EC49600B50D4F /* LBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNavigationController.m; sourceTree = "<group>"; };
-		16613DCC1E5EC49600B50D4F /* LBTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTabBar.h; sourceTree = "<group>"; };
-		16613DCD1E5EC49600B50D4F /* LBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTabBar.m; sourceTree = "<group>"; };
-		16613DCE1E5EC49600B50D4F /* LBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTabBarController.h; sourceTree = "<group>"; };
-		16613DCF1E5EC49600B50D4F /* LBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTabBarController.m; sourceTree = "<group>"; };
-		16613DD01E5EC49600B50D4F /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
-		16613DD11E5EC49600B50D4F /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
-		16613DD21E5EC49600B50D4F /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
-		16613DD31E5EC49600B50D4F /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
 		16613DD91E5ED5DA00B50D4F /* WorkCourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCourseSetViewController.h; sourceTree = "<group>"; };
 		16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCourseSetViewController.m; sourceTree = "<group>"; };
 		16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCourseSetViewController.xib; sourceTree = "<group>"; };
@@ -1944,6 +1934,16 @@
 		F5B169811E2788480068BE12 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		F5B169821E2788480068BE12 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		F5B7FD641E49BB9200917D75 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F5C99EF81E5EDDEF000FD100 /* LBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNavigationController.h; sourceTree = "<group>"; };
+		F5C99EF91E5EDDEF000FD100 /* LBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNavigationController.m; sourceTree = "<group>"; };
+		F5C99EFA1E5EDDEF000FD100 /* LBTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTabBar.h; sourceTree = "<group>"; };
+		F5C99EFB1E5EDDEF000FD100 /* LBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTabBar.m; sourceTree = "<group>"; };
+		F5C99EFC1E5EDDEF000FD100 /* LBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTabBarController.h; sourceTree = "<group>"; };
+		F5C99EFD1E5EDDEF000FD100 /* LBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTabBarController.m; sourceTree = "<group>"; };
+		F5C99EFE1E5EDDEF000FD100 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		F5C99EFF1E5EDDEF000FD100 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		F5C99F001E5EDDEF000FD100 /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
+		F5C99F011E5EDDEF000FD100 /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2192,16 +2192,16 @@
 		16613DC91E5EC36100B50D4F /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				16613DCA1E5EC49600B50D4F /* LBNavigationController.h */,
-				16613DCB1E5EC49600B50D4F /* LBNavigationController.m */,
-				16613DCC1E5EC49600B50D4F /* LBTabBar.h */,
-				16613DCD1E5EC49600B50D4F /* LBTabBar.m */,
-				16613DCE1E5EC49600B50D4F /* LBTabBarController.h */,
-				16613DCF1E5EC49600B50D4F /* LBTabBarController.m */,
-				16613DD01E5EC49600B50D4F /* UIImage+Image.h */,
-				16613DD11E5EC49600B50D4F /* UIImage+Image.m */,
-				16613DD21E5EC49600B50D4F /* UIView+LBExtension.h */,
-				16613DD31E5EC49600B50D4F /* UIView+LBExtension.m */,
+				F5C99EF81E5EDDEF000FD100 /* LBNavigationController.h */,
+				F5C99EF91E5EDDEF000FD100 /* LBNavigationController.m */,
+				F5C99EFA1E5EDDEF000FD100 /* LBTabBar.h */,
+				F5C99EFB1E5EDDEF000FD100 /* LBTabBar.m */,
+				F5C99EFC1E5EDDEF000FD100 /* LBTabBarController.h */,
+				F5C99EFD1E5EDDEF000FD100 /* LBTabBarController.m */,
+				F5C99EFE1E5EDDEF000FD100 /* UIImage+Image.h */,
+				F5C99EFF1E5EDDEF000FD100 /* UIImage+Image.m */,
+				F5C99F001E5EDDEF000FD100 /* UIView+LBExtension.h */,
+				F5C99F011E5EDDEF000FD100 /* UIView+LBExtension.m */,
 			);
 			name = TabBar;
 			sourceTree = "<group>";
@@ -4973,6 +4973,7 @@
 				F58F5DC21E5A99370004AAF7 /* SRSlimeView.m in Sources */,
 				F56D323B1E2A04B600239DF6 /* GPUImageHazeFilter.m in Sources */,
 				F58F5E2A1E5A99380004AAF7 /* UserProfileEditViewController.m in Sources */,
+				F5C99F031E5EDDEF000FD100 /* LBTabBar.m in Sources */,
 				F56D32811E2A04B600239DF6 /* GPUImageSkinToneFilter.m in Sources */,
 				F59CFDD11E5E784200E93B43 /* LoginController.m in Sources */,
 				F56D324B1E2A04B600239DF6 /* GPUImageLaplacianFilter.m in Sources */,
@@ -4981,7 +4982,6 @@
 				F56D32521E2A04B600239DF6 /* GPUImageLowPassFilter.m in Sources */,
 				F58F5D641E5A99370004AAF7 /* EMSDWebImagePrefetcher.m in Sources */,
 				F58F5E051E5A99370004AAF7 /* ChatViewController.m in Sources */,
-				16613DD41E5EC49600B50D4F /* LBNavigationController.m in Sources */,
 				F58F5D821E5A99370004AAF7 /* NSString+Valid.m in Sources */,
 				F58F5D601E5A99370004AAF7 /* EMSDWebImageDecoder.m in Sources */,
 				F58F5D871E5A99370004AAF7 /* EaseMessageReadManager.m in Sources */,
@@ -4996,7 +4996,6 @@
 				F58F5E161E5A99370004AAF7 /* ContactListViewController.m in Sources */,
 				F58F5E201E5A99370004AAF7 /* EMRobotChatTextBubbleView.m in Sources */,
 				F56D327E1E2A04B600239DF6 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */,
-				16613DD71E5EC49600B50D4F /* UIImage+Image.m in Sources */,
 				F56D328D1E2A04B600239DF6 /* GPUImageSwirlFilter.m in Sources */,
 				F58F5DC81E5A99370004AAF7 /* EMCallViewController.m in Sources */,
 				F58F5E2C1E5A99380004AAF7 /* EMSearchBar.m in Sources */,
@@ -5017,7 +5016,6 @@
 				F58F5E0D1E5A99370004AAF7 /* GroupSubjectChangingViewController.m in Sources */,
 				F58F5E151E5A99370004AAF7 /* ContactListSelectViewController.m in Sources */,
 				F58F5E261E5A99370004AAF7 /* DebugViewController.m in Sources */,
-				16613DD51E5EC49600B50D4F /* LBTabBar.m in Sources */,
 				F58F5D6E1E5A99370004AAF7 /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
 				F58F5D3D1E5A99360004AAF7 /* EMVoiceConverter.mm in Sources */,
 				F54E9ABC1E4D8E7B00E30E8A /* MyOrderCell.m in Sources */,
@@ -5048,6 +5046,7 @@
 				F56D31ED1E2A04B600239DF6 /* LFVideoEncoder.m in Sources */,
 				F58F5D881E5A99370004AAF7 /* EaseEmoji.m in Sources */,
 				F56D32B41E2A05F600239DF6 /* UIControl+Add.m in Sources */,
+				F5C99F021E5EDDEF000FD100 /* LBNavigationController.m in Sources */,
 				F58F5E091E5A99370004AAF7 /* CreateGroupViewController.m in Sources */,
 				F58F5D391E5A99360004AAF7 /* EMCDDeviceManager+Remind.m in Sources */,
 				F56D32911E2A04B600239DF6 /* GPUImageThresholdEdgeDetectionFilter.m in Sources */,
@@ -5060,7 +5059,6 @@
 				F58F5DB21E5A99370004AAF7 /* TransferCell.m in Sources */,
 				F58F5D971E5A99370004AAF7 /* EaseMessageTimeCell.m in Sources */,
 				F56D31EF1E2A04B600239DF6 /* LFHardwareAudioEncoder.m in Sources */,
-				16613DD61E5EC49600B50D4F /* LBTabBarController.m in Sources */,
 				F56D326C1E2A04B600239DF6 /* GPUImagePixellatePositionFilter.m in Sources */,
 				F58F5D791E5A99370004AAF7 /* PSTGridLayoutRow.m in Sources */,
 				F56D32251E2A04B600239DF6 /* GPUImageDivideBlendFilter.m in Sources */,
@@ -5242,7 +5240,6 @@
 				F58F5E1A1E5A99370004AAF7 /* ApplyViewController.m in Sources */,
 				F58F5E291E5A99380004AAF7 /* SettingsViewController.m in Sources */,
 				F58F5D411E5A99370004AAF7 /* MBProgressHUD.m in Sources */,
-				16613DD81E5EC49600B50D4F /* UIView+LBExtension.m in Sources */,
 				164463401E4AE74B00C76031 /* EducViewController.m in Sources */,
 				F58F5E301E5A99380004AAF7 /* BaseViewController.m in Sources */,
 				F54E9AB01E4D688B00E30E8A /* UIView+Extension.m in Sources */,
@@ -5279,6 +5276,7 @@
 				F56D32841E2A04B600239DF6 /* GPUImageSoftEleganceFilter.m in Sources */,
 				F56D33141E2A134200239DF6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				F522E5C61E31E4F100B34B46 /* HeaderView.m in Sources */,
+				F5C99F061E5EDDEF000FD100 /* UIView+LBExtension.m in Sources */,
 				F58F5D481E5A99370004AAF7 /* MJRefreshAutoNormalFooter.m in Sources */,
 				F56D327A1E2A04B600239DF6 /* GPUImageSaturationFilter.m in Sources */,
 				F56D31EB1E2A04B600239DF6 /* LFMP4Atom.m in Sources */,
@@ -5336,6 +5334,7 @@
 				F56D32901E2A04B600239DF6 /* GPUImageThreeInputFilter.m in Sources */,
 				F58F5D891E5A99370004AAF7 /* EaseEmojiEmoticons.m in Sources */,
 				F56D32731E2A04B600239DF6 /* GPUImageRawDataOutput.m in Sources */,
+				F5C99F051E5EDDEF000FD100 /* UIImage+Image.m in Sources */,
 				F56D326B1E2A04B600239DF6 /* GPUImagePixellateFilter.m in Sources */,
 				F58F5E221E5A99370004AAF7 /* RobotChatViewController.m in Sources */,
 				166CBAD41E26209300E12865 /* main.m in Sources */,
@@ -5393,6 +5392,7 @@
 				F58F5E281E5A99380004AAF7 /* PushNotificationViewController.m in Sources */,
 				F58F5D511E5A99370004AAF7 /* MJRefreshConst.m in Sources */,
 				F58F5E311E5A99380004AAF7 /* EMChooseViewController.m in Sources */,
+				F5C99F041E5EDDEF000FD100 /* LBTabBarController.m in Sources */,
 				F58F5D9F1E5A99370004AAF7 /* EaseBubbleView.m in Sources */,
 				F58F5D3A1E5A99360004AAF7 /* EMCDDeviceManagerBase.m in Sources */,
 				F56D32931E2A04B600239DF6 /* GPUImageThresholdSketchFilter.m in Sources */,
