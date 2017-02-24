@@ -35,6 +35,9 @@
 
 @implementation CourseViewController
 
+- (void)viewDidAppear:(BOOL)animated {
+    self.navigationController.navigationBarHidden = YES;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpNav];
@@ -202,15 +205,13 @@
     return newscell ;
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
-}
+
 
 -(void)viewDidAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = YES;
 }
+
 //自定义导航栏
 -(void)setUpNav
 {
