@@ -51,10 +51,8 @@
 		1644638A1E4B0E9600C76031 /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164463891E4B0E9600C76031 /* AgreementViewController.m */; };
 		16613DDC1E5ED5DA00B50D4F /* WorkCourseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */; };
 		16613DDD1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */; };
-		16631DE31E63CCD10074BD46 /* StudyreportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165558861E5FC18B002B8AA8 /* StudyreportTableViewCell.xib */; };
-		16631DE41E63CF1F0074BD46 /* StudyreportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 165558851E5FC18B002B8AA8 /* StudyreportTableViewCell.m */; };
-		16631DE61E63F50A0074BD46 /* StudyreportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5701EA91E63BDC600D9B10C /* StudyreportTableViewCell.xib */; };
 		16631DE81E63F5D30074BD46 /* StudyreportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5701EA81E63BDC600D9B10C /* StudyreportTableViewCell.m */; };
+		16631DEA1E63F9110074BD46 /* StudyreportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5701EA91E63BDC600D9B10C /* StudyreportTableViewCell.xib */; };
 		166CBAD41E26209300E12865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD31E26209300E12865 /* main.m */; };
 		166CBAD71E26209300E12865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD61E26209300E12865 /* AppDelegate.m */; };
 		166CBADA1E26209300E12865 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD91E26209300E12865 /* ViewController.m */; };
@@ -782,8 +780,6 @@
 		164463861E4B0A0800C76031 /* RegisrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisrViewController.m; sourceTree = "<group>"; };
 		164463881E4B0E9600C76031 /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
 		164463891E4B0E9600C76031 /* AgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgreementViewController.m; sourceTree = "<group>"; };
-		165558851E5FC18B002B8AA8 /* StudyreportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyreportTableViewCell.m; sourceTree = "<group>"; };
-		165558861E5FC18B002B8AA8 /* StudyreportTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudyreportTableViewCell.xib; sourceTree = "<group>"; };
 		16613DD91E5ED5DA00B50D4F /* WorkCourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCourseSetViewController.h; sourceTree = "<group>"; };
 		16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCourseSetViewController.m; sourceTree = "<group>"; };
 		16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCourseSetViewController.xib; sourceTree = "<group>"; };
@@ -4699,9 +4695,8 @@
 				F58F5DF01E5A99370004AAF7 /* Button_Mute@2x.png in Resources */,
 				F58F5DC01E5A99370004AAF7 /* sr_refresh@2X.png in Resources */,
 				F58F5E3D1E5A99380004AAF7 /* call_silence@2x.png in Resources */,
-				16631DE61E63F50A0074BD46 /* StudyreportTableViewCell.xib in Resources */,
 				F58F5E451E5A99380004AAF7 /* chat_location_detail_disclosure@2x.png in Resources */,
-				16631DE31E63CCD10074BD46 /* StudyreportTableViewCell.xib in Resources */,
+				16631DEA1E63F9110074BD46 /* StudyreportTableViewCell.xib in Resources */,
 				164462CF1E4AB28600C76031 /* Address.plist in Resources */,
 				F58F5E7C1E5A99380004AAF7 /* group_creategroup@2x.png in Resources */,
 				F58F5DEF1E5A99370004AAF7 /* Button_Mute.png in Resources */,
@@ -5189,7 +5184,6 @@
 				166CBAD71E26209300E12865 /* AppDelegate.m in Sources */,
 				F56D32201E2A04B600239DF6 /* GPUImageDifferenceBlendFilter.m in Sources */,
 				F56D323D1E2A04B600239DF6 /* GPUImageHighlightShadowTintFilter.m in Sources */,
-				16631DE41E63CF1F0074BD46 /* StudyreportTableViewCell.m in Sources */,
 				F58F5D4A1E5A99370004AAF7 /* MJRefreshBackGifFooter.m in Sources */,
 				1644633F1E4AE74B00C76031 /* CCPPickerViewTwo.m in Sources */,
 				F56D321F1E2A04B600239DF6 /* GPUImageDarkenBlendFilter.m in Sources */,
