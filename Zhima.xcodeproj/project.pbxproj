@@ -51,9 +51,12 @@
 		1644638A1E4B0E9600C76031 /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164463891E4B0E9600C76031 /* AgreementViewController.m */; };
 		16613DDC1E5ED5DA00B50D4F /* WorkCourseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */; };
 		16613DDD1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */; };
+<<<<<<< Updated upstream
 		16613DE11E5EE98C00B50D4F /* StudyreportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DE01E5EE98C00B50D4F /* StudyreportViewController.m */; };
 		16631DE31E63CCD10074BD46 /* StudyreportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165558861E5FC18B002B8AA8 /* StudyreportTableViewCell.xib */; };
 		16631DE41E63CF1F0074BD46 /* StudyreportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 165558851E5FC18B002B8AA8 /* StudyreportTableViewCell.m */; };
+=======
+>>>>>>> Stashed changes
 		166CBAD41E26209300E12865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD31E26209300E12865 /* main.m */; };
 		166CBAD71E26209300E12865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD61E26209300E12865 /* AppDelegate.m */; };
 		166CBADA1E26209300E12865 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD91E26209300E12865 /* ViewController.m */; };
@@ -321,6 +324,10 @@
 		F56D33151E2A134200239DF6 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F56D33071E2A134200239DF6 /* View+MASAdditions.m */; };
 		F56D33161E2A134200239DF6 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F56D330A1E2A134200239DF6 /* ViewController+MASAdditions.m */; };
 		F56D33171E2A134200239DF6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F56D330B1E2A134200239DF6 /* README.md */; };
+		F5701EAA1E63BDC600D9B10C /* StudyreportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5701EA81E63BDC600D9B10C /* StudyreportTableViewCell.m */; };
+		F5701EAB1E63BDC600D9B10C /* StudyreportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5701EA91E63BDC600D9B10C /* StudyreportTableViewCell.xib */; };
+		F5701EB01E63BDE400D9B10C /* StudyreportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5701EAD1E63BDE400D9B10C /* StudyreportViewController.m */; };
+		F5701EB11E63BDE400D9B10C /* StudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5701EAF1E63BDE400D9B10C /* StudyViewController.m */; };
 		F58F5D331E5A99360004AAF7 /* EaseUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F58F5A7A1E5A99360004AAF7 /* EaseUI.m */; };
 		F58F5D341E5A99360004AAF7 /* EMAudioPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F58F5A841E5A99360004AAF7 /* EMAudioPlayerUtil.m */; };
 		F58F5D351E5A99360004AAF7 /* EMAudioRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F58F5A861E5A99360004AAF7 /* EMAudioRecorderUtil.m */; };
@@ -779,16 +786,17 @@
 		164463861E4B0A0800C76031 /* RegisrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisrViewController.m; sourceTree = "<group>"; };
 		164463881E4B0E9600C76031 /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
 		164463891E4B0E9600C76031 /* AgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgreementViewController.m; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		165558841E5FC18B002B8AA8 /* StudyreportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyreportTableViewCell.h; sourceTree = "<group>"; };
 		165558851E5FC18B002B8AA8 /* StudyreportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyreportTableViewCell.m; sourceTree = "<group>"; };
 		165558861E5FC18B002B8AA8 /* StudyreportTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudyreportTableViewCell.xib; sourceTree = "<group>"; };
 		165558891E5FD2F8002B8AA8 /* StudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyViewController.h; sourceTree = "<group>"; };
 		1655588A1E5FD2F8002B8AA8 /* StudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyViewController.m; sourceTree = "<group>"; };
+=======
+>>>>>>> Stashed changes
 		16613DD91E5ED5DA00B50D4F /* WorkCourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCourseSetViewController.h; sourceTree = "<group>"; };
 		16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCourseSetViewController.m; sourceTree = "<group>"; };
 		16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCourseSetViewController.xib; sourceTree = "<group>"; };
-		16613DDF1E5EE98C00B50D4F /* StudyreportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyreportViewController.h; sourceTree = "<group>"; };
-		16613DE01E5EE98C00B50D4F /* StudyreportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyreportViewController.m; sourceTree = "<group>"; };
 		166CBACF1E26209300E12865 /* Zhima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zhima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		166CBAD31E26209300E12865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		166CBAD51E26209300E12865 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1321,6 +1329,13 @@
 		F56D33091E2A134200239DF6 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		F56D330A1E2A134200239DF6 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		F56D330B1E2A134200239DF6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F5701EA71E63BDC600D9B10C /* StudyreportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyreportTableViewCell.h; sourceTree = "<group>"; };
+		F5701EA81E63BDC600D9B10C /* StudyreportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyreportTableViewCell.m; sourceTree = "<group>"; };
+		F5701EA91E63BDC600D9B10C /* StudyreportTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudyreportTableViewCell.xib; sourceTree = "<group>"; };
+		F5701EAC1E63BDE400D9B10C /* StudyreportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyreportViewController.h; sourceTree = "<group>"; };
+		F5701EAD1E63BDE400D9B10C /* StudyreportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyreportViewController.m; sourceTree = "<group>"; };
+		F5701EAE1E63BDE400D9B10C /* StudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyViewController.h; sourceTree = "<group>"; };
+		F5701EAF1E63BDE400D9B10C /* StudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyViewController.m; sourceTree = "<group>"; };
 		F58F5A781E5A99360004AAF7 /* EaseUI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EaseUI-Prefix.pch"; sourceTree = "<group>"; };
 		F58F5A791E5A99360004AAF7 /* EaseUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseUI.h; sourceTree = "<group>"; };
 		F58F5A7A1E5A99360004AAF7 /* EaseUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseUI.m; sourceTree = "<group>"; };
@@ -2202,9 +2217,9 @@
 		165558831E5FC111002B8AA8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				165558841E5FC18B002B8AA8 /* StudyreportTableViewCell.h */,
-				165558851E5FC18B002B8AA8 /* StudyreportTableViewCell.m */,
-				165558861E5FC18B002B8AA8 /* StudyreportTableViewCell.xib */,
+				F5701EA71E63BDC600D9B10C /* StudyreportTableViewCell.h */,
+				F5701EA81E63BDC600D9B10C /* StudyreportTableViewCell.m */,
+				F5701EA91E63BDC600D9B10C /* StudyreportTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -2230,10 +2245,10 @@
 			isa = PBXGroup;
 			children = (
 				165558831E5FC111002B8AA8 /* View */,
-				16613DDF1E5EE98C00B50D4F /* StudyreportViewController.h */,
-				16613DE01E5EE98C00B50D4F /* StudyreportViewController.m */,
-				165558891E5FD2F8002B8AA8 /* StudyViewController.h */,
-				1655588A1E5FD2F8002B8AA8 /* StudyViewController.m */,
+				F5701EAC1E63BDE400D9B10C /* StudyreportViewController.h */,
+				F5701EAD1E63BDE400D9B10C /* StudyreportViewController.m */,
+				F5701EAE1E63BDE400D9B10C /* StudyViewController.h */,
+				F5701EAF1E63BDE400D9B10C /* StudyViewController.m */,
 			);
 			name = "Study report";
 			sourceTree = "<group>";
@@ -4695,7 +4710,11 @@
 				F58F5DC01E5A99370004AAF7 /* sr_refresh@2X.png in Resources */,
 				F58F5E3D1E5A99380004AAF7 /* call_silence@2x.png in Resources */,
 				F58F5E451E5A99380004AAF7 /* chat_location_detail_disclosure@2x.png in Resources */,
+<<<<<<< Updated upstream
 				16631DE31E63CCD10074BD46 /* StudyreportTableViewCell.xib in Resources */,
+=======
+				F5701EAB1E63BDC600D9B10C /* StudyreportTableViewCell.xib in Resources */,
+>>>>>>> Stashed changes
 				164462CF1E4AB28600C76031 /* Address.plist in Resources */,
 				F58F5E7C1E5A99380004AAF7 /* group_creategroup@2x.png in Resources */,
 				F58F5DEF1E5A99370004AAF7 /* Button_Mute.png in Resources */,
@@ -4988,6 +5007,7 @@
 				F58F5D721E5A99370004AAF7 /* PSTCollectionViewData.m in Sources */,
 				F58F5E061E5A99370004AAF7 /* ChatGroupDetailViewController.m in Sources */,
 				F58F5E241E5A99370004AAF7 /* RobotManager.m in Sources */,
+				F5701EB01E63BDE400D9B10C /* StudyreportViewController.m in Sources */,
 				F58F5E1F1E5A99370004AAF7 /* UserProfileViewController.m in Sources */,
 				166CBADA1E26209300E12865 /* ViewController.m in Sources */,
 				F56D32081E2A04B600239DF6 /* GPUImageBoxBlurFilter.m in Sources */,
@@ -5015,7 +5035,6 @@
 				F58F5D901E5A99370004AAF7 /* EaseRefreshTableViewController.m in Sources */,
 				F56D32521E2A04B600239DF6 /* GPUImageLowPassFilter.m in Sources */,
 				F58F5D641E5A99370004AAF7 /* EMSDWebImagePrefetcher.m in Sources */,
-				16613DE11E5EE98C00B50D4F /* StudyreportViewController.m in Sources */,
 				F58F5E051E5A99370004AAF7 /* ChatViewController.m in Sources */,
 				F58F5D821E5A99370004AAF7 /* NSString+Valid.m in Sources */,
 				F58F5D601E5A99370004AAF7 /* EMSDWebImageDecoder.m in Sources */,
@@ -5183,7 +5202,11 @@
 				166CBAD71E26209300E12865 /* AppDelegate.m in Sources */,
 				F56D32201E2A04B600239DF6 /* GPUImageDifferenceBlendFilter.m in Sources */,
 				F56D323D1E2A04B600239DF6 /* GPUImageHighlightShadowTintFilter.m in Sources */,
+<<<<<<< Updated upstream
 				16631DE41E63CF1F0074BD46 /* StudyreportTableViewCell.m in Sources */,
+=======
+				F5701EAA1E63BDC600D9B10C /* StudyreportTableViewCell.m in Sources */,
+>>>>>>> Stashed changes
 				F58F5D4A1E5A99370004AAF7 /* MJRefreshBackGifFooter.m in Sources */,
 				1644633F1E4AE74B00C76031 /* CCPPickerViewTwo.m in Sources */,
 				F56D321F1E2A04B600239DF6 /* GPUImageDarkenBlendFilter.m in Sources */,
@@ -5426,6 +5449,7 @@
 				F58F5DA21E5A99370004AAF7 /* EaseImageView.m in Sources */,
 				164463831E4AF92E00C76031 /* PerTableViewCell.m in Sources */,
 				F58F5E281E5A99380004AAF7 /* PushNotificationViewController.m in Sources */,
+				F5701EB11E63BDE400D9B10C /* StudyViewController.m in Sources */,
 				F58F5D511E5A99370004AAF7 /* MJRefreshConst.m in Sources */,
 				F58F5E311E5A99380004AAF7 /* EMChooseViewController.m in Sources */,
 				F5C99F041E5EDDEF000FD100 /* LBTabBarController.m in Sources */,
