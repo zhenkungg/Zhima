@@ -53,6 +53,12 @@
 		16613DDD1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */; };
 		16631DE81E63F5D30074BD46 /* StudyreportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5701EA81E63BDC600D9B10C /* StudyreportTableViewCell.m */; };
 		16631DEA1E63F9110074BD46 /* StudyreportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5701EA91E63BDC600D9B10C /* StudyreportTableViewCell.xib */; };
+		16631DF31E6415260074BD46 /* MastTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16631DF11E6415260074BD46 /* MastTableViewCell.m */; };
+		16631DF41E6415260074BD46 /* MastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16631DF21E6415260074BD46 /* MastTableViewCell.xib */; };
+		16631DF81E6415C00074BD46 /* WentiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16631DF61E6415C00074BD46 /* WentiTableViewCell.m */; };
+		16631DF91E6415C00074BD46 /* WentiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16631DF71E6415C00074BD46 /* WentiTableViewCell.xib */; };
+		16631DFD1E6416740074BD46 /* PraiseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16631DFB1E6416740074BD46 /* PraiseTableViewCell.m */; };
+		16631DFE1E6416740074BD46 /* PraiseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16631DFC1E6416740074BD46 /* PraiseTableViewCell.xib */; };
 		166CBAD41E26209300E12865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD31E26209300E12865 /* main.m */; };
 		166CBAD71E26209300E12865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD61E26209300E12865 /* AppDelegate.m */; };
 		166CBADA1E26209300E12865 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD91E26209300E12865 /* ViewController.m */; };
@@ -783,6 +789,15 @@
 		16613DD91E5ED5DA00B50D4F /* WorkCourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCourseSetViewController.h; sourceTree = "<group>"; };
 		16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCourseSetViewController.m; sourceTree = "<group>"; };
 		16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCourseSetViewController.xib; sourceTree = "<group>"; };
+		16631DF01E6415260074BD46 /* MastTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MastTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		16631DF11E6415260074BD46 /* MastTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MastTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		16631DF21E6415260074BD46 /* MastTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MastTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		16631DF51E6415C00074BD46 /* WentiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WentiTableViewCell.h; sourceTree = "<group>"; };
+		16631DF61E6415C00074BD46 /* WentiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WentiTableViewCell.m; sourceTree = "<group>"; };
+		16631DF71E6415C00074BD46 /* WentiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WentiTableViewCell.xib; sourceTree = "<group>"; };
+		16631DFA1E6416740074BD46 /* PraiseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PraiseTableViewCell.h; sourceTree = "<group>"; };
+		16631DFB1E6416740074BD46 /* PraiseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PraiseTableViewCell.m; sourceTree = "<group>"; };
+		16631DFC1E6416740074BD46 /* PraiseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PraiseTableViewCell.xib; sourceTree = "<group>"; };
 		166CBACF1E26209300E12865 /* Zhima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zhima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		166CBAD31E26209300E12865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		166CBAD51E26209300E12865 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -2206,6 +2221,15 @@
 				F5701EA71E63BDC600D9B10C /* StudyreportTableViewCell.h */,
 				F5701EA81E63BDC600D9B10C /* StudyreportTableViewCell.m */,
 				F5701EA91E63BDC600D9B10C /* StudyreportTableViewCell.xib */,
+				16631DF01E6415260074BD46 /* MastTableViewCell.h */,
+				16631DF11E6415260074BD46 /* MastTableViewCell.m */,
+				16631DF21E6415260074BD46 /* MastTableViewCell.xib */,
+				16631DF51E6415C00074BD46 /* WentiTableViewCell.h */,
+				16631DF61E6415C00074BD46 /* WentiTableViewCell.m */,
+				16631DF71E6415C00074BD46 /* WentiTableViewCell.xib */,
+				16631DFA1E6416740074BD46 /* PraiseTableViewCell.h */,
+				16631DFB1E6416740074BD46 /* PraiseTableViewCell.m */,
+				16631DFC1E6416740074BD46 /* PraiseTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -4674,6 +4698,7 @@
 				F58F5DC91E5A99370004AAF7 /* EMCallViewController.xib in Resources */,
 				F58F5E591E5A99380004AAF7 /* chat_sender_audio_playing_full@2x.png in Resources */,
 				F58F5DF21E5A99370004AAF7 /* Button_Speaker active.png in Resources */,
+				16631DF41E6415260074BD46 /* MastTableViewCell.xib in Resources */,
 				F58F5E801E5A99380004AAF7 /* group_participant_add@2x.png in Resources */,
 				F58F5E011E5A99370004AAF7 /* default_avatar.png in Resources */,
 				F5B169841E2788480068BE12 /* HeaderView.xib in Resources */,
@@ -4685,6 +4710,7 @@
 				F58F5E711E5A99380004AAF7 /* icon_024_cover.png in Resources */,
 				16613DDD1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib in Resources */,
 				F58F5DD91E5A99370004AAF7 /* Button_Camera switch disabled@3x.png in Resources */,
+				16631DF91E6415C00074BD46 /* WentiTableViewCell.xib in Resources */,
 				F58F5E851E5A99380004AAF7 /* newFriends@2x.png in Resources */,
 				F56D330C1E2A134200239DF6 /* LICENSE in Resources */,
 				F58F5E5F1E5A99380004AAF7 /* icon_007_cover.png in Resources */,
@@ -4701,6 +4727,7 @@
 				F58F5E7C1E5A99380004AAF7 /* group_creategroup@2x.png in Resources */,
 				F58F5DEF1E5A99370004AAF7 /* Button_Mute.png in Resources */,
 				F58F5E741E5A99380004AAF7 /* icon_029.gif in Resources */,
+				16631DFE1E6416740074BD46 /* PraiseTableViewCell.xib in Resources */,
 				F58F5E531E5A99380004AAF7 /* chat_receiver_bg.png in Resources */,
 				F58F5E491E5A99380004AAF7 /* chat_location_preview@2x.png in Resources */,
 				F58F5DF51E5A99370004AAF7 /* Button_Speaker disabled.png in Resources */,
@@ -4963,6 +4990,7 @@
 				F58F5D421E5A99370004AAF7 /* MJRefreshAutoFooter.m in Sources */,
 				F58F5D4D1E5A99370004AAF7 /* MJRefreshGifHeader.m in Sources */,
 				F56D324F1E2A04B600239DF6 /* GPUImageLineGenerator.m in Sources */,
+				16631DFD1E6416740074BD46 /* PraiseTableViewCell.m in Sources */,
 				F56D32761E2A04B600239DF6 /* GPUImageRGBErosionFilter.m in Sources */,
 				F56D32961E2A04B600239DF6 /* GPUImageToonFilter.m in Sources */,
 				F56D32651E2A04B600239DF6 /* GPUImageOpeningFilter.m in Sources */,
@@ -5262,6 +5290,7 @@
 				F58F5D4C1E5A99370004AAF7 /* MJRefreshBackStateFooter.m in Sources */,
 				1644637E1E4AF92E00C76031 /* PerCollectionViewCell.m in Sources */,
 				F58F5D341E5A99360004AAF7 /* EMAudioPlayerUtil.m in Sources */,
+				16631DF81E6415C00074BD46 /* WentiTableViewCell.m in Sources */,
 				F58F5D351E5A99360004AAF7 /* EMAudioRecorderUtil.m in Sources */,
 				164463271E4ACEBF00C76031 /* IDcardViewController.m in Sources */,
 				164462E71E4AB80400C76031 /* BlockTextViewController.m in Sources */,
@@ -5428,6 +5457,7 @@
 				164463831E4AF92E00C76031 /* PerTableViewCell.m in Sources */,
 				F58F5E281E5A99380004AAF7 /* PushNotificationViewController.m in Sources */,
 				F5701EB11E63BDE400D9B10C /* StudyViewController.m in Sources */,
+				16631DF31E6415260074BD46 /* MastTableViewCell.m in Sources */,
 				F58F5D511E5A99370004AAF7 /* MJRefreshConst.m in Sources */,
 				F58F5E311E5A99380004AAF7 /* EMChooseViewController.m in Sources */,
 				F5C99F041E5EDDEF000FD100 /* LBTabBarController.m in Sources */,
