@@ -49,10 +49,11 @@
 		164463841E4AF92E00C76031 /* PerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1644637B1E4AF92E00C76031 /* PerTableViewCell.xib */; };
 		164463871E4B0A0800C76031 /* RegisrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164463861E4B0A0800C76031 /* RegisrViewController.m */; };
 		1644638A1E4B0E9600C76031 /* AgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164463891E4B0E9600C76031 /* AgreementViewController.m */; };
-
 		16613DDC1E5ED5DA00B50D4F /* WorkCourseSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */; };
 		16613DDD1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */; };
 		16613DE11E5EE98C00B50D4F /* StudyreportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16613DE01E5EE98C00B50D4F /* StudyreportViewController.m */; };
+		16631DE31E63CCD10074BD46 /* StudyreportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 165558861E5FC18B002B8AA8 /* StudyreportTableViewCell.xib */; };
+		16631DE41E63CF1F0074BD46 /* StudyreportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 165558851E5FC18B002B8AA8 /* StudyreportTableViewCell.m */; };
 		166CBAD41E26209300E12865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD31E26209300E12865 /* main.m */; };
 		166CBAD71E26209300E12865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD61E26209300E12865 /* AppDelegate.m */; };
 		166CBADA1E26209300E12865 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166CBAD91E26209300E12865 /* ViewController.m */; };
@@ -778,26 +779,11 @@
 		164463861E4B0A0800C76031 /* RegisrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisrViewController.m; sourceTree = "<group>"; };
 		164463881E4B0E9600C76031 /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
 		164463891E4B0E9600C76031 /* AgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgreementViewController.m; sourceTree = "<group>"; };
-
-
 		165558841E5FC18B002B8AA8 /* StudyreportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyreportTableViewCell.h; sourceTree = "<group>"; };
 		165558851E5FC18B002B8AA8 /* StudyreportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyreportTableViewCell.m; sourceTree = "<group>"; };
 		165558861E5FC18B002B8AA8 /* StudyreportTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudyreportTableViewCell.xib; sourceTree = "<group>"; };
 		165558891E5FD2F8002B8AA8 /* StudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyViewController.h; sourceTree = "<group>"; };
 		1655588A1E5FD2F8002B8AA8 /* StudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyViewController.m; sourceTree = "<group>"; };
-		16613DCA1E5EC49600B50D4F /* LBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBNavigationController.h; sourceTree = "<group>"; };
-		16613DCB1E5EC49600B50D4F /* LBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBNavigationController.m; sourceTree = "<group>"; };
-		16613DCC1E5EC49600B50D4F /* LBTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTabBar.h; sourceTree = "<group>"; };
-		16613DCD1E5EC49600B50D4F /* LBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTabBar.m; sourceTree = "<group>"; };
-		16613DCE1E5EC49600B50D4F /* LBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTabBarController.h; sourceTree = "<group>"; };
-		16613DCF1E5EC49600B50D4F /* LBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTabBarController.m; sourceTree = "<group>"; };
-		16613DD01E5EC49600B50D4F /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
-		16613DD11E5EC49600B50D4F /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
-		16613DD21E5EC49600B50D4F /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
-		16613DD31E5EC49600B50D4F /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
-
-
-
 		16613DD91E5ED5DA00B50D4F /* WorkCourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCourseSetViewController.h; sourceTree = "<group>"; };
 		16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCourseSetViewController.m; sourceTree = "<group>"; };
 		16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCourseSetViewController.xib; sourceTree = "<group>"; };
@@ -4709,7 +4695,7 @@
 				F58F5DC01E5A99370004AAF7 /* sr_refresh@2X.png in Resources */,
 				F58F5E3D1E5A99380004AAF7 /* call_silence@2x.png in Resources */,
 				F58F5E451E5A99380004AAF7 /* chat_location_detail_disclosure@2x.png in Resources */,
-				165558881E5FC18C002B8AA8 /* StudyreportTableViewCell.xib in Resources */,
+				16631DE31E63CCD10074BD46 /* StudyreportTableViewCell.xib in Resources */,
 				164462CF1E4AB28600C76031 /* Address.plist in Resources */,
 				F58F5E7C1E5A99380004AAF7 /* group_creategroup@2x.png in Resources */,
 				F58F5DEF1E5A99370004AAF7 /* Button_Mute.png in Resources */,
@@ -5195,9 +5181,9 @@
 				F56D32291E2A04B600239DF6 /* GPUImageExposureFilter.m in Sources */,
 				F56D32361E2A04B600239DF6 /* GPUImageGlassSphereFilter.m in Sources */,
 				166CBAD71E26209300E12865 /* AppDelegate.m in Sources */,
-				165558871E5FC18B002B8AA8 /* StudyreportTableViewCell.m in Sources */,
 				F56D32201E2A04B600239DF6 /* GPUImageDifferenceBlendFilter.m in Sources */,
 				F56D323D1E2A04B600239DF6 /* GPUImageHighlightShadowTintFilter.m in Sources */,
+				16631DE41E63CF1F0074BD46 /* StudyreportTableViewCell.m in Sources */,
 				F58F5D4A1E5A99370004AAF7 /* MJRefreshBackGifFooter.m in Sources */,
 				1644633F1E4AE74B00C76031 /* CCPPickerViewTwo.m in Sources */,
 				F56D321F1E2A04B600239DF6 /* GPUImageDarkenBlendFilter.m in Sources */,
@@ -5439,7 +5425,6 @@
 				F58F5DB71E5A99370004AAF7 /* 环信红包3.x接入文档(iOS).md in Sources */,
 				F58F5DA21E5A99370004AAF7 /* EaseImageView.m in Sources */,
 				164463831E4AF92E00C76031 /* PerTableViewCell.m in Sources */,
-				1655588B1E5FD2F9002B8AA8 /* StudyViewController.m in Sources */,
 				F58F5E281E5A99380004AAF7 /* PushNotificationViewController.m in Sources */,
 				F58F5D511E5A99370004AAF7 /* MJRefreshConst.m in Sources */,
 				F58F5E311E5A99380004AAF7 /* EMChooseViewController.m in Sources */,

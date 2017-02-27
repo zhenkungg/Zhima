@@ -4,60 +4,89 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="StudyreportTableViewCell">
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="studycell" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="StudyreportTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="390" height="99.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeaderImage" translatesAutoresizingMaskIntoConstraints="NO" id="awm-DJ-Iv2">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderImage" translatesAutoresizingMaskIntoConstraints="NO" id="awm-DJ-Iv2">
                         <rect key="frame" x="16" y="8" width="61" height="57"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="fan-jb-ysI"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="刘小飞" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJo-mz-r9Q">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刘小飞" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJo-mz-r9Q">
                         <rect key="frame" x="16" y="73" width="61" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="srv-V2-SjR"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="数学基础" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-MC-PLq">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数学基础" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-MC-PLq">
                         <rect key="frame" x="91" y="8" width="139" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="OIq-a4-3iq"/>
+                            <constraint firstAttribute="width" constant="139" id="jN9-bv-qza"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="掌握情况：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkS-f2-Nbs">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="掌握情况：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkS-f2-Nbs">
                         <rect key="frame" x="91" y="30" width="61" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="Ydw-rF-NoS"/>
+                            <constraint firstAttribute="height" constant="21" id="g7I-g6-ZiA"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="存在问题：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrS-Jl-cG6">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="存在问题：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrS-Jl-cG6">
                         <rect key="frame" x="92" y="51" width="61" height="26"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="cuk-9p-qH3"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[2017/2/24 9:0:35:170]: onNetworkChanged(): 2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHO-cu-172">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="[2017/2/24 9:0:35:170]: onNetworkChanged(): 2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHO-cu-172">
                         <rect key="frame" x="147" y="54" width="223" height="40"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="awm-DJ-Iv2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="0Z9-jH-guq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jrS-Jl-cG6" secondAttribute="bottom" constant="14" id="6ay-ll-blG"/>
+                    <constraint firstItem="awm-DJ-Iv2" firstAttribute="trailing" secondItem="mJo-mz-r9Q" secondAttribute="trailing" id="7Qe-aj-gxZ"/>
+                    <constraint firstItem="awm-DJ-Iv2" firstAttribute="leading" secondItem="mJo-mz-r9Q" secondAttribute="leading" id="8pO-Yb-GjB"/>
+                    <constraint firstItem="mJo-mz-r9Q" firstAttribute="bottom" secondItem="KHO-cu-172" secondAttribute="bottom" id="DVP-1l-cph"/>
+                    <constraint firstItem="jrS-Jl-cG6" firstAttribute="leading" secondItem="mJo-mz-r9Q" secondAttribute="trailing" constant="15" id="GYz-MV-7rf"/>
+                    <constraint firstItem="mJo-mz-r9Q" firstAttribute="top" secondItem="awm-DJ-Iv2" secondAttribute="bottom" constant="8" symbolic="YES" id="H9X-Rc-Axl"/>
+                    <constraint firstItem="yNI-MC-PLq" firstAttribute="leading" secondItem="awm-DJ-Iv2" secondAttribute="trailing" constant="14" id="HsY-Yd-Dzu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mJo-mz-r9Q" secondAttribute="bottom" constant="-3" id="IsM-5y-Mez"/>
+                    <constraint firstItem="KHO-cu-172" firstAttribute="leading" secondItem="mJo-mz-r9Q" secondAttribute="trailing" constant="70" id="KFl-nf-wUY"/>
+                    <constraint firstItem="awm-DJ-Iv2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Neb-4r-cdk"/>
+                    <constraint firstItem="jrS-Jl-cG6" firstAttribute="top" secondItem="UkS-f2-Nbs" secondAttribute="bottom" id="O7k-bP-3jc"/>
+                    <constraint firstItem="yNI-MC-PLq" firstAttribute="leading" secondItem="UkS-f2-Nbs" secondAttribute="leading" id="R2w-oM-rvb"/>
+                    <constraint firstItem="awm-DJ-Iv2" firstAttribute="top" secondItem="yNI-MC-PLq" secondAttribute="top" id="aOA-ei-IOS"/>
+                    <constraint firstItem="UkS-f2-Nbs" firstAttribute="top" secondItem="yNI-MC-PLq" secondAttribute="bottom" constant="1" id="bw0-BN-d2f"/>
+                    <constraint firstItem="KHO-cu-172" firstAttribute="top" secondItem="UkS-f2-Nbs" secondAttribute="bottom" constant="3" id="mom-Df-DH1"/>
+                </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="61" y="52"/>
         </tableViewCell>

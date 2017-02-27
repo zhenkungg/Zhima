@@ -203,12 +203,6 @@
 }
 
 
-
--(void)viewDidAppear:(BOOL)animated
-{
-    self.navigationController.navigationBar.hidden = YES;
-}
-
 //自定义导航栏
 -(void)setUpNav
 {
