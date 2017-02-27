@@ -778,8 +778,7 @@
 		164463861E4B0A0800C76031 /* RegisrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisrViewController.m; sourceTree = "<group>"; };
 		164463881E4B0E9600C76031 /* AgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgreementViewController.h; sourceTree = "<group>"; };
 		164463891E4B0E9600C76031 /* AgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgreementViewController.m; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
-=======
+
 
 		165558841E5FC18B002B8AA8 /* StudyreportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyreportTableViewCell.h; sourceTree = "<group>"; };
 		165558851E5FC18B002B8AA8 /* StudyreportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyreportTableViewCell.m; sourceTree = "<group>"; };
@@ -798,7 +797,7 @@
 		16613DD31E5EC49600B50D4F /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
 
 
->>>>>>> Stashed changes
+
 		16613DD91E5ED5DA00B50D4F /* WorkCourseSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkCourseSetViewController.h; sourceTree = "<group>"; };
 		16613DDA1E5ED5DA00B50D4F /* WorkCourseSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkCourseSetViewController.m; sourceTree = "<group>"; };
 		16613DDB1E5ED5DA00B50D4F /* WorkCourseSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkCourseSetViewController.xib; sourceTree = "<group>"; };
